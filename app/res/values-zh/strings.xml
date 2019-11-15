@@ -124,10 +124,8 @@
     <string name="channel_launch">发射频道</string>
     <string name="channel_long_distance_d">远距离频道%1$d</string>
     <string name="channel_not_to_edit">频率 （不可编辑）</string>
-    <string name="channel_preset_range">430.000 – 440.000</string>
     <string name="channel_public">公众频道</string>
     <string name="channel_public_d">公众频道%1$d</string>
-    <string name="channel_public_range">409.7500 – 409.9875</string>
     <string name="channel_public_seal">公众频道 (L01 - L20)</string>
     <string name="channel_receive">接收频道</string>
     <string name="channel_remote">远距离频道</string>
@@ -136,7 +134,6 @@
     <string name="channel_setting">频道设置</string>
     <string name="channel_setting_active_device">"使用远距离频道、自定义频道与中继频道
 请先进行激活"</string>
-    <string name="channel_setting_active_device_channel_confines">144.000–148.000    430.000–440.000</string>
     <string name="channel_sos">SOS频道</string>
     <string name="channel_team">组队频道</string>
     <string name="chat_search_not_found">"没有找到您所搜索的群组
@@ -304,7 +301,6 @@
     <string name="google_satellitic_map_download">谷歌卫星地图</string>
     <string name="google_satellitic_map_offline">谷歌卫星地图</string>
     <string name="google_standard_map">谷歌标准地图</string>
-    <string name="gps">GPS</string>
     <string name="had_udpate_to_newest_version">已升级到最新版本 V</string>
     <string name="hangkang">香港</string>
     <string name="have_conn_bt_ear_name_s">对讲机已连接至 %1$s</string>
@@ -451,7 +447,6 @@
     <string name="pw_save_mode">省电模式</string>
     <string name="pw_save_mode_detail">降级功耗，提升续航能力</string>
     <string name="pw_save_mode_had_open">省电模式已开启，通讯距离可能缩短</string>
-    <string name="qq">QQ</string>
     <string name="qq_space">QQ空间</string>
     <string name="qr_code">二维码</string>
     <string name="qr_code_card">二维码名片</string>
@@ -558,7 +553,6 @@
     <string name="skip_interval">跳过 %1$ds</string>
     <string name="sos_mode_can_not_setting">SOS频道不可设置</string>
     <string name="speed">时速</string>
-    <string name="splash_logo_copyright">Copyright © 2016 FENGYU, All rights reserved.</string>
     <string name="start_connect">开始连接</string>
     <string name="stop_trans_if_busy_detail">频道被占用时禁止发射</string>
     <string name="stop_trans_if_busy_text">遇忙禁发</string>

@@ -93,7 +93,7 @@ I have read and fully understood this statement, and promise that I possess all 
     <string name="add_relay">Add Repeater</string>
     <string name="altitude">Altitude</string>
     <string name="altitude_h">Altitude</string>
-    <string name="aomen">澳门</string>
+    <string name="aomen">Macao</string>
     <string name="apk_update_title">App version update</string>
     <string name="app_name">Mi PTT</string>
     <string name="app_version">App Version: 1.0.1</string>
@@ -102,7 +102,7 @@ I have read and fully understood this statement, and promise that I possess all 
     <string name="average_altitude">Average altitude</string>
     <string name="away_from">Distance</string>
     <string name="beginner_guide">User Guide</string>
-    <string name="beijing">北京</string>
+    <string name="beijing">Beijing</string>
     <string name="ble_is_unConnect_please_reConnect">Bluetooth disconnected</string>
     <string name="ble_scan_need_open_location_service">To scan the devices, you need to turn on [Location Services] of your phone</string>
     <string name="bt_ear_guide1_text1">Supports most Bluetooth headsets currently available on the market.</string>
@@ -113,7 +113,7 @@ I have read and fully understood this statement, and promise that I possess all 
     <string name="bt_ear_have_enter_conn_mode">Bluetooth pairing mode activated</string>
     <string name="btn_back">Return</string>
     <string name="btn_reconnect">Reconnect</string>
-    <string name="btn_send_message">发送消息</string>
+    <string name="btn_send_message">Send message</string>
     <string name="button_free_cal_describing">Call without having to press the PTT button</string>
     <string name="button_free_call_text">Hands-Free Call</string>
     <string name="can_not_download_app">An App Store or Browser is not available for downloading. Install one manually.</string>
@@ -146,12 +146,11 @@ I have read and fully understood this statement, and promise that I possess all 
     <string name="channel_setting_active_device_channel_confines">144.000–148.000    430.000–440.000</string>
     <string name="channel_sos">SOS channel</string>
     <string name="channel_team">Teaming channel</string>
-    <string name="chat_search_not_found">"没有找到您所搜索的群组
-请重新搜索"</string>
-    <string name="chat_search_not_result">没有找到相关结果</string>
-    <string name="chat_system_message">系统消息</string>
+    <string name="chat_search_not_found">The group you searched for was not found. Please search again</string>
+    <string name="chat_search_not_result">No results found</string>
+    <string name="chat_system_message">System information</string>
     <string name="check_ing">Checking</string>
-    <string name="chongqing">重庆</string>
+    <string name="chongqing">Chongqing</string>
     <string name="city_list">List of Cities</string>
     <string name="click_map_measure_elevation">Click the map to measure altitude</string>
     <string name="click_to_connect">Click to connect</string>
@@ -202,14 +201,14 @@ I have read and fully understood this statement, and promise that I possess all 
     <string name="connect_user_welcome">Welcome!</string>
     <string name="connecting_device">Connecting to radio</string>
     <string name="continue_update_mcu">Continue</string>
-    <string name="converse_group_list">通话群组列表</string>
-    <string name="country_offline_map">全国概要图</string>
+    <string name="converse_group_list">Group list</string>
+    <string name="country_offline_map">National offline map</string>
     <string name="country_offline_map_en">National Basic Map</string>
     <string name="create">Establish</string>
-    <string name="create_group">创建群组</string>
+    <string name="create_group">Create group</string>
     <string name="css_code_close">Closed</string>
     <string name="current_city"> (Current city)</string>
-    <string name="current_converse_group_bottom_text">设备为当前通话群组，可自动播放该群组的语音信息</string>
+    <string name="current_converse_group_bottom_text">The device is the current call group, and the voice information of the group can be automatically played.</string>
     <string name="current_device_not_connected">Current device is unconnected</string>
     <string name="current_gps_no_accuracy_please_change_place">Weak GPS signal Try again in open areas</string>
     <string name="current_mcu_version">Current Version V%1$s</string>
@@ -232,7 +231,7 @@ This version is the latest one"</string>
     <string name="device_mode_channel_scan_ing_describe">Scanning, please wait</string>
     <string name="device_mode_team">Teaming mode</string>
     <string name="device_mode_team_ing_describe">Teaming, please wait</string>
-    <string name="device_net_talk_had_open">对讲机网络对讲功能已开启</string>
+    <string name="device_net_talk_had_open">Intercom function is turned on</string>
     <string name="device_not_activate_and_just_can_translate">This device is not activated yet, you will only be able to receive when a long-range channel is selected. You will not be able to transmit.</string>
     <string name="device_not_connected">No device connected</string>
     <string name="device_seal_name">Mi Walkie-Talkie 1S</string>
@@ -265,15 +264,15 @@ This version is the latest one"</string>
     <string name="dialog_send_failed">Failed to send</string>
     <string name="dialog_send_success">Sent successfully</string>
     <string name="dialog_sending">Sending</string>
-    <string name="dialog_title_delete_relay">Repeater list: %1$s/%2$s</string>
+    <string name="dialog_title_delete_relay">Repeaters: %1$s/%2$s</string>
     <string name="dialog_title_discover_the_new_version">Found new version</string>
-    <string name="dialog_title_modify_group_name">群名称</string>
-    <string name="dialog_title_my_nick_name_in_group">我在本群的昵称</string>
+    <string name="dialog_title_modify_group_name">Group name</string>
+    <string name="dialog_title_my_nick_name_in_group">My nickname in this group</string>
     <string name="dialog_update_info_title">Firmware update log</string>
     <string name="dialog_uploading">Uploading</string>
     <string name="disclaimer">Activation Statement</string>
     <string name="disconnect">Disconnect</string>
-    <string name="disconnect_kickout">账号在其他端登陆,点击重登</string>
+    <string name="disconnect_kickout">The account is logged in at the other device, click to re-register</string>
     <string name="display_other_15_channel">Show additional channels</string>
     <string name="do_you_confirm_download_wechat">Wechat must be installed before Log in with WeChat ID, download?</string>
     <string name="double_frequency_model">Dual Watch</string>
@@ -286,8 +285,8 @@ This version is the latest one"</string>
     <string name="emission_frequency">Transmission</string>
     <string name="emissive_sub_tone">Transmitting sub-code</string>
     <string name="empty" />
-    <string name="empty_recent_group_none">"您还没有添加任何群组列表
-请点击右上角 \"+\" 按钮进行添加"</string>
+    <string name="empty_recent_group_none">"You have not added any group lists yet.
+Please click the \"+\" button in the upper right corner to add"</string>
     <string name="exit_user_improve_plan">Exit the User Experience Improvement Program</string>
     <string name="feedback">Feedback</string>
     <string name="feedback_detail_title">Detailed Problem Description</string>
@@ -310,8 +309,8 @@ This version is the latest one"</string>
     <string name="google_satellitic_map_offline">Google Maps</string>
     <string name="google_standard_map">Standard GMap</string>
     <string name="gps">GPS</string>
-    <string name="had_udpate_to_newest_version">Already updated to the latest version V</string>
-    <string name="hangkang">香港</string>
+    <string name="had_udpate_to_newest_version">Already updated to the latest version\u0020</string>
+    <string name="hangkang">Hong Kong</string>
     <string name="have_conn_bt_ear_name_s">The walkie-talkie is connected to %1$s</string>
     <string name="have_connected">Connected</string>
     <string name="have_different_language_update">The walkie talkie applied a different language from that of the app, upgrading firmware to fix this?</string>
@@ -328,7 +327,7 @@ This version is the latest one"</string>
     <string name="input_location_address">Input geo-location</string>
     <string name="insert_failed">Failed to add</string>
     <string name="insert_success">Added successfully</string>
-    <string name="invite_contact">邀请好友</string>
+    <string name="invite_contact">Invite friends</string>
     <string name="join_user_improve_plan">Join our User Experience Improvement Program</string>
     <string name="just">just</string>
     <string name="label_select_picture">Select picture</string>
@@ -339,9 +338,9 @@ This version is the latest one"</string>
     <string name="location_and_distance">Distance</string>
     <string name="location_is">Located at</string>
     <string name="location_permission_hint">Location permission required to scan and connect to Bluetooth</string>
-    <string name="logging_in">正在登录中…</string>
-    <string name="login_error_general_failed">帐号或密码错误，请重新填写</string>
-    <string name="login_error_unexpected">登陆失败, 请检查你的网络或稍后重试</string>
+    <string name="logging_in">Signing in…</string>
+    <string name="login_error_general_failed">Login or password is incorrect, please re-enter</string>
+    <string name="login_error_unexpected">Login failed, please check your network or try again later</string>
     <string name="login_means_that_you_agree">Login means you agree </string>
     <string name="login_success">Login successful</string>
     <string name="login_time_out">Login timed out</string>
@@ -350,7 +349,7 @@ This version is the latest one"</string>
     <string name="logining">Logging in</string>
     <string name="logout">Log out</string>
     <string name="main_ble_have_unconnect">Bluetooth disconnected</string>
-    <string name="main_title_chat">网络对讲</string>
+    <string name="main_title_chat">Network chat</string>
     <string name="map_kit_select_next_point">Next measurement point</string>
     <string name="map_kit_select_start_point">Select a starting point</string>
     <string name="map_kit_selected_location_latlong">Coordinate of selected</string>
@@ -368,9 +367,9 @@ This version is the latest one"</string>
     <string name="mean_speed">Mean speed</string>
     <string name="measure_failed">Measure failed</string>
     <string name="measuring_altitude">Measuring Altitude</string>
-    <string name="menu_item_create_group">创建群组</string>
-    <string name="menu_item_join_group">加入群组</string>
-    <string name="menu_item_scan_qr_code">扫一扫</string>
+    <string name="menu_item_create_group">Create group</string>
+    <string name="menu_item_join_group">Join group</string>
+    <string name="menu_item_scan_qr_code">Scan QR code</string>
     <string name="mileage">Mileage</string>
     <string name="min_ago">%1$s min ago</string>
     <string name="minute">%1$d min</string>
@@ -392,15 +391,15 @@ This version is the latest one"</string>
     <string name="nearby_bt_ear_device">Nearby Bluetooth Devices</string>
     <string name="net_error_please_check">Network error, please check</string>
     <string name="network_exception">Network anomaly</string>
-    <string name="no_network">网络连接不可用,点击重新连接…</string>
-    <string name="no_network_error_toast">网络异常，稍候再试</string>
-    <string name="no_network_toast">网络连接不可用</string>
+    <string name="no_network">Network connection is not available, click Reconnect…</string>
+    <string name="no_network_error_toast">Network error, please try again later</string>
+    <string name="no_network_toast">Network connection is not available</string>
     <string name="no_tracks_are_recorded">No track recorded</string>
     <string name="noise_level_detail">Set the Threshold for Receiving Signals</string>
     <string name="noise_level_text">Squelch Level</string>
     <string name="normal">Normal</string>
-    <string name="not_add_any_converse_group">"您还没有添加任何群组！
-请在网络对讲界面进行添加群组！"</string>
+    <string name="not_add_any_converse_group">You have not added any groups yet!
+Please add a group in the network chat interface!</string>
     <string name="not_connected_any_device">"Unconnected to any radio
 press below button to add one"</string>
     <string name="not_found_device">"Haven't found any device"</string>
@@ -420,7 +419,7 @@ press below button to add one"</string>
     <string name="off_map_not_have_content">There is no content yet</string>
     <string name="offline_notification">Offline notification</string>
     <string name="offlinemap_download">Download Offline Maps</string>
-    <string name="open_device_net_talk">开启对讲机网络对讲功能</string>
+    <string name="open_device_net_talk">Turn on the network chat function</string>
     <string name="open_permission">Permission granted</string>
     <string name="open_with_other_app">Open with other Apps</string>
     <string name="operation_failed">Operation failed</string>
@@ -432,7 +431,7 @@ press below button to add one"</string>
     <string name="please_check_device">Check the device</string>
     <string name="please_complete_info">Please enter the map name</string>
     <string name="please_confirm_device_is_connect_with_phone">Please make sure the radio is turned on and connected to the phone</string>
-    <string name="please_connect_ble_to_use_net_talk">连接对讲机，使用对讲机进行网络对讲</string>
+    <string name="please_connect_ble_to_use_net_talk">Connect the walkie-talkie and use the walkie-talkie for network chat</string>
     <string name="please_input_name">Enter map name</string>
     <string name="please_input_remark_name">Enter Remark Name Here (Optional)</string>
     <string name="please_kaojin_between_device_btear">Please hold the walkie-talkie near the Bluetooth device you wish to connect to.</string>
@@ -453,20 +452,20 @@ press below button to add one"</string>
     <string name="pw_save_mode_had_open">Enabling Power Saving Mode might reduce the effective communication distance.</string>
     <string name="qq">QQ</string>
     <string name="qq_space">QQ space</string>
-    <string name="qr_code">二维码</string>
-    <string name="qr_code_card">二维码名片</string>
+    <string name="qr_code">QR code</string>
+    <string name="qr_code_card">Business card QR code</string>
     <string name="query_failed">Inquiry failed</string>
     <string name="query_with_city">Query by region</string>
     <string name="radio_examination">ArExam Inquiry</string>
     <string name="radio_question_bank">ArExam Bank</string>
     <string name="ranging">Distance</string>
-    <string name="read">已读</string>
+    <string name="read">Read</string>
     <string name="receive_css_code_s">RX Sub-code:%1$s</string>
     <string name="receive_frequency">Receiving</string>
     <string name="receive_sub_tone">Receive sub-code</string>
     <string name="reconnect_immediately">Reconnect Now</string>
     <string name="relay_d">Repeater %1$d</string>
-    <string name="relay_list_none">"No repeater list information, please add
+    <string name="relay_list_none">"No repeaters information, please add
 144.000–148.000    400.000–470.000"</string>
     <string name="rename">Rename</string>
     <string name="request_data_failed_please_check_network">Data loading failed, please check your network</string>
@@ -569,13 +568,13 @@ press below button to add one"</string>
     <string name="sure">Yes</string>
     <string name="sure_to_delete_current_feedback">Delete current feedback information?</string>
     <string name="switch_channel">Switch</string>
-    <string name="switch_current_group">切换当前群组</string>
+    <string name="switch_current_group">Switch current group</string>
     <string name="tab_discovery">Discover</string>
     <string name="tab_discovery_not_have_more_content">No more content</string>
     <string name="tab_my">Me</string>
     <string name="team_mode_can_not_setting">Channels are unsettable in teaming mode</string>
     <string name="the_day_before_yesterday">the day before yesterday</string>
-    <string name="tianjin">天津</string>
+    <string name="tianjin">Tianjin</string>
     <string name="time_consuming">Total time</string>
     <string name="time_format_month_day_hour">MMM d HH:mm</string>
     <string name="toast_activate_this_freq_befor_using">Please activate before using this frequency</string>
@@ -583,13 +582,13 @@ press below button to add one"</string>
     <string name="toast_contains_invalid_characters">Contains invalid characters</string>
     <string name="toast_download_errored">Download error</string>
     <string name="toast_downloading">Downloading…</string>
-    <string name="toast_group_name_is_required">群名称不能为空</string>
-    <string name="toast_kick_out_failed">移除失败</string>
+    <string name="toast_group_name_is_required">Group name cannot be empty</string>
+    <string name="toast_kick_out_failed">Removal failed</string>
     <string name="toast_log_service_close">Logs stats service closed</string>
     <string name="toast_log_service_start">Logs stats service opened</string>
     <string name="toast_map_download_completed">Current map downloaded</string>
     <string name="toast_network_disconnected_and_pause_download">Due to network disconnection, downloading of the offline map package is paused</string>
-    <string name="toast_nick_name_is_required">昵称不能为空</string>
+    <string name="toast_nick_name_is_required">Username can not be empty</string>
     <string name="toast_obtain_data_failed_please_later_retry">Failed to get data, please try again later</string>
     <string name="toast_of_sure_bt_ear_enter_conn_mode">Please make sure your Bluetooth headset has entered pairing mode.</string>
     <string name="toast_please_check_agree">Check Agree</string>
@@ -603,8 +602,8 @@ press below button to add one"</string>
     <string name="toast_the_name_can_not_empty">Name must be provided</string>
     <string name="toast_the_name_is_duplicate">This name is already in use, please choose another one</string>
     <string name="toast_the_num_of_custom_channels_has_reached_the_limit">Number of Custom channels reached upper limit</string>
-    <string name="toast_transfer_failed">转让失败</string>
-    <string name="toast_transfer_success">转让成功</string>
+    <string name="toast_transfer_failed">Transfer failed</string>
+    <string name="toast_transfer_success">Transfer successful</string>
     <string name="total_climb">Total climb</string>
     <string name="total_decline">Total decline</string>
     <string name="total_time">Total time</string>
@@ -723,4 +722,8 @@ press below button to add one"</string>
     <string name="you_can_browse_to_the_car">Quick view over cars etc</string>
     <string name="zhixiashi_or_hangkang_en">Municipalities or SAR</string>
     <string name="zhixiashi_or_hangkang">@string/zhixiashi_or_hangkang_en</string>
+    <string name="connect_msg_server_failed">Unable to connect to the message server, please check your network or try again later</string>
+    <string name="load_end">No more data</string>
+    <string name="load_failed">Loading failed, please click to try again</string>
+    <string name="req_msg_server_addrs_failed">Failed to get the message server address, please check your network or try again later</string>
 </resources>
