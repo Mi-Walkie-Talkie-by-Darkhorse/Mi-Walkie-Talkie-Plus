@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar_layout" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/voice_prompt" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="20.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_prompt_text" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/voice_prompt_detail" />
+        </LinearLayout>
+        <CheckBox android:id="@id/voice_prompt_checkBox" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/switch_btn_checkbox" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/voice_type_parent_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/voice_type" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="20.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_broadcast" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/voice_type_detail" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/black80" android:id="@id/voice_type_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="20.0dip" />
+        </LinearLayout>
+        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pw_save_mode" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="20.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pw_save_mode" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/pw_save_mode_detail" />
+        </LinearLayout>
+        <CheckBox android:id="@id/pw_save_mode_checkBox" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/switch_btn_checkbox" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/stop_trans_if_busy" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="20.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stop_trans_if_busy_text" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/stop_trans_if_busy_detail" />
+        </LinearLayout>
+        <CheckBox android:id="@id/stop_trans_if_busy_checkBox" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/switch_btn_checkbox" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/noise_level" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="20.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/noise_level_text" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/noise_level_detail" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/black80" android:id="@id/noise_level_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/wide_narrow_band" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="20.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wide_narrow_band_text" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/wide_narrow_band_detail" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/black80" android:id="@id/wide_narrow_band_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

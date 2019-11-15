@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_layout" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:background="@color/space_bg" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/dialogTitleTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_auto_send_location_select_time_text" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/channel_settting_choose_number" android:id="@id/right_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_auto_send_location_right_text" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/select_1_minute_rl" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/select_1_minute_iv" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="21.0dip" android:src="@drawable/setting_audo_send_location_pic_selector" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/dialogTitleTextColor" android:gravity="center_vertical" android:id="@id/select_1_minute_tv" android:paddingLeft="21.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/setting_auto_send_location_1_minute" android:layout_toRightOf="@id/select_1_minute_iv" />
+    </RelativeLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/select_3_minute_rl" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/select_3_minute_iv" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="21.0dip" android:src="@drawable/setting_audo_send_location_pic_selector" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/dialogTitleTextColor" android:gravity="center_vertical" android:id="@id/select_3_minute_tv" android:paddingLeft="21.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/setting_auto_send_location_3_minute" android:layout_toRightOf="@id/select_3_minute_iv" />
+    </RelativeLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/select_5_minute_rl" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/select_5_minute_iv" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="21.0dip" android:src="@drawable/setting_audo_send_location_pic_selector" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/dialogTitleTextColor" android:gravity="center_vertical" android:id="@id/select_5_minute_tv" android:paddingLeft="21.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/setting_auto_send_location_5_minute" android:layout_toRightOf="@id/select_5_minute_iv" />
+    </RelativeLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/select_10_minute_rl" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/select_10_minute_iv" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="21.0dip" android:src="@drawable/setting_audo_send_location_pic_selector" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/dialogTitleTextColor" android:gravity="center_vertical" android:id="@id/select_10_minute_tv" android:paddingLeft="21.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/setting_auto_send_location_10_minute" android:layout_toRightOf="@id/select_10_minute_iv" />
+    </RelativeLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/select_15_minute_rl" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/select_15_minute_iv" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="21.0dip" android:src="@drawable/setting_audo_send_location_pic_selector" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/dialogTitleTextColor" android:gravity="center_vertical" android:id="@id/select_15_minute_tv" android:paddingLeft="21.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/setting_auto_send_location_15_minute" android:layout_toRightOf="@id/select_15_minute_iv" />
+    </RelativeLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_layout" />
+    <View android:id="@id/line1" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="19.0dip" android:layout_marginRight="19.0dip" android:layout_above="@id/user_protocol" />
+    <RelativeLayout android:id="@id/user_protocol" android:background="@drawable/common_btn_selector" android:paddingLeft="19.0dip" android:paddingRight="19.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_above="@id/user_improve_plan_layout">
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_protocol" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/line3" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="19.0dip" android:layout_marginRight="19.0dip" android:layout_above="@id/user_improve_plan_layout" />
+    <RelativeLayout android:id="@id/user_improve_plan_layout" android:background="@drawable/common_btn_selector" android:paddingLeft="19.0dip" android:paddingRight="19.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_above="@id/line2">
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_improve_plan" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/line2" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="19.0dip" android:layout_marginRight="19.0dip" android:layout_above="@id/user_power_center_layout" />
+    <RelativeLayout android:id="@id/user_power_center_layout" android:background="@drawable/common_btn_selector" android:paddingLeft="19.0dip" android:paddingRight="19.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_above="@id/line4">
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_power_center" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/line4" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="19.0dip" android:layout_marginRight="19.0dip" android:layout_marginBottom="42.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/line1" android:layout_below="@id/title_bar" android:layout_centerInParent="true">
+        <ImageView android:id="@id/about_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/about_icon" />
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/app_name" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/about_app_version" android:id="@id/about_app_versionName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_version" />
+    </LinearLayout>
+</RelativeLayout>

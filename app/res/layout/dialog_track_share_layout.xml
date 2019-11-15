@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="100.0dip" android:weightSum="4.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_weixin_layout" android:background="@drawable/btn_rec_trasparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/share_wechat_icom" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wechat" />
+        </LinearLayout>
+        <View android:background="@color/track_share_dialog_space_line" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_pengyouquan_layout" android:background="@drawable/btn_rec_trasparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:padding="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/share_friend_icon" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/moments" />
+        </LinearLayout>
+        <View android:background="@color/track_share_dialog_space_line" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_qq_layout" android:background="@drawable/btn_rec_trasparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:padding="3.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/share_qq_icon" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qq" />
+        </LinearLayout>
+        <View android:background="@color/track_share_dialog_space_line" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_weibo_layout" android:background="@drawable/btn_rec_trasparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/share_weibo_icon" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sina_weibo" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/track_share_dialog_space_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="100.0dip" android:weightSum="4.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_qqzone_layout" android:background="@drawable/btn_rec_trasparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:padding="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/share_qq_space_icon" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qq_space" />
+        </LinearLayout>
+        <View android:background="@color/track_share_dialog_space_line" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_save_album_layout" android:background="@drawable/btn_rec_trasparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:padding="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/share_save_icon" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/save_albums" />
+        </LinearLayout>
+        <View android:background="@color/track_share_dialog_space_line" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_more_share_layout" android:background="@drawable/btn_rec_trasparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:padding="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/share_more_icon" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_more" />
+        </LinearLayout>
+        <View android:background="@color/track_share_dialog_space_line" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

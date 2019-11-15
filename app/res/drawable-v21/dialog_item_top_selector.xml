@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/bg_pressed_white_material"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="8.0dip" android:topRightRadius="8.0dip" />
+            <solid android:color="@color/bg_pressed_white" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="8.0dip" android:topRightRadius="8.0dip" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</ripple>

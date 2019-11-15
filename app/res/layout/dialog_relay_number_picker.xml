@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/body_text_1p5" android:gravity="center" android:id="@id/tv_title" android:background="@drawable/dialog_top_message_bg" android:layout_width="fill_parent" android:layout_height="57.0dip" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ifengyu.intercom.ui.widget.view.NumberPickerView android:id="@id/np_tone_type" android:background="@drawable/dialog_top_message_bg" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="0.0dip" android:layout_height="160.0dip" android:layout_weight="1.0" app:npv_ShowCount="3" app:npv_DividerColor="@color/line_2" app:npv_DividerHeight="1.0dip" app:npv_TextSizeNormal="12.0sp" app:npv_TextSizeSelected="16.0sp" app:npv_WrapSelectorWheel="false" />
+        <com.ifengyu.intercom.ui.widget.view.NumberPickerView android:id="@id/np_tone_value" android:background="@drawable/dialog_top_message_bg" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="0.0dip" android:layout_height="160.0dip" android:layout_weight="1.0" app:npv_ShowCount="3" app:npv_DividerColor="@color/line_2" app:npv_DividerHeight="1.0dip" app:npv_TextSizeNormal="12.0sp" app:npv_TextSizeSelected="16.0sp" app:npv_WrapSelectorWheel="false" />
+    </LinearLayout>
+    <View android:id="@id/dialog_bottom_top_split" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_button_height">
+        <TextView android:id="@id/button_negative" android:background="@drawable/dialog_negative_btn_bg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/common_cancel" android:layout_weight="1.0" style="@style/dialogButtonText" />
+        <View android:background="@color/line_2" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:id="@id/button_positive" android:background="@drawable/dialog_positive_btn_bg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/common_select" android:layout_weight="1.0" style="@style/dialogButtonText" />
+    </LinearLayout>
+</LinearLayout>

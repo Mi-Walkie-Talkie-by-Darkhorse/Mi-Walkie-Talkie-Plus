@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:paddingLeft="23.5dip" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_confirm_logout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/update_failure_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.5dip" android:layout_marginRight="23.5dip" android:layout_marginBottom="27.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/logout_cancel_click" android:background="@drawable/common_left_corner_rect_selector" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common_cancel" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/logout_confirm_click" android:background="@drawable/common_right_corner_rect_selector" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common_select" android:layout_weight="1.0" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</LinearLayout>

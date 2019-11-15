@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/chat_title_bar_layout" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_top_corner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+        <android.support.v7.widget.SearchView android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="72.0dip" app:queryHint="输入群组ID" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:text="搜索列表" style="@style/channelEditSection" />
+            <com.ifengyu.library.widget.view.RecyclerViewEmptySupport android:id="@id/rvSearchList" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

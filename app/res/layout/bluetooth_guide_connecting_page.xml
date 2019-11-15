@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/connecting_page" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ifengyu.intercom.ui.widget.view.WaterRippleView android:layout_gravity="center" android:id="@id/wv" android:layout_width="280.0dip" android:layout_height="280.0dip" app:rippleCount="3" app:rippleCenterIcon="@drawable/bluetooth_icon_gif" app:rippleAutoRunning="false" />
+</FrameLayout>

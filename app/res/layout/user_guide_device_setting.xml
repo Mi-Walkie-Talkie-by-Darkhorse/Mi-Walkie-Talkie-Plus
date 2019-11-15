@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar_right_layout" android:layout_width="65.0dip" android:layout_height="48.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <View android:id="@id/bg" android:background="@drawable/user_guide_right_top_btn_bg" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/title_bar_right" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_icon_set_n" android:scaleType="fitCenter" />
+        <View android:background="#ffb5b5b4" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginTop="23.25dip" android:layout_toLeftOf="@id/bg" />
+    </RelativeLayout>
+    <View android:id="@id/horizontal_line" android:background="#ffb5b5b4" android:layout_width="50.0dip" android:layout_height="1.0dip" android:layout_marginTop="23.25dip" android:layout_toLeftOf="@id/title_bar_right_layout" />
+    <View android:id="@id/vertical_line" android:background="#ffb5b5b4" android:layout_width="1.0dip" android:layout_height="60.0dip" android:layout_toLeftOf="@id/horizontal_line" android:layout_alignTop="@id/horizontal_line" />
+    <View android:id="@id/point" android:background="#ffb5b5b4" android:layout_width="3.5dip" android:layout_height="3.5dip" android:layout_marginLeft="-1.5dip" android:layout_below="@id/vertical_line" android:layout_alignLeft="@id/vertical_line" />
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="-100.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="-100.0dip" android:layout_below="@id/point" android:layout_alignLeft="@id/point" android:layout_alignRight="@id/point">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/guide_text" android:background="@drawable/user_guide_top_btn_text_bg" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" />
+    </LinearLayout>
+</RelativeLayout>

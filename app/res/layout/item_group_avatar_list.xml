@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ifengyu.library.widget.view.SquareFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ifengyu.library.widget.view.QMUIRadiusImageView android:layout_gravity="center" android:id="@id/riv_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:qmui_corner_radius="5.0dip" />
+    </com.ifengyu.library.widget.view.SquareFrameLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/black80" android:ellipsize="end" android:gravity="center" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" />
+</LinearLayout>

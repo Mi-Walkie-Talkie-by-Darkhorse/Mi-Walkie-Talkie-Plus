@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_material_ripple_write" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/top_line" style="@style/horizontal_light_thin_divider" />
+    <RelativeLayout android:paddingLeft="@dimen/content_spacing_horizontal" android:paddingRight="@dimen/content_spacing_horizontal" android:layout_width="fill_parent" android:layout_height="76.0dip">
+        <ImageView android:id="@id/iv_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <FrameLayout android:id="@id/label" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0sp" android:textColor="@color/white50" android:layout_gravity="center" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.ifengyu.library.widget.view.QMUIAlphaButton android:textSize="15.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/btn_reply" android:background="@drawable/bg_yellow_and_corner" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?android:attr/borderlessButtonStyle" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/label" android:layout_toRightOf="@id/iv_avatar" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tv_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="蜂语组" android:maxLines="1" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black80" android:ellipsize="end" android:id="@id/tv_last_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/bottom_line" style="@style/horizontal_light_thin_divider" />
+</LinearLayout>

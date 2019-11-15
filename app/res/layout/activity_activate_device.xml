@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_layout" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/channel_settting_divider_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_activate_text" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never">
+                <TextView android:textSize="12.0sp" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activate_device_text" android:lineSpacingMultiplier="1.2" />
+            </ScrollView>
+            <View android:background="@color/channel_setting_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+            <android.support.v7.widget.AppCompatCheckBox android:textSize="11.0sp" android:textColor="@color/body_text_8" android:id="@id/checkbox" android:background="@color/white" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:checked="false" android:text="@string/activate_device_checkbox_text" app:theme="@style/MyCheckBox" />
+        </LinearLayout>
+        <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="8.0dip">
+            <Button android:textColor="@color/body_text_8" android:gravity="center" android:id="@id/btn_cancel" android:background="@drawable/bg_left_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/common_cancel" android:layout_toLeftOf="@id/view" android:layout_alignParentLeft="true" />
+            <View android:id="@id/view" android:background="@color/channel_settting_divider_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+            <Button android:textColor="@color/select_color" android:gravity="center" android:id="@id/btn_activate" android:background="@drawable/bg_right_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/active_device" android:layout_toRightOf="@id/view" android:layout_alignTop="@id/cancel" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

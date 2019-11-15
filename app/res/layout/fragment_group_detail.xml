@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/chat_title_bar_layout" />
+    <android.support.v4.widget.NestedScrollView android:background="@color/bg_section_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/bg_section_color" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            <View android:background="@color/black5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tv_group_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="16.0dip" android:text="群ID：84756251" />
+            <android.support.v7.widget.RecyclerView android:id="@id/rv_group_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="21.0dip" android:layout_marginBottom="16.0dip" />
+            <FrameLayout android:orientation="horizontal" android:id="@id/more_view" android:background="@drawable/bg_material_ripple_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                <TextView android:textColor="@color/black80" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多群成员" android:drawableRight="@drawable/icon_more_black" android:drawablePadding="6.0dip" />
+            </FrameLayout>
+            <View android:background="@color/black5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <View android:background="@color/bg_section_color" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+            <View android:background="@color/black5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_group_name" android:layout_height="56.0dip" app:titleText="群名称" app:valueText="产品组" app:accessory_type="chevron_text" style="@style/ItemView" />
+            <View android:background="@color/black5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:id="@id/item_group_qr_code" android:layout_width="fill_parent" android:layout_height="56.0dip" style="@style/ItemView">
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="群二维码" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_qr_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/chat_info_icon_qr" android:layout_toLeftOf="@id/iv_arrow" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/black5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_my_nickname_in_group" android:layout_height="56.0dip" app:titleText="我在本群的昵称" app:valueText="Kevin" app:accessory_type="chevron_text" style="@style/ItemView" />
+            <View android:background="@color/black5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_transfer_owner" android:layout_height="56.0dip" app:titleText="转让群主" style="@style/ItemView" />
+            <View android:background="@color/black5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <View android:background="@color/bg_section_color" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+            <View android:background="@color/black5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.ifengyu.library.widget.view.QMUIAlphaButton android:textSize="16.0sp" android:textColor="@color/btn_delete_text_color" android:id="@id/btn_delete_quit" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="删除并退出" style="?android:attr/borderlessButtonStyle" />
+            <View android:background="@color/black5" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

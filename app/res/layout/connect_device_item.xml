@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/device_item" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/device_item_padding_start" android:paddingEnd="@dimen/device_item_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/connect_device_item_topSplit" android:background="#fff2f2f2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/device_item_height">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/iv_connect_icon_arrow" android:background="@drawable/icon_more_black" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/iv_connect_icon_ble" android:background="@drawable/bluetooth_icon_connect" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

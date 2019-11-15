@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_40"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/load_more_loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_4" style="?android:attr/progressBarStyleSmall" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@android:color/black" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:text="@string/loading" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/load_more_load_fail_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/load_failed" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/load_more_load_end_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@android:color/darker_gray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/load_end" />
+    </FrameLayout>
+</FrameLayout>

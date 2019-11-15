@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/chat_title_bar_layout" />
+    <FrameLayout android:background="@color/color_message_default_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_message_list" android:paddingBottom="100.0dip" android:focusable="false" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="ifContentScrolls" />
+        <ImageButton android:layout_gravity="bottom|center" android:id="@id/btn_record" android:background="@null" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/bg_record_btn_selector" android:scaleType="centerInside" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

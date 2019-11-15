@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ifengyu.library.widget.view.RecyclerViewEmptySupport android:id="@id/rv_nearby_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:layout_gravity="center" android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没有附近的人" />
+</FrameLayout>

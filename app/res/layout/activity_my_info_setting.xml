@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_layout" />
+    <TextView android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="93.0dip">
+            <com.ifengyu.intercom.ui.widget.view.CirclrImageView android:id="@id/edit_my_portrait" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/my_head_default" android:layout_centerInParent="true" app:widthFrame="0" app:frameColor="#15000000" />
+        </RelativeLayout>
+        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/set_my_name" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="57.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_my_info_username" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/black80" android:gravity="end" android:id="@id/set_my_name_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="10.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" />
+        </LinearLayout>
+        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/set_my_sex" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="57.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_my_info_sex" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/black80" android:gravity="end" android:id="@id/set_my_sex_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setting_user_info_gender_male" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="10.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" />
+        </LinearLayout>
+        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/set_my_phone" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="57.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_my_info_phone" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/black80" android:gravity="end" android:id="@id/set_my_phone_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setting_user_info_have_not_set" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="10.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" />
+        </LinearLayout>
+        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/set_my_email" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="57.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_my_info_email" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/black80" android:gravity="end" android:id="@id/set_my_email_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setting_user_info_have_not_set" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="10.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" />
+        </LinearLayout>
+        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/chat_title_bar_layout" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_top_corner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/converse_group_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" android:layout_marginStart="13.0dip" android:layout_marginEnd="13.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@color/text_select_color" android:ellipsize="end" android:id="@id/tv_talk_group_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="产品组（6）" android:maxLines="1" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/converse_group_right_icon" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/black50" android:id="@id/tv_talk_group_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="群组ID：230233" />
+            <View android:background="@color/text_select_color" android:layout_width="30.0dip" android:layout_height="2.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/current_converse_group_bottom_text" />
+        </LinearLayout>
+        <TextView android:text="@string/converse_group_list" style="@style/channelEditSection" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/contact_icon_none" android:scaleType="center" />
+                <TextView android:textColor="@color/black50" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/not_add_any_converse_group" android:lineSpacingMultiplier="1.3" />
+            </LinearLayout>
+            <com.ifengyu.library.widget.view.RecyclerViewEmptySupport android:id="@id/rv_group_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

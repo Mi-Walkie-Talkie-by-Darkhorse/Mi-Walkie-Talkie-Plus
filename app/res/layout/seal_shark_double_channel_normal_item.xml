@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/space_line" android:background="@color/line_2" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/double_channel_left_and_right_padding" android:layout_marginRight="@dimen/double_channel_left_and_right_padding" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/double_channel_left_and_right_padding" android:paddingRight="@dimen/double_channel_left_and_right_padding" android:layout_width="fill_parent" android:layout_height="@dimen/double_channel_item_height">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/normal_channel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="22.0sp" android:textColor="@color/white" android:id="@id/normal_channel_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="1" />
+        <ImageView android:id="@id/right_arrow" android:layout_width="8.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_go_white" android:scaleType="fitCenter" />
+    </LinearLayout>
+</LinearLayout>

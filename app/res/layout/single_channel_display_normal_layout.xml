@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/single_channel_item_height">
+        <TextView android:textSize="25.0sp" android:textColor="@color/white" android:id="@id/normal_channel_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/normal_channel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/normal_channel_number" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/single_channel_item_enter_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/switch_channel" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="6.0dip" android:layout_height="wrap_content" android:src="@drawable/set_icon_white_switch" android:scaleType="fitCenter" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

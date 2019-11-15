@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar_layout" />
+    <View android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="70.0dip" android:onClick="gaodeMapDownloadClicked">
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/map_icon_topographic_map" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/body_text_1p5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gaode_standard_map_offline" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/home_channel_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gaode_offline_map_description" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="70.0dip" android:onClick="googleMapDownloadClicked">
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/map_icon_google_offine" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/body_text_1p5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/google_satellitic_map_offline" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/home_channel_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/google_offline_map_description" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

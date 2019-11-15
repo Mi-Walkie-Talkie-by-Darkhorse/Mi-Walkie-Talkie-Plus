@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/space_line" android:background="@color/line_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/double_channel_left_and_right_padding" android:layout_marginRight="@dimen/double_channel_left_and_right_padding" />
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="@dimen/double_channel_left_and_right_padding" android:paddingRight="@dimen/double_channel_left_and_right_padding" android:layout_width="fill_parent" android:layout_height="@dimen/double_channel_item_height">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/relay_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/relay_name">
+            <TextView android:textSize="25.0sp" android:textColor="@color/white" android:id="@id/relay_receive_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/receive_frequency" android:layout_below="@id/relay_receive_number" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="25.0sp" android:textColor="@color/white" android:id="@id/relay_transmit_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/right_arrow" />
+            <ImageView android:id="@id/right_arrow" android:layout_width="8.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_go_white" android:scaleType="fitCenter" android:layout_alignTop="@id/relay_transmit_number" android:layout_alignBottom="@id/relay_transmit_number" android:layout_alignParentRight="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emission_frequency" android:layout_below="@id/relay_transmit_number" android:layout_alignLeft="@id/relay_transmit_number" />
+            <View android:background="@color/white" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_alignTop="@id/relay_receive_number" android:layout_alignBottom="@id/relay_receive_number" android:layout_centerHorizontal="true" android:translationX="-10.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

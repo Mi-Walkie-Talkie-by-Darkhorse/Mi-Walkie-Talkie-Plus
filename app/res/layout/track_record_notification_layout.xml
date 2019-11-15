@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="62.0dip" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@mipmap/icon" android:scaleType="fitCenter" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="3.0" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/select_color" android:gravity="center" android:id="@id/track_recording_speed_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/speed" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/select_color" android:gravity="center" android:id="@id/track_recording_distance_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mileage" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/select_color" android:gravity="center" android:id="@id/track_recording_timing_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="00:00:00" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/time_consuming" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_bottom_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:autofit="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0sp" android:textColor="@color/body_text_10" android:gravity="center" android:id="@id/item_1" android:background="@drawable/btn_rec_white_top_corner" android:clickable="true" android:layout_width="fill_parent" android:layout_height="68.0dip" android:text="@string/device_dolphin_name" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/body_text_10" android:gravity="center" android:id="@id/item_2" android:background="@drawable/btn_rec_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="68.0dip" android:text="@string/device_seal_name" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/body_text_10" android:gravity="center" android:id="@id/item_3" android:background="@drawable/btn_rec_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="68.0dip" android:text="@string/device_shark_name" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/body_text_10" android:gravity="center" android:id="@id/item_4" android:background="@drawable/item_rec_white_bottom_corner" android:clickable="true" android:layout_width="fill_parent" android:layout_height="68.0dip" android:text="@string/other_question" />
+</LinearLayout>

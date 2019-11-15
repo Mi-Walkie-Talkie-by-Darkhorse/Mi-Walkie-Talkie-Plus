@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/map_downloaded_item_bg" android:layout_width="fill_parent" android:layout_height="73.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/map_icon_topographic_map" android:scaleType="fitCenter" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="#ff585858" android:id="@id/city_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffa8a8a8" android:id="@id/city_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+        <com.ifengyu.intercom.ui.widget.view.RoundProgressBarView android:id="@id/download_progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="23.5dip" app:roundColor="@color/offMap_download_progressBar" app:roundProgressColor="@color/select_color_80" app:roundWidth="2.0dip" app:textColor="@color/select_color_80" app:textSize="14.0sp" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="1.0px" />
+</LinearLayout>

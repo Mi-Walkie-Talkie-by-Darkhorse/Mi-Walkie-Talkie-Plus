@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ifengyu.intercom.ui.widget.view.LoadMoreListView android:id="@id/my_feedback_list_view" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/this_not_have_content_rl" android:paddingBottom="60.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:src="@drawable/question_icon_none" android:scaleType="fitCenter" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/body_text_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_have_any_feedback" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

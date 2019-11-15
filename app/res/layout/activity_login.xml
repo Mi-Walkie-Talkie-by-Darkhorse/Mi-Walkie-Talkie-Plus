@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <android.support.v4.view.ViewPager android:id="@id/guide_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.ifengyu.intercom.ui.widget.view.CircleIndicator android:layout_gravity="bottom" android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="37.0dip" app:ci_margin="10.0dip" app:ci_drawable="@drawable/guide_icon_selected" app:ci_drawable_unselected="@drawable/guide_icon_normal" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/btn_login_xiaomi" android:background="@drawable/load_btn_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginStart="55.0dip" android:layout_marginEnd="55.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/load_icon_mi" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/login_with_xiaomi" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/btn_login_weixin" android:background="@drawable/load_btn_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="55.0dip" android:layout_marginEnd="55.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/load_icon_wechat" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/login_with_wechat" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/guide_description" android:layout_gravity="center_horizontal" android:id="@id/top_i_agree" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="I have read and agree to" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/select_user_protocol_iv" android:paddingTop="10.0dip" android:paddingBottom="2.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_audo_send_location_pic_selector" android:scaleType="fitCenter" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/guide_description" android:id="@id/i_had_read" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_means_that_you_agree" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/use_agree" android:gravity="bottom" android:id="@id/user_agree" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/user_protocol" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/select_improve_plan_iv" android:paddingTop="3.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_audo_send_location_pic_selector" android:scaleType="fitCenter" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/guide_description" android:id="@id/i_well_join" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/w_will_join" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/use_agree" android:gravity="top" android:id="@id/improve_plan_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/user_improve_plan" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
