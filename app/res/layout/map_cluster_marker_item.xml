@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="70.0dip" android:layout_height="52.0dip">
+        <FrameLayout android:background="@drawable/home_botton_head" android:layout_width="47.0dip" android:layout_height="52.0dip" android:layout_centerInParent="true">
+            <com.ifengyu.intercom.ui.widget.view.CirclrImageView android:layout_gravity="center" android:id="@id/map_cluster_item_portrait_iv" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/my_head_default" android:scaleType="fitCenter" app:widthFrame="0" app:frameColor="#15000000" />
+        </FrameLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/map_cluster_item_number_tv" android:background="@drawable/map_cluster_marker_right_top_bg" android:layout_width="35.0dip" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

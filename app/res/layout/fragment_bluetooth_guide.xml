@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/chat_title_bar_layout" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="36.0dip" android:text="开启后，可在对讲机上与选定群组\n进行语音对讲" android:lineSpacingExtra="2.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/bluetooth_guide_start_page" />
+        <include android:visibility="gone" layout="@layout/bluetooth_guide_connecting_page" />
+        <include android:visibility="gone" layout="@layout/bluetooth_guide_connect_success_page" />
+        <include android:visibility="gone" layout="@layout/bluetooth_guide_connect_failed_page" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ifengyu.library.widget.view.QMUIAlphaTextView android:textColor="@color/colorAccent" android:id="@id/tv_look_help" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="无法正常开启，点击查看帮助" android:drawableRight="@drawable/icon_right_arrow_yellow" android:drawablePadding="5.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <com.ifengyu.library.widget.view.QMUIAlphaButton android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/btn_action" android:background="@drawable/bg_yellow_solid_and_corner" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="16.0dip" android:text="开启对讲机网络对讲" android:layout_above="@id/tv_look_help" android:layout_alignWithParentIfMissing="true" style="?android:attr/borderlessButtonStyle" />
+    </RelativeLayout>
+</LinearLayout>

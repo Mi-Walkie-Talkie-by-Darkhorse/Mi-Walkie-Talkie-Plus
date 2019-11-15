@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/offmap_click" android:background="@drawable/map_downloaded_item_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="73.0dip">
+        <ImageView android:id="@id/offmap_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/map_icon_google_offine" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="80.0dip" android:layout_toRightOf="@id/offmap_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0sp" android:textColor="#ff585858" android:id="@id/offmap_dirname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffa8a8a8" android:id="@id/offmap_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+        <com.ifengyu.intercom.ui.widget.view.RoundProgressBarView android:id="@id/download_progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="23.5dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:roundColor="@color/offMap_download_progressBar" app:roundProgressColor="@color/select_color_80" app:roundWidth="2.0dip" app:textColor="@color/select_color_80" app:textSize="14.0sp" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff585858" android:id="@id/right_had_download_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23.5dip" android:text="@string/downloaded" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

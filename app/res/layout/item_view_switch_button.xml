@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ifengyu.library.widget.view.SwitchButton android:id="@id/item_switch" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButton" />
+</merge>

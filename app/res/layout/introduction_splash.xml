@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:layout_gravity="center|right|top" android:orientation="horizontal" android:id="@id/splash_countdown_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginEnd="21.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/splash_skip_bg_normal" android:layout_width="34.0dip" android:layout_height="34.0dip" />
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/splash_skip_selector" android:layout_width="61.0dip" android:layout_height="34.0dip" android:text="@string/skip" android:layout_marginStart="7.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon" android:layout_centerInParent="true" />
+        <TextView android:textSize="8.0dip" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/splash_logo_copyright" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

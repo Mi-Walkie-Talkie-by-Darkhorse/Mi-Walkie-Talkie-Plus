@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bubble_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/message_item_audio_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center|left" android:id="@id/message_item_audio_playing_animation" android:background="@drawable/im_audio_animation_list_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/empty" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_black_333333" android:layout_gravity="center|right" android:id="@id/message_item_audio_duration" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ImageView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/message_item_audio_unread_indicator" android:background="@drawable/message_unread" android:focusable="false" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bubble_layout_margin_side" android:layout_marginRight="@dimen/bubble_layout_margin_side" android:contentDescription="@string/empty" />
+</LinearLayout>

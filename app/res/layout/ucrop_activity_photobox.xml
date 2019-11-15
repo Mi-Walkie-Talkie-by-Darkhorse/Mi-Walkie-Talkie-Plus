@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ucrop_photobox" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/ucrop_color_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize">
+        <TextView android:textColor="@color/ucrop_color_toolbar_widget" android:layout_gravity="center" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ucrop_label_edit_photo" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:id="@id/ucrop_frame" android:background="@color/ucrop_color_crop_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/wrapper_controls" android:layout_below="@id/toolbar">
+        <ImageView android:layout_gravity="center" android:id="@id/image_view_logo" android:layout_width="200.0dip" android:layout_height="200.0dip" app:srcCompat="@drawable/ucrop_vector_ic_crop" />
+        <com.yalantis.ucrop.view.UCropView android:id="@id/ucrop" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    </FrameLayout>
+</RelativeLayout>

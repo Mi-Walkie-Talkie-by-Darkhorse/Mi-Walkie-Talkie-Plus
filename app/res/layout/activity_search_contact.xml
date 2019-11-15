@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/chat_title_bar_layout" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_top_corner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+        <com.ifengyu.intercom.ui.imui.ui.chat.widget.searchshowview.ExLinearlayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <com.ifengyu.library.widget.view.RecyclerViewEmptySupport android:id="@id/rv_top_list" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="8.0dip" />
+            <android.support.v7.widget.SearchView android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:queryHint="输入好友ID" />
+        </com.ifengyu.intercom.ui.imui.ui.chat.widget.searchshowview.ExLinearlayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/search_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:text="搜索列表" style="@style/channelEditSection" />
+                <com.ifengyu.library.widget.view.RecyclerViewEmptySupport android:id="@id/rv_search_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/nearby_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.design.widget.TabLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="56.0dip" app:tabIndicatorColor="@color/select_color" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="@color/black80" app:tabSelectedTextColor="@color/select_color" />
+                <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

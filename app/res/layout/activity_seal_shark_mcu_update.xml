@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_height">
+            <ImageView android:id="@id/title_bar_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_back" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" style="@style/TitlebarLeftButton" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_gravity="end" android:id="@id/title_bar_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/mcu_update_log" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+            <View android:layout_gravity="bottom" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textSize="27.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/firmware_upgrade" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black60" android:layout_gravity="center_horizontal" android:id="@id/version_code_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/update_check_new" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginTop="75.0dip">
+        <com.ifengyu.intercom.ui.widget.view.CircleProgress android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/state_view_layout" android:background="@drawable/firmware_icon_circle_blue" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_state_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/firmware_icon_upgrade" />
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/black50" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_state" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/black50" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_power_prompt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="@color/select_color" android:gravity="center" android:id="@id/btn_update" android:background="@drawable/common_corner_rect" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginBottom="20.0dip" android:text="@string/update_start" android:layout_alignParentBottom="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+    </RelativeLayout>
+</LinearLayout>

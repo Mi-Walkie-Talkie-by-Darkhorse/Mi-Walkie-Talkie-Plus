@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/tv_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+    <com.flyco.tablayout.widget.MsgView android:textSize="11.5sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/rtv_msg_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" mv:mv_backgroundColor="#fffd481f" mv:mv_strokeWidth="1.0dip" mv:mv_strokeColor="#ffffffff" mv:mv_isRadiusHalfHeight="true" xmlns:mv="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

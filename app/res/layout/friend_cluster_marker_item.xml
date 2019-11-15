@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/transparent" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <View android:id="@id/bottom_line" android:background="@color/line_3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+        <com.ifengyu.intercom.ui.widget.view.CirclrImageView android:id="@id/friend_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/my_head_default" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:widthFrame="0" app:frameColor="#00ffffff" />
+        <TextView android:textSize="14.0sp" android:textColor="#88000000" android:gravity="center|left" android:id="@id/friend_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/right_arrow" android:layout_toRightOf="@id/friend_icon" android:layout_below="@id/bottom_line" />
+        <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/top_line" android:background="@color/black10" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+    <View android:id="@id/mid_line" android:background="@color/black10" android:layout_width="1.0dip" android:layout_height="42.0dip" android:layout_below="@id/top_line" android:layout_centerHorizontal="true" />
+    <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/dialog_btn_left_text_color" android:id="@id/btn_left" android:background="@drawable/dialog_left_button_selector" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_toLeftOf="@id/mid_line" android:layout_below="@id/top_line" android:layout_alignParentLeft="true" style="?android:attr/borderlessButtonStyle" />
+    <Button android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/btn_right" android:background="@drawable/dialog_right_button_selector" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_toRightOf="@id/mid_line" android:layout_below="@id/top_line" android:layout_alignParentRight="true" style="?android:attr/borderlessButtonStyle" />
+</RelativeLayout>

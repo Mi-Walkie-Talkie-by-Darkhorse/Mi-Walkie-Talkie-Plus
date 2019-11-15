@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.imui.ui.chat.widget.searchshowview.ExLinearlayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/search_show_view_hs" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_show_view_container" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </HorizontalScrollView>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/search_show_view_edit_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/common_icon_search_black" />
+        <EditText android:textSize="15.0sp" android:id="@id/search_show_view_et" android:background="@null" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:hint="@string/common_search" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" android:imeOptions="actionSearch" />
+    </LinearLayout>
+</com.ifengyu.intercom.ui.imui.ui.chat.widget.searchshowview.ExLinearlayout>

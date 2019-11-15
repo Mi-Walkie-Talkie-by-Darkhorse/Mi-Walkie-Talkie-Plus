@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ifengyu.intercom.ui.widget.view.RecyclerViewEmptySupport android:id="@id/rv_seal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textColor="@color/home_channel_name" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="@string/seal_custom_list_none" android:drawableTop="@drawable/relay_list_none" android:drawablePadding="10.0dip" android:lineSpacingMultiplier="1.3" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

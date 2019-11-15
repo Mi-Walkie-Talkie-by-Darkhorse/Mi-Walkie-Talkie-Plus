@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/single_channel_item_height">
+        <RelativeLayout android:id="@id/mid_channel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="25.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/relay_channel_receive_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/view" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/receive_frequency" android:layout_toLeftOf="@id/view" android:layout_below="@id/relay_channel_receive_number" android:layout_alignParentLeft="true" />
+            <View android:id="@id/view" android:background="@color/white" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_alignTop="@id/relay_channel_receive_number" android:layout_alignBottom="@id/relay_channel_receive_number" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="25.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/normal_channel_transmit_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/view" android:layout_alignParentRight="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/emission_frequency" android:layout_toRightOf="@id/view" android:layout_below="@id/normal_channel_transmit_number" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/relay_channel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/mid_channel" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/single_channel_item_enter_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/switch_channel" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="6.0dip" android:layout_height="wrap_content" android:src="@drawable/set_icon_white_switch" android:scaleType="fitCenter" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,244 @@
+.class final Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;
+.super Ljava/util/concurrent/atomic/AtomicInteger;
+.source "ObservableRetryBiPredicate.java"
+
+# interfaces
+.implements Lio/reactivex/q;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "RetryBiObserver"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/util/concurrent/atomic/AtomicInteger;",
+        "Lio/reactivex/q",
+        "<TT;>;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final serialVersionUID:J = -0x628271a96862fff0L
+
+
+# instance fields
+.field final a:Lio/reactivex/q;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/reactivex/q",
+            "<-TT;>;"
+        }
+    .end annotation
+.end field
+
+.field final b:Lio/reactivex/internal/disposables/SequentialDisposable;
+
+.field final c:Lio/reactivex/o;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/reactivex/o",
+            "<+TT;>;"
+        }
+    .end annotation
+.end field
+
+.field final d:Lio/reactivex/b/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/reactivex/b/d",
+            "<-",
+            "Ljava/lang/Integer;",
+            "-",
+            "Ljava/lang/Throwable;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field e:I
+
+
+# direct methods
+.method constructor <init>(Lio/reactivex/q;Lio/reactivex/b/d;Lio/reactivex/internal/disposables/SequentialDisposable;Lio/reactivex/o;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/reactivex/q",
+            "<-TT;>;",
+            "Lio/reactivex/b/d",
+            "<-",
+            "Ljava/lang/Integer;",
+            "-",
+            "Ljava/lang/Throwable;",
+            ">;",
+            "Lio/reactivex/internal/disposables/SequentialDisposable;",
+            "Lio/reactivex/o",
+            "<+TT;>;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
+
+    iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->a:Lio/reactivex/q;
+
+    iput-object p3, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->b:Lio/reactivex/internal/disposables/SequentialDisposable;
+
+    iput-object p4, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->c:Lio/reactivex/o;
+
+    iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->d:Lio/reactivex/b/d;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method a()V
+    .locals 2
+
+    invoke-virtual {p0}, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->getAndIncrement()I
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const/4 v0, 0x1
+
+    :cond_0
+    iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->b:Lio/reactivex/internal/disposables/SequentialDisposable;
+
+    invoke-virtual {v1}, Lio/reactivex/internal/disposables/SequentialDisposable;->isDisposed()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    :cond_1
+    :goto_0
+    return-void
+
+    :cond_2
+    iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->c:Lio/reactivex/o;
+
+    invoke-interface {v1, p0}, Lio/reactivex/o;->subscribe(Lio/reactivex/q;)V
+
+    neg-int v0, v0
+
+    invoke-virtual {p0, v0}, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->addAndGet(I)I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+.end method
+
+.method public onComplete()V
+    .locals 1
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->a:Lio/reactivex/q;
+
+    invoke-interface {v0}, Lio/reactivex/q;->onComplete()V
+
+    return-void
+.end method
+
+.method public onError(Ljava/lang/Throwable;)V
+    .locals 5
+
+    :try_start_0
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->d:Lio/reactivex/b/d;
+
+    iget v1, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->e:I
+
+    add-int/lit8 v1, v1, 0x1
+
+    iput v1, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->e:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1, p1}, Lio/reactivex/b/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->a:Lio/reactivex/q;
+
+    invoke-interface {v0, p1}, Lio/reactivex/q;->onError(Ljava/lang/Throwable;)V
+
+    :goto_0
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    invoke-static {v0}, Lio/reactivex/exceptions/a;->b(Ljava/lang/Throwable;)V
+
+    iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->a:Lio/reactivex/q;
+
+    new-instance v2, Lio/reactivex/exceptions/CompositeException;
+
+    const/4 v3, 0x2
+
+    new-array v3, v3, [Ljava/lang/Throwable;
+
+    const/4 v4, 0x0
+
+    aput-object p1, v3, v4
+
+    const/4 v4, 0x1
+
+    aput-object v0, v3, v4
+
+    invoke-direct {v2, v3}, Lio/reactivex/exceptions/CompositeException;-><init>([Ljava/lang/Throwable;)V
+
+    invoke-interface {v1, v2}, Lio/reactivex/q;->onError(Ljava/lang/Throwable;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p0}, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->a()V
+
+    goto :goto_0
+.end method
+
+.method public onNext(Ljava/lang/Object;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->a:Lio/reactivex/q;
+
+    invoke-interface {v0, p1}, Lio/reactivex/q;->onNext(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public onSubscribe(Lio/reactivex/disposables/b;)V
+    .locals 1
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableRetryBiPredicate$RetryBiObserver;->b:Lio/reactivex/internal/disposables/SequentialDisposable;
+
+    invoke-virtual {v0, p1}, Lio/reactivex/internal/disposables/SequentialDisposable;->a(Lio/reactivex/disposables/b;)Z
+
+    return-void
+.end method
