@@ -179,7 +179,7 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->setHintTextTypeface(Landroid/graphics/Typeface;)V
 
-    const-string v0, "en"
+    const-string v0, "zh"
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->getResources()Landroid/content/res/Resources;
 
@@ -199,7 +199,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;->mNp1:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
 

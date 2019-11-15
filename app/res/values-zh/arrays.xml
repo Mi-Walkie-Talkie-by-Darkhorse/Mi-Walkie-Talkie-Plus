@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_tab_title">
+        <item>首页</item>
+        <item>发现</item>
+        <item>我的</item>
+    </string-array>
+    <string-array name="main_tab_title_have_net_talk">
+        <item>首页</item>
+        <item>对讲</item>
+        <item>发现</item>
+        <item>我的</item>
+    </string-array>
+    <string-array name="channel_tab_title">
+        <item>自定义频道</item>
+        <item>预设频道</item>
+    </string-array>
+    <string-array name="dolphin_channel_tab_title">
+        <item>预设频道</item>
+        <item>自定义频道</item>
+        <item>中继频道</item>
+    </string-array>
+    <string-array name="guide_title">
+        <item>快速设置频道</item>
+        <item>无网络，亦可共享位置</item>
+        <item>离线地图下载</item>
+    </string-array>
+    <string-array name="guide_description">
+        <item>"手机调节频率，自定义频道
+输入更轻松，选择更便捷"</item>
+        <item>"无需借助手机网络，对讲机间位置互传
+户外游玩更安全、更有趣"</item>
+        <item>"无网络环境下可使用离线地图
+户外探险好帮手"</item>
+    </string-array>
+    <string-array name="dialog_connect_note">
+        <item>重试</item>
+        <item>帮助</item>
+        <item>暂不绑定</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="sub_code_type">
+        <item>模拟亚音</item>
+        <item>数字亚音-正相</item>
+        <item>数字亚音-反相</item>
+    </string-array>
+</resources>
