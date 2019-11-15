@@ -1,8 +1,7 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: MI-Walkie-Talkie-2.9.34.apk
-compressionType: false
+apkFileName: MI-Walkie-Talkie-Plus-2.9.34.apk
+compressionType: true
 doNotCompress:
-- arsc
 - png
 - data
 - wav
