@@ -2120,6 +2120,7 @@
     <public type="string" name="title_settings_dialog" id="0x7f09029c" />
     <public type="string" name="ucrop_error_input_data_is_absent" id="0x7f09029d" />
     <public type="string" name="ucrop_mutate_exception_hint" id="0x7f09029e" />
+    <public type="string" name="frequency_mhz" id="0x7f09029f" />
     <public type="array" name="analog_tone" id="0x7f0a0000" />
     <public type="array" name="channel_tab_title" id="0x7f0a0001" />
     <public type="array" name="dialog_connect_note" id="0x7f0a0002" />
