@@ -171,7 +171,7 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->setHintTextTypeface(Landroid/graphics/Typeface;)V
 
-    const-string v0, "en"
+    const-string v0, "zh"
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->getResources()Landroid/content/res/Resources;
 
@@ -187,11 +187,15 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/SealSharkPickerDialog;->mNp1:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
 

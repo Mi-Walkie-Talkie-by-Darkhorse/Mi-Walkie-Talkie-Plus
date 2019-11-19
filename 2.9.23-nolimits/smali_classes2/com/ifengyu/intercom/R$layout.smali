@@ -253,8 +253,6 @@
 
 .field public static final dialog_custom_channel:I = 0x7f040076
 
-.field public static final dialog_custom_channel_400_470:I = 0x7f040077
-
 .field public static final dialog_custom_channel_option:I = 0x7f040078
 
 .field public static final dialog_custom_channel_option_rename:I = 0x7f040079
@@ -278,10 +276,6 @@
 .field public static final dialog_product_device_selector:I = 0x7f040082
 
 .field public static final dialog_relay_number_picker:I = 0x7f040083
-
-.field public static final dialog_seal_input_custom_channel:I = 0x7f040084
-
-.field public static final dialog_shark_input_custom_channel:I = 0x7f040085
 
 .field public static final dialog_three_item_select_layout:I = 0x7f040086
 

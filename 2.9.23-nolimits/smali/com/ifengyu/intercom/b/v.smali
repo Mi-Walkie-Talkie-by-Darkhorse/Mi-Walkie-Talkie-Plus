@@ -75,40 +75,102 @@
 .end method
 
 .method public static a(Ljava/lang/String;)I
-    .locals 4
+    .locals 5
 
-    const-wide v2, 0x408f400000000000L    # 1000.0
-
-    const-string v0, ","
-
-    const-string v1, "."
-
-    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v1
+    const v3, 0xf4240
 
     const/4 v0, 0x0
 
+    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const/16 v1, 0x2e
+
     :try_start_0
-    invoke-static {v1}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
-    :try_end_0
-    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v1}, Ljava/lang/String;->indexOf(I)I
 
-    move-result-wide v0
+    move-result v1
 
-    mul-double/2addr v0, v2
+    if-gez v1, :cond_3
 
-    mul-double/2addr v0, v2
+    const/16 v1, 0x2c
 
-    double-to-int v0, v0
+    invoke-virtual {p0, v1}, Ljava/lang/String;->indexOf(I)I
+
+    move-result v1
+
+    move v2, v1
 
     :goto_0
+    if-gez v2, :cond_1
+
+    invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v0
+
+    mul-int/2addr v0, v3
+
+    :cond_0
+    :goto_1
     return v0
+
+    :cond_1
+    if-lez v2, :cond_2
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v1
+
+    mul-int/2addr v1, v3
+
+    :goto_2
+    const-string v3, "000000"
+
+    invoke-virtual {p0, v3}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    add-int/lit8 v4, v2, 0x1
+
+    add-int/lit8 v2, v2, 0x7
+
+    invoke-virtual {v3, v4, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v0
+
+    add-int/2addr v0, v1
+
+    goto :goto_1
+
+    :cond_2
+    move v1, v0
+
+    goto :goto_2
 
     :catch_0
     move-exception v1
 
     invoke-static {v1}, Lcom/google/devtools/build/android/desugar/runtime/ThrowableExtension;->printStackTrace(Ljava/lang/Throwable;)V
+
+    goto :goto_1
+
+    :cond_3
+    move v2, v1
 
     goto :goto_0
 .end method
@@ -605,37 +667,15 @@
 .end method
 
 .method public static a()Z
-    .locals 2
+    .locals 1
 
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "en"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    invoke-static {}, Lcom/ifengyu/intercom/b/v;->b()Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    xor-int/lit8 v0, v0, 0x1
 
-    const/4 v0, 0x1
-
-    :goto_0
     return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
 .end method
 
 .method public static a(Landroid/content/Context;)Z
@@ -1245,29 +1285,59 @@
 .end method
 
 .method public static c(I)Ljava/lang/String;
-    .locals 4
+    .locals 3
 
-    int-to-double v0, p0
+    const v2, 0xf4240
 
-    const-wide/high16 v2, 0x3ff0000000000000L    # 1.0
+    if-gtz p0, :cond_0
 
-    mul-double/2addr v0, v2
+    const/4 v0, 0x0
 
-    const-wide v2, 0x412e848000000000L    # 1000000.0
+    :goto_0
+    return-object v0
 
-    div-double/2addr v0, v2
+    :cond_0
+    rem-int v0, p0, v2
 
-    new-instance v2, Ljava/text/DecimalFormat;
+    add-int/2addr v0, v2
 
-    const-string v3, "0.0000"
+    rem-int/lit8 v1, v0, 0xa
 
-    invoke-direct {v2, v3}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
+    if-nez v1, :cond_1
 
-    invoke-virtual {v2, v0, v1}, Ljava/text/DecimalFormat;->format(D)Ljava/lang/String;
+    div-int/lit8 v0, v0, 0xa
+
+    :cond_1
+    rem-int/lit8 v1, v0, 0xa
+
+    if-nez v1, :cond_2
+
+    div-int/lit8 v0, v0, 0xa
+
+    :cond_2
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    div-int v2, p0, v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
+
+    move-result v2
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const/16 v0, 0x2e
+
+    invoke-virtual {v1, v2, v0}, Ljava/lang/StringBuilder;->setCharAt(IC)V
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    return-object v0
+    goto :goto_0
 .end method
 
 .method public static c(Landroid/content/Context;)Z
