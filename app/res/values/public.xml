@@ -1384,9 +1384,9 @@
     <public type="layout" name="ucrop_view" id="0x7f040117" />
     <public type="layout" name="user_guide_device_setting" id="0x7f040118" />
     <public type="layout" name="user_guide_muli_device_manager" id="0x7f040119" />
-    <public type="layout" name="user_guide_share_location" id="0x7f04011a" />
-    <public type="layout" name="view_tips_loading" id="0x7f04011b" />
-    <public type="layout" name="webview_load_fail" id="0x7f04011c" />
+    <public type="layout" name="user_guide_share_location" id="0x7f040077" />
+    <public type="layout" name="view_tips_loading" id="0x7f040084" />
+    <public type="layout" name="webview_load_fail" id="0x7f040085" />
     <public type="layout" name="notification_media_action" id="0x7f0400eb" />
     <public type="layout" name="notification_media_cancel_action" id="0x7f0400ec" />
     <public type="layout" name="notification_template_big_media" id="0x7f0400ed" />
