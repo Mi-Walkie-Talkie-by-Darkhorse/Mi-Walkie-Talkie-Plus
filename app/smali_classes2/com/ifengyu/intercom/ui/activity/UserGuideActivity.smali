@@ -293,7 +293,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
-    const v0, 0x7f04011a
+    const v0, 0x7f040077
 
     invoke-static {p0, v0, v13}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
