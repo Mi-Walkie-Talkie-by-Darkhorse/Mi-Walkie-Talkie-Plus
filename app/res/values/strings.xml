@@ -353,7 +353,7 @@ Please click the \"+\" button in the upper right corner to add"</string>
     <string name="map_kit_select_next_point">Next measurement point</string>
     <string name="map_kit_select_start_point">Select a starting point</string>
     <string name="map_kit_selected_location_latlong">Coordinate of selected</string>
-    <string name="map_kit_text">Gadgets</string>
+    <string name="map_kit_text">Tools</string>
     <string name="map_satellitic">Satellite map</string>
     <string name="map_size_text">Map size  </string>
     <string name="map_standard">Standard map</string>
