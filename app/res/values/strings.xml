@@ -95,7 +95,7 @@ I have read and fully understood this statement, and promise that I possess all 
     <string name="altitude_h">Altitude</string>
     <string name="aomen">Macao</string>
     <string name="apk_update_title">App version update</string>
-    <string name="app_name">Mi PTT</string>
+    <string name="app_name">Mi PTT+</string>
     <string name="app_version">App Version: 1.0.1</string>
     <string name="authorized_login">Authorized logging in</string>
     <string name="auto_send_location_interval">Location Transmission Interval</string>
@@ -567,7 +567,7 @@ press below button to add one"</string>
     <string name="support_use_ji_feng_btear">Support the use of the BEEBEST Bluetooth earphone，please upgrade firmware before use it.</string>
     <string name="sure">Yes</string>
     <string name="sure_to_delete_current_feedback">Delete current feedback information?</string>
-    <string name="switch_channel">Switch</string>
+    <string name="switch_channel">Channels</string>
     <string name="switch_current_group">Switch current group</string>
     <string name="tab_discovery">Discover</string>
     <string name="tab_discovery_not_have_more_content">No more content</string>
