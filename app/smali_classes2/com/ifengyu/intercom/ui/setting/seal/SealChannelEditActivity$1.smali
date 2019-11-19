@@ -3,8 +3,7 @@
 .source "SealChannelEditActivity.java"
 
 # interfaces
-.implements Lcom/ifengyu/intercom/ui/setting/seal/a$c;
-
+.implements Lcom/ifengyu/intercom/ui/widget/dialog/o$c;
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
@@ -113,6 +112,8 @@
 
 .method public b(Ljava/lang/String;)V
     .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity$1;->a(Ljava/lang/String;)V
 
     return-void
 .end method

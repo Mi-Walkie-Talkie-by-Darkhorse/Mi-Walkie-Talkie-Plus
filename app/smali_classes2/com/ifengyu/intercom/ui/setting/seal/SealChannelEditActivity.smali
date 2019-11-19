@@ -135,34 +135,27 @@
     return-object v0
 .end method
 
-.method private a(Ljava/lang/String;ILcom/ifengyu/intercom/ui/setting/seal/a$c;)V
+.method private a(IILcom/ifengyu/intercom/ui/widget/dialog/o$c;)V
     .locals 2
-
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/ifengyu/intercom/ui/setting/seal/a;
-
-    invoke-direct {v0, p0, p1, p2}, Lcom/ifengyu/intercom/ui/setting/seal/a;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
-
-    :goto_0
-    invoke-virtual {v0, p3}, Lcom/ifengyu/intercom/ui/setting/seal/a;->a(Lcom/ifengyu/intercom/ui/setting/seal/a$c;)V
-
-    invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/seal/a;->show()V
-
-    return-void
-
-    :cond_0
-    new-instance v0, Lcom/ifengyu/intercom/ui/setting/seal/a;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1, p2}, Lcom/ifengyu/intercom/ui/setting/seal/a;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
+    if-lez p1, :cond_0
 
-    goto :goto_0
+    invoke-static {p1}, Lcom/ifengyu/intercom/b/v;->c(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    :cond_0
+    new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/o;
+
+    invoke-direct {v0, p0, v1, p2}, Lcom/ifengyu/intercom/ui/widget/dialog/o;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
+
+    invoke-virtual {v0, p3}, Lcom/ifengyu/intercom/ui/widget/dialog/o;->a(Lcom/ifengyu/intercom/ui/widget/dialog/o$c;)V
+
+    invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/o;->show()V
+
+    return-void
 .end method
 
 .method static synthetic a(Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;Z)Z
@@ -989,11 +982,16 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/b/v;->a(Landroid/view/View;)V
 
-    new-instance v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity$1;
+    new-instance v4, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity$1;
 
-    invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity$1;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;)V
+    invoke-direct {v4, p0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity$1;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;)V
 
-    invoke-direct {p0, v3, v4, v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->a(Ljava/lang/String;ILcom/ifengyu/intercom/ui/setting/seal/a$c;)V
+    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->a:I
+
+    const/4 v5, 0x2
+
+    :goto_5
+    invoke-direct {p0, v1, v5, v4}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->a(IILcom/ifengyu/intercom/ui/widget/dialog/o$c;)V
 
     goto/16 :goto_0
 
@@ -1002,13 +1000,15 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/b/v;->a(Landroid/view/View;)V
 
-    new-instance v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity$2;
+    new-instance v4, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity$2;
 
-    invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity$2;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;)V
+    invoke-direct {v4, p0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity$2;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;)V
 
     invoke-direct {p0, v3, v5, v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->a(Ljava/lang/String;ILcom/ifengyu/intercom/ui/setting/seal/a$c;)V
 
-    goto/16 :goto_0
+    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->b:I
+
+    goto :goto_5
 
     :sswitch_4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mFlRXCss:Landroid/widget/FrameLayout;
@@ -1146,8 +1146,6 @@
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/d;->c()V
 
     goto/16 :goto_0
-
-    nop
 
     :sswitch_data_0
     .sparse-switch
