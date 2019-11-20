@@ -986,7 +986,7 @@
 
     invoke-direct {v4, p0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity$1;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;)V
 
-    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->a:I
+    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->b:I
 
     const/4 v5, 0x2
 
@@ -1004,9 +1004,7 @@
 
     invoke-direct {v4, p0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity$2;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;)V
 
-    invoke-direct {p0, v3, v5, v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->a(Ljava/lang/String;ILcom/ifengyu/intercom/ui/setting/seal/a$c;)V
-
-    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->b:I
+    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->a:I
 
     goto :goto_5
 

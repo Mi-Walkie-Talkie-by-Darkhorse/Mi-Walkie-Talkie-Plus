@@ -946,7 +946,7 @@
 
     invoke-direct {v4, p0}, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity$1;-><init>(Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;)V
 
-    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;->a:I
+    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;->b:I
 
     const/4 v3, 0x2
 
@@ -964,7 +964,7 @@
 
     invoke-direct {v4, p0}, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity$2;-><init>(Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;)V
 
-    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;->b:I
+    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;->a:I
 
     goto :goto_5
 
