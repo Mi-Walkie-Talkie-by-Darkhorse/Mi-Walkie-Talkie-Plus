@@ -933,7 +933,7 @@
 
     invoke-direct {v4, p0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$1;-><init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)V
 
-    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->a:I
+    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->b:I
 
     const/4 v2, 0x2
 
@@ -951,7 +951,7 @@
 
     invoke-direct {v4, p0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$3;-><init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)V
 
-    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->b:I
+    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->a:I
 
     goto :goto_3
 
