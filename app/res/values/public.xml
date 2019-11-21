@@ -1234,7 +1234,6 @@
     <public type="layout" name="dialog_content_frame_list" id="0x7f040074" />
     <public type="layout" name="dialog_content_frame_view" id="0x7f040075" />
     <public type="layout" name="dialog_custom_channel" id="0x7f040076" />
-    <public type="layout" name="dialog_custom_channel_400_470" id="0x7f040077" />
     <public type="layout" name="dialog_custom_channel_option" id="0x7f040078" />
     <public type="layout" name="dialog_custom_channel_option_rename" id="0x7f040079" />
     <public type="layout" name="dialog_device_update_info" id="0x7f04007a" />
@@ -1247,8 +1246,6 @@
     <public type="layout" name="dialog_pic_selector" id="0x7f040081" />
     <public type="layout" name="dialog_product_device_selector" id="0x7f040082" />
     <public type="layout" name="dialog_relay_number_picker" id="0x7f040083" />
-    <public type="layout" name="dialog_seal_input_custom_channel" id="0x7f040084" />
-    <public type="layout" name="dialog_shark_input_custom_channel" id="0x7f040085" />
     <public type="layout" name="dialog_three_item_select_layout" id="0x7f040086" />
     <public type="layout" name="dialog_track_share_layout" id="0x7f040087" />
     <public type="layout" name="dialog_userinfo_layout" id="0x7f040088" />
@@ -1387,9 +1384,9 @@
     <public type="layout" name="ucrop_view" id="0x7f040117" />
     <public type="layout" name="user_guide_device_setting" id="0x7f040118" />
     <public type="layout" name="user_guide_muli_device_manager" id="0x7f040119" />
-    <public type="layout" name="user_guide_share_location" id="0x7f04011a" />
-    <public type="layout" name="view_tips_loading" id="0x7f04011b" />
-    <public type="layout" name="webview_load_fail" id="0x7f04011c" />
+    <public type="layout" name="user_guide_share_location" id="0x7f040077" />
+    <public type="layout" name="view_tips_loading" id="0x7f040084" />
+    <public type="layout" name="webview_load_fail" id="0x7f040085" />
     <public type="layout" name="notification_media_action" id="0x7f0400eb" />
     <public type="layout" name="notification_media_cancel_action" id="0x7f0400ec" />
     <public type="layout" name="notification_template_big_media" id="0x7f0400ed" />
@@ -2123,6 +2120,7 @@
     <public type="string" name="title_settings_dialog" id="0x7f09029c" />
     <public type="string" name="ucrop_error_input_data_is_absent" id="0x7f09029d" />
     <public type="string" name="ucrop_mutate_exception_hint" id="0x7f09029e" />
+    <public type="string" name="frequency_mhz" id="0x7f09029f" />
     <public type="array" name="analog_tone" id="0x7f0a0000" />
     <public type="array" name="channel_tab_title" id="0x7f0a0001" />
     <public type="array" name="dialog_connect_note" id="0x7f0a0002" />

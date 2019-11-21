@@ -3,7 +3,7 @@
 .source "DolphinCustomFragment.java"
 
 # interfaces
-.implements Lcom/ifengyu/intercom/ui/widget/dialog/p$c;
+.implements Lcom/ifengyu/intercom/ui/widget/dialog/o$c;
 
 
 # annotations
