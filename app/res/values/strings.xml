@@ -133,10 +133,10 @@ I have read and fully understood this statement, and promise that I possess all 
     <string name="channel_long_distance_d">Amateur Channel %1$d</string>
     <string name="channel_not_to_edit">Frequency (Not Editable)</string>
     <string name="channel_preset_range">430.000 – 440.000</string>
-    <string name="channel_public">Public Channels</string>
+    <string name="channel_public">China Public Channels</string>
     <string name="channel_public_d">Public channel %1$d</string>
     <string name="channel_public_range">409.7500 – 409.9875</string>
-    <string name="channel_public_seal">Public Channels (L01 - L20)</string>
+    <string name="channel_public_seal">China Public Channels (L01 - L20)</string>
     <string name="channel_receive">Receiving channel</string>
     <string name="channel_remote">Amateur Channels</string>
     <string name="channel_remote_seal">Amateur Channels (H01 - H20)</string>
@@ -302,11 +302,11 @@ Please click the \"+\" button in the upper right corner to add"</string>
     <string name="gaode_satellite_map">Satellite AMap</string>
     <string name="gaode_standard_map">Standard AMap</string>
     <string name="gaode_standard_map_download">AMap</string>
-    <string name="gaode_standard_map_offline">AMap</string>
+    <string name="gaode_standard_map_offline">@string/gaode_standard_map_download</string>
     <string name="google_offline_map_description">Satellite map which requires significant memory</string>
     <string name="google_satellitic_map">Satellite GMap</string>
     <string name="google_satellitic_map_download">Google Maps</string>
-    <string name="google_satellitic_map_offline">Google Maps</string>
+    <string name="google_satellitic_map_offline">@string/google_satellitic_map_download</string>
     <string name="google_standard_map">Standard GMap</string>
     <string name="gps">GPS</string>
     <string name="had_udpate_to_newest_version">Already updated to the latest version\u0020</string>
@@ -682,7 +682,7 @@ press below button to add one"</string>
     <string name="update_restart">Update again</string>
     <string name="update_start">Start updating</string>
     <string name="update_success">Successful update</string>
-    <string name="update_to_newest_version">Update to the Latest Version V</string>
+    <string name="update_to_newest_version">Update to the Latest Version\u0020</string>
     <string name="updating_not_close_device">Updating, do not turn off the walkie-talkie…</string>
     <string name="upgrade_immediately">Update</string>
     <string name="upload_local">Upload local data</string>
@@ -727,4 +727,6 @@ press below button to add one"</string>
     <string name="load_failed">Loading failed, please click to try again</string>
     <string name="req_msg_server_addrs_failed">Failed to get the message server address, please check your network or try again later</string>
     <string name="frequency_mhz">Frequency value, MHz</string>
+    <string name="hardware_version">"Hardware version\u0020"</string>
+    <string name="flash_file_text">Flash \"%s\"</string>
 </resources>

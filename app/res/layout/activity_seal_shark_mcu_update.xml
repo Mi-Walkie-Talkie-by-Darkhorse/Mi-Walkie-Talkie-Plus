@@ -16,9 +16,10 @@
             <ImageView android:layout_gravity="center" android:id="@id/iv_state_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/firmware_icon_upgrade" />
         </FrameLayout>
     </FrameLayout>
-    <TextView android:textSize="15.0sp" android:textColor="@color/black50" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_state" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/black50" android:layout_gravity="center_horizontal" android:id="@id/dialog_update_info_version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/black50" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_state" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
     <TextView android:textSize="14.0sp" android:textColor="@color/black50" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_power_prompt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
     <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
-        <TextView android:textSize="15.0sp" android:textColor="@color/select_color" android:gravity="center" android:id="@id/btn_update" android:background="@drawable/common_corner_rect" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginBottom="20.0dip" android:text="@string/update_start" android:layout_alignParentBottom="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/select_color" android:gravity="center" android:id="@id/btn_update" android:background="@drawable/common_corner_rect" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
     </RelativeLayout>
 </LinearLayout>
