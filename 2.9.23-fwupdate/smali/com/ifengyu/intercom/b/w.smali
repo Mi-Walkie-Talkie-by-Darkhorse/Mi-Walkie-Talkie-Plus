@@ -141,6 +141,12 @@
 .method public static G()I
     .locals 3
 
+    invoke-static {}, Lcom/ifengyu/intercom/b/w;->fwdir()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
     invoke-static {}, Lcom/ifengyu/intercom/b/w;->e()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -153,6 +159,7 @@
 
     move-result v0
 
+    :cond_0
     return v0
 .end method
 
@@ -1446,6 +1453,59 @@
     return-void
 .end method
 
+.method private static fwdir()Z
+    .locals 3
+
+    :try_start_0
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "mounted"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "mounted_ro"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    new-instance v0, Ljava/io/File;
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+
+    move-result-object v1
+
+    const-string v2, "Mi-walkie-talkie.firmware"
+
+    invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v0
+
+    :cond_1
+    :goto_0
+    return v0
+
+    :catch_0
+    move-exception v0
+
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
 .method public static g()V
     .locals 2
 
@@ -1941,6 +2001,12 @@
 .method public static l()I
     .locals 3
 
+    invoke-static {}, Lcom/ifengyu/intercom/b/w;->fwdir()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
     invoke-static {}, Lcom/ifengyu/intercom/b/w;->c()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1953,6 +2019,7 @@
 
     move-result v0
 
+    :cond_0
     return v0
 .end method
 
@@ -2243,6 +2310,12 @@
 .method public static s()I
     .locals 3
 
+    invoke-static {}, Lcom/ifengyu/intercom/b/w;->fwdir()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
     invoke-static {}, Lcom/ifengyu/intercom/b/w;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2255,6 +2328,7 @@
 
     move-result v0
 
+    :cond_0
     return v0
 .end method
 

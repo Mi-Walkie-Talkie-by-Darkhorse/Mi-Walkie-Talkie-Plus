@@ -1689,8 +1689,6 @@
 
 .field public static final update_restart_click:I = 0x7f100197
 
-.field public static final update_start_click:I = 0x7f100193
-
 .field public static final update_state:I = 0x7f100192
 
 .field public static final update_sure_click:I = 0x7f100194

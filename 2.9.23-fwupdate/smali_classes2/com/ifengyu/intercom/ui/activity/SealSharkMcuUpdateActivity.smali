@@ -1,5 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
-.super Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
+.super Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;
 .source "SealSharkMcuUpdateActivity.java"
 
 # interfaces
@@ -38,7 +38,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;-><init>()V
+    invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;-><init>()V
 
     const/4 v0, 0x0
 
@@ -475,6 +475,10 @@
 .method private d()V
     .locals 5
 
+    iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->fwf:Ljava/io/File;
+
+    if-nez v2, :cond_0
+
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->w:Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->getSource()Ljava/lang/String;
@@ -535,7 +539,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_1
+    if-eqz v3, :cond_2
 
     invoke-virtual {v2}, Ljava/io/File;->toString()Ljava/lang/String;
 
@@ -555,8 +559,9 @@
 
     move-result v3
 
-    if-eqz v3, :cond_0
+    if-eqz v3, :cond_1
 
+    :cond_0
     const/4 v0, 0x4
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->u:I
@@ -572,12 +577,12 @@
     :goto_0
     return-void
 
-    :cond_0
+    :cond_1
     invoke-virtual {p0, v0, v1}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    :cond_1
+    :cond_2
     invoke-virtual {p0, v0, v1}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
@@ -1224,11 +1229,13 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
 
-    invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->onCreate(Landroid/os/Bundle;)V
 
     const v0, 0x7f040042
 
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->setContentView(I)V
+
+    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->initUI()V
 
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->getIntent()Landroid/content/Intent;
 
@@ -1298,7 +1305,7 @@
 .method protected onDestroy()V
     .locals 1
 
-    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onDestroy()V
+    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->onDestroy()V
 
     const/4 v0, 0x0
 
@@ -1312,7 +1319,7 @@
 .method protected onPause()V
     .locals 1
 
-    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onPause()V
+    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->onPause()V
 
     invoke-static {}, Lcom/xiaomi/mistatistic/sdk/MiStatInterface;->recordPageEnd()V
 
@@ -1328,7 +1335,7 @@
 .method protected onResume()V
     .locals 1
 
-    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onResume()V
+    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->onResume()V
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->e:Ljava/lang/String;
 
