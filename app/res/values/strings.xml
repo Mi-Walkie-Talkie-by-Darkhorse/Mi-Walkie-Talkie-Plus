@@ -95,7 +95,7 @@ I have read and fully understood this statement, and promise that I possess all 
     <string name="altitude_h">Altitude</string>
     <string name="aomen">Macao</string>
     <string name="apk_update_title">App version update</string>
-    <string name="app_name">Mi PTT</string>
+    <string name="app_name">Mi PTT+</string>
     <string name="app_version">App Version: 1.0.1</string>
     <string name="authorized_login">Authorized logging in</string>
     <string name="auto_send_location_interval">Location Transmission Interval</string>
@@ -120,7 +120,7 @@ I have read and fully understood this statement, and promise that I possess all 
     <string name="cancel_login_weixin">Cancel Log in via Wechat ID</string>
     <string name="cancel_login_xiaomi">Cancel Log in via Xiaomi ID</string>
     <string name="channel">Channel</string>
-    <string name="channel_custom">Custom</string>
+    <string name="channel_custom">Custom channel frequency</string>
     <string name="channel_custom_2s">Custom channel: %1$s/%2$s</string>
     <string name="channel_custom_all_d">Custom channel %1$d</string>
     <string name="channel_custom_d">CH %1$d</string>
@@ -129,7 +129,7 @@ I have read and fully understood this statement, and promise that I possess all 
     <string name="channel_custom_range_400_470">"Frequency range: 400.000 – 470.000
 144.000 – 148.000 MHz"</string>
     <string name="channel_custom_s">Custom channel: %1$s</string>
-    <string name="channel_launch">Transmitting channel</string>
+    <string name="channel_launch">Transmission channel</string>
     <string name="channel_long_distance_d">Amateur Channel %1$d</string>
     <string name="channel_not_to_edit">Frequency (Not Editable)</string>
     <string name="channel_preset_range">430.000 – 440.000</string>
@@ -282,8 +282,8 @@ This version is the latest one"</string>
     <string name="edit_css_code_prompt1">Set the receiving sub-audible audio tones to block signals that do not match the sub-audible audio tones transmitted</string>
     <string name="edit_css_code_prompt2">To communicate normally, the other party needs to set the same sub-audible audio tone transmissions after one party sets to receive these tones</string>
     <string name="edit_relay">Edit Repeater</string>
-    <string name="emission_frequency">Transmission</string>
-    <string name="emissive_sub_tone">Transmitting sub-code</string>
+    <string name="emission_frequency">Transmission frequency</string>
+    <string name="emissive_sub_tone">Transmission sub-code</string>
     <string name="empty" />
     <string name="empty_recent_group_none">"You have not added any group lists yet.
 Please click the \"+\" button in the upper right corner to add"</string>
@@ -353,7 +353,7 @@ Please click the \"+\" button in the upper right corner to add"</string>
     <string name="map_kit_select_next_point">Next measurement point</string>
     <string name="map_kit_select_start_point">Select a starting point</string>
     <string name="map_kit_selected_location_latlong">Coordinate of selected</string>
-    <string name="map_kit_text">Gadgets</string>
+    <string name="map_kit_text">Tools</string>
     <string name="map_satellitic">Satellite map</string>
     <string name="map_size_text">Map size  </string>
     <string name="map_standard">Standard map</string>
@@ -461,8 +461,8 @@ press below button to add one"</string>
     <string name="ranging">Distance</string>
     <string name="read">Read</string>
     <string name="receive_css_code_s">RX Sub-code:%1$s</string>
-    <string name="receive_frequency">Receiving</string>
-    <string name="receive_sub_tone">Receive sub-code</string>
+    <string name="receive_frequency">Receiving frequency</string>
+    <string name="receive_sub_tone">Receiving sub-code</string>
     <string name="reconnect_immediately">Reconnect Now</string>
     <string name="relay_d">Repeater %1$d</string>
     <string name="relay_list_none">"No repeaters information, please add
@@ -567,7 +567,7 @@ press below button to add one"</string>
     <string name="support_use_ji_feng_btear">Support the use of the BEEBEST Bluetooth earphone，please upgrade firmware before use it.</string>
     <string name="sure">Yes</string>
     <string name="sure_to_delete_current_feedback">Delete current feedback information?</string>
-    <string name="switch_channel">Switch</string>
+    <string name="switch_channel">Channels</string>
     <string name="switch_current_group">Switch current group</string>
     <string name="tab_discovery">Discover</string>
     <string name="tab_discovery_not_have_more_content">No more content</string>
@@ -726,4 +726,5 @@ press below button to add one"</string>
     <string name="load_end">No more data</string>
     <string name="load_failed">Loading failed, please click to try again</string>
     <string name="req_msg_server_addrs_failed">Failed to get the message server address, please check your network or try again later</string>
+    <string name="frequency_mhz">Frequency value, MHz</string>
 </resources>

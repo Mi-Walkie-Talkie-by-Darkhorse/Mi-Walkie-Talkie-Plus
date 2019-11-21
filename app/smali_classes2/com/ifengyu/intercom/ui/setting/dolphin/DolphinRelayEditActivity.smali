@@ -169,72 +169,35 @@
     .end packed-switch
 .end method
 
+.method private a(IILcom/ifengyu/intercom/ui/widget/dialog/o$c;)V
+    .locals 2
+
+    const/4 v1, 0x0
+
+    if-lez p1, :cond_0
+
+    invoke-static {p1}, Lcom/ifengyu/intercom/b/v;->c(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    :cond_0
+    new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/o;
+
+    invoke-direct {v0, p0, v1, p2}, Lcom/ifengyu/intercom/ui/widget/dialog/o;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
+
+    invoke-virtual {v0, p3}, Lcom/ifengyu/intercom/ui/widget/dialog/o;->a(Lcom/ifengyu/intercom/ui/widget/dialog/o$c;)V
+
+    invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/o;->show()V
+
+    return-void
+.end method
+
 .method static synthetic a(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;II)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->a(II)V
 
     return-void
-.end method
-
-.method private a(Ljava/lang/String;ILcom/ifengyu/intercom/ui/widget/dialog/o$c;)V
-    .locals 2
-
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/o;
-
-    invoke-direct {v0, p0, p1, p2}, Lcom/ifengyu/intercom/ui/widget/dialog/o;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
-
-    :goto_0
-    invoke-virtual {v0, p3}, Lcom/ifengyu/intercom/ui/widget/dialog/o;->a(Lcom/ifengyu/intercom/ui/widget/dialog/o$c;)V
-
-    invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/o;->show()V
-
-    return-void
-
-    :cond_0
-    new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/o;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1, p2}, Lcom/ifengyu/intercom/ui/widget/dialog/o;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
-
-    goto :goto_0
-.end method
-
-.method private a(Ljava/lang/String;ILcom/ifengyu/intercom/ui/widget/dialog/p$c;)V
-    .locals 2
-
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/p;
-
-    invoke-direct {v0, p0, p1, p2}, Lcom/ifengyu/intercom/ui/widget/dialog/p;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
-
-    :goto_0
-    invoke-virtual {v0, p3}, Lcom/ifengyu/intercom/ui/widget/dialog/p;->a(Lcom/ifengyu/intercom/ui/widget/dialog/p$c;)V
-
-    invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/p;->show()V
-
-    return-void
-
-    :cond_0
-    new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/p;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1, p2}, Lcom/ifengyu/intercom/ui/widget/dialog/p;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
-
-    goto :goto_0
 .end method
 
 .method static synthetic b(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;I)I
@@ -966,26 +929,16 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/b/v;->a(Landroid/view/View;)V
 
-    invoke-static {}, Lcom/ifengyu/intercom/b/v;->a()Z
+    new-instance v4, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$1;
 
-    move-result v0
+    invoke-direct {v4, p0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$1;-><init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)V
 
-    if-eqz v0, :cond_5
+    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->b:I
 
-    new-instance v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$1;
+    const/4 v2, 0x2
 
-    invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$1;-><init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)V
-
-    invoke-direct {p0, v4, v2, v0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->a(Ljava/lang/String;ILcom/ifengyu/intercom/ui/widget/dialog/p$c;)V
-
-    goto/16 :goto_0
-
-    :cond_5
-    new-instance v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$2;
-
-    invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$2;-><init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)V
-
-    invoke-direct {p0, v4, v2, v0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->a(Ljava/lang/String;ILcom/ifengyu/intercom/ui/widget/dialog/o$c;)V
+    :goto_3
+    invoke-direct {p0, v1, v2, v4}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->a(IILcom/ifengyu/intercom/ui/widget/dialog/o$c;)V
 
     goto/16 :goto_0
 
@@ -994,21 +947,14 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/b/v;->a(Landroid/view/View;)V
 
-    invoke-static {}, Lcom/ifengyu/intercom/b/v;->a()Z
+    new-instance v4, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$3;
 
-    move-result v0
+    invoke-direct {v4, p0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$3;-><init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)V
 
-    if-eqz v0, :cond_6
+    iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->a:I
 
-    new-instance v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$3;
+    goto :goto_3
 
-    invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$3;-><init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)V
-
-    invoke-direct {p0, v4, v2, v0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->a(Ljava/lang/String;ILcom/ifengyu/intercom/ui/widget/dialog/p$c;)V
-
-    goto/16 :goto_0
-
-    :cond_6
     const/4 v0, 0x2
 
     new-instance v1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$4;
@@ -1026,13 +972,13 @@
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->c:I
 
-    if-nez v0, :cond_7
+    if-nez v0, :cond_5
 
     move v0, v1
 
     move v1, v2
 
-    :goto_3
+    :goto_4
     new-instance v2, Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;
 
     invoke-direct {v2, p0}, Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;-><init>(Lcom/ifengyu/intercom/ui/baseui/BaseActivity;)V
@@ -1067,27 +1013,27 @@
 
     goto/16 :goto_0
 
-    :cond_7
+    :cond_5
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->c:I
 
-    if-lez v0, :cond_8
-
-    iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->c:I
-
-    if-gt v0, v3, :cond_8
+    if-lez v0, :cond_6
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->c:I
 
-    goto :goto_3
-
-    :cond_8
-    iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->c:I
-
-    if-le v0, v3, :cond_9
+    if-gt v0, v3, :cond_6
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->c:I
 
-    if-gt v0, v5, :cond_9
+    goto :goto_4
+
+    :cond_6
+    iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->c:I
+
+    if-le v0, v3, :cond_7
+
+    iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->c:I
+
+    if-gt v0, v5, :cond_7
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->c:I
 
@@ -1095,12 +1041,12 @@
 
     move v1, v2
 
-    goto :goto_3
+    goto :goto_4
 
-    :cond_9
+    :cond_7
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->c:I
 
-    if-le v0, v5, :cond_e
+    if-le v0, v5, :cond_c
 
     const/4 v1, 0x2
 
@@ -1108,7 +1054,7 @@
 
     add-int/lit8 v0, v0, -0x7c
 
-    goto :goto_3
+    goto :goto_4
 
     :sswitch_5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditDownTone:Landroid/widget/FrameLayout;
@@ -1117,9 +1063,9 @@
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->d:I
 
-    if-nez v0, :cond_a
+    if-nez v0, :cond_8
 
-    :goto_4
+    :goto_5
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;-><init>(Lcom/ifengyu/intercom/ui/baseui/BaseActivity;)V
@@ -1154,14 +1100,14 @@
 
     goto/16 :goto_0
 
-    :cond_a
+    :cond_8
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->d:I
 
-    if-lez v0, :cond_b
+    if-lez v0, :cond_9
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->d:I
 
-    if-gt v0, v3, :cond_b
+    if-gt v0, v3, :cond_9
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->d:I
 
@@ -1169,27 +1115,27 @@
 
     move v1, v0
 
-    goto :goto_4
+    goto :goto_5
 
-    :cond_b
+    :cond_9
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->d:I
 
-    if-le v0, v3, :cond_c
+    if-le v0, v3, :cond_a
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->d:I
 
-    if-gt v0, v5, :cond_c
+    if-gt v0, v5, :cond_a
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->d:I
 
     add-int/lit8 v1, v0, -0x28
 
-    goto :goto_4
+    goto :goto_5
 
-    :cond_c
+    :cond_a
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->d:I
 
-    if-le v0, v5, :cond_d
+    if-le v0, v5, :cond_b
 
     const/4 v2, 0x2
 
@@ -1197,7 +1143,7 @@
 
     add-int/lit8 v1, v0, -0x7c
 
-    goto :goto_4
+    goto :goto_5
 
     :sswitch_6
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/d;
@@ -1244,17 +1190,15 @@
 
     goto/16 :goto_0
 
-    :cond_d
+    :cond_b
     move v2, v1
 
-    goto :goto_4
+    goto :goto_5
 
-    :cond_e
+    :cond_c
     move v0, v1
 
-    goto/16 :goto_3
-
-    nop
+    goto/16 :goto_4
 
     :sswitch_data_0
     .sparse-switch
