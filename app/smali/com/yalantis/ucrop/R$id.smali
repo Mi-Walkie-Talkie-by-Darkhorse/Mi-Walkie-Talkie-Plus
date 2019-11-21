@@ -139,7 +139,7 @@
 
 .field public static final menu_crop:I = 0x7f10036b
 
-.field public static final menu_loader:I = 0x7f10036c
+.field public static final menu_loader:I = 0x7f100194
 
 .field public static final middle:I = 0x7f100053
 
