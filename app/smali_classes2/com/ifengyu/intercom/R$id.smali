@@ -921,7 +921,7 @@
 
 .field public static final menu_crop:I = 0x7f10036b
 
-.field public static final menu_loader:I = 0x7f10036c
+.field public static final menu_loader:I = 0x7f100194
 
 .field public static final message_container:I = 0x7f10011d
 
@@ -1692,8 +1692,6 @@
 .field public static final update_progress:I = 0x7f100191
 
 .field public static final update_restart_click:I = 0x7f100198
-
-.field public static final update_start_click:I = 0x7f100194
 
 .field public static final update_state:I = 0x7f100193
 

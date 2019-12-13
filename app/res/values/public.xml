@@ -2121,6 +2121,8 @@
     <public type="string" name="ucrop_error_input_data_is_absent" id="0x7f09029d" />
     <public type="string" name="ucrop_mutate_exception_hint" id="0x7f09029e" />
     <public type="string" name="frequency_mhz" id="0x7f09029f" />
+    <public type="string" name="hardware_version" id="0x7f0902a0" />
+    <public type="string" name="flash_file_text" id="0x7f0902a1" />
     <public type="array" name="analog_tone" id="0x7f0a0000" />
     <public type="array" name="channel_tab_title" id="0x7f0a0001" />
     <public type="array" name="dialog_connect_note" id="0x7f0a0002" />
@@ -3443,7 +3445,7 @@
     <public type="id" name="update_progress" id="0x7f100191" />
     <public type="id" name="update_dev_is_newsest" id="0x7f100192" />
     <public type="id" name="update_state" id="0x7f100193" />
-    <public type="id" name="update_start_click" id="0x7f100194" />
+    <public type="id" name="menu_loader" id="0x7f100194" />
     <public type="id" name="update_sure_click" id="0x7f100195" />
     <public type="id" name="update_failure_layout" id="0x7f100196" />
     <public type="id" name="update_cancel_click" id="0x7f100197" />
@@ -3915,7 +3917,6 @@
     <public type="id" name="action_join_group" id="0x7f100369" />
     <public type="id" name="action_scan_qr_code" id="0x7f10036a" />
     <public type="id" name="menu_crop" id="0x7f10036b" />
-    <public type="id" name="menu_loader" id="0x7f10036c" />
     <public type="menu" name="chat_more_pop" id="0x7f110000" />
     <public type="menu" name="ucrop_menu_activity" id="0x7f110001" />
 </resources>
