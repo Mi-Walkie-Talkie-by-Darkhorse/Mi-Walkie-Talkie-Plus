@@ -1,7 +1,7 @@
 ## About
 **Mi-Walkie-Talkie-Plus** is an improved version of original Xiaomi Mi Walkie-Talkie radios companion application for Android.  
 **"Plus"** improvements are:
-* **All the fancy Xiaomi frequency editing dialogs are replaced by simplified ones:**
+* **All the fancy Xiaomi frequency editing dialogs are replaced by simplified ones:**  
 ![alt text](http://cs5-3.4pda.to/14851033.jpg)  
 These simplified dialogs allows to enter any frequency you want, in Megaherz, in 130 - 520 MHz range, with 1Hz precision (up to 6 fraction part digits). Original frequency dialogs are replaced both **for custom channels and repeaters for all supported walkie-talkie models.**  
 
