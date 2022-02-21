@@ -3137,7 +3137,7 @@
 
     const-string v1, "hwVersion"
 
-    invoke-static {}, Lcom/ifengyu/intercom/b/w;->F()I
+    invoke-static {}, Lcom/ifengyu/intercom/b/w;->Fu()I
 
     move-result v4
 
