@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="12.0dip" />
+    <size android:height="@dimen/qmui_switch_size" android:width="@dimen/qmui_switch_size" />
+    <solid android:color="?qmui_config_color_gray_3" />
+    <stroke android:width="4.0dip" android:color="#00000000" />
+</shape>

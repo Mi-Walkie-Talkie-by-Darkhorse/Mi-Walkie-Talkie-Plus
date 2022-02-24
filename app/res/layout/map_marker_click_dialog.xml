@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_friend_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingTop="24.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ifengyu.intercom.ui.widget.view.CirclrImageView android:id="@id/friend_icon" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginLeft="28.0dip" android:src="@drawable/my_head_default" android:layout_alignParentTop="true" app:frameColor="#88ffffff" app:widthFrame="2" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="14.0dip" android:layout_toEndOf="@id/friend_icon">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/friend_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/black80" android:gravity="center_horizontal" android:id="@id/friend_update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/black80" android:gravity="center_horizontal" android:id="@id/friend_update_location" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@drawable/map_information_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:paddingTop="22.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="28.0dip" android:paddingEnd="28.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/select_color" android:id="@id/friend_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3 km" android:lines="1" android:includeFontPadding="false" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/black50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/location_and_distance" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/select_color" android:id="@id/friend_freq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="149.0000 MHz" android:lines="1" android:includeFontPadding="false" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/black50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/use_the_channel" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="22.0sp" android:textColor="@color/select_color" android:id="@id/friend_altitude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/black50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/altitude_h" android:includeFontPadding="false" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

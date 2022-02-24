@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:background="@drawable/corner_white_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:columnCount="2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="5.0dip">
+        <ImageView android:id="@id/map_switch_mode_gaode_normal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_gaode_standard_selected" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_gravity="bottom" android:id="@id/map_switch_mode_gaode_normal_tv" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/gaode_standard_map" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="10.0dip">
+        <ImageView android:id="@id/map_switch_mode_gaode_satellite" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_gaode_satellite_unselected" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_gravity="bottom" android:id="@id/map_switch_mode_gaode_satellite_tv" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/gaode_satellite_map" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="5.0dip">
+        <ImageView android:id="@id/map_switch_mode_standard" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_google_standard_unselected" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_gravity="bottom" android:id="@id/map_switch_mode_standard_tv" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/google_standard_map" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="10.0dip">
+        <ImageView android:id="@id/map_switch_mode_satellitic" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_google_satellite_unselected" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_gravity="bottom" android:id="@id/map_switch_mode_satellitic_tv" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/google_satellitic_map" />
+    </LinearLayout>
+</GridLayout>

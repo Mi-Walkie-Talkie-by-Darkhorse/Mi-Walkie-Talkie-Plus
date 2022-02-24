@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/back_iv" android:paddingLeft="20.0dip" android:layout_width="30.0dip" android:layout_height="50.0dip" android:src="@drawable/arrow_right_normal" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/passport_oauth_actionbar_title" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ifengyu.intercom.ui.widget.view.RecyclerViewEmptySupport android:id="@id/rv_shark" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/tv_empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="55.0dip" android:src="@drawable/relay_list_none" />
+        <TextView android:textColor="@color/home_channel_name" android:gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/custom_list_none" android:lineSpacingMultiplier="1.1" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

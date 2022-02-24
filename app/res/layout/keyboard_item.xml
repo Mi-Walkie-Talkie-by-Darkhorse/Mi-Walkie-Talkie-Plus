@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/selector_gird_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="26.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_key" android:layout_width="fill_parent" android:layout_height="60.0dip" android:includeFontPadding="false" />
+    <ImageView android:layout_gravity="center" android:id="@id/imgDelete" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:src="@drawable/keyboard_delete_img" android:scaleType="centerInside" />
+</FrameLayout>

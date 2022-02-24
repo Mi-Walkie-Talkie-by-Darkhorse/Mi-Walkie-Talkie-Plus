@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_action_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_height">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/title_bar_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_back" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" style="@style/TitlebarLeftButton" />
+            <RelativeLayout android:background="@drawable/offmap_address_search_trans_bg" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_centerVertical="true" android:layout_marginEnd="20.0dip" android:layout_toEndOf="@id/title_bar_left">
+                <ImageView android:id="@id/lookup_iv" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="25.0dip" android:layout_height="fill_parent" android:src="@drawable/common_icon_search_black" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/black80" android:textColorHint="@color/black30" android:gravity="center_vertical" android:id="@id/search_et" android:background="@null" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/input_location_address" android:lines="1" android:layout_toLeftOf="@id/delete_text_btn" android:layout_toRightOf="@id/lookup_iv" />
+                <ImageView android:layout_gravity="center|left" android:id="@id/delete_text_btn" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="fill_parent" android:src="@drawable/common_btn_clear" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:id="@id/title_bar_bottom_line" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/address_rv" android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_action_bar" />
+</RelativeLayout>

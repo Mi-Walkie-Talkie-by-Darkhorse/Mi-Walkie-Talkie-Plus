@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottom_bg" android:background="@drawable/equipment_btn_board_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="28.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black60" android:id="@id/tv_device_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/black40" android:id="@id/tv_device_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/device_type_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/equipment_img_dolphin" android:scaleType="fitCenter" android:layout_marginEnd="30.0dip" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:gravity="center" android:id="@id/right_checkbox" android:layout_width="40.0dip" android:layout_height="40.0dip" android:checked="false" android:button="@drawable/lite_checkbox" android:layout_marginEnd="20.0dip" app:theme="@style/MyCheckBox" />
+    </LinearLayout>
+</LinearLayout>

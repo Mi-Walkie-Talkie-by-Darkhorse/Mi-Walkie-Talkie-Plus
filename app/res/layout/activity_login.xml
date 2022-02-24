@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/load_img_board" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="30.0dip" android:paddingEnd="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="50.0dip" android:src="@drawable/logo_white" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/load_icon_phone" />
+                <com.ifengyu.intercom.ui.widget.view.FixedEditText android:textSize="16.0sp" android:textColor="@color/white" android:textColorHint="@color/white50" android:id="@id/et_phone" android:background="@null" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="@string/login_input_phone_number_hint" android:singleLine="true" android:inputType="number" android:textCursorDrawable="@null" android:layout_marginStart="20.0dip" app:clearIcon="@drawable/load_icon_delete" />
+            </LinearLayout>
+            <View android:background="@color/white60" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/load_icon_key" />
+                <com.ifengyu.intercom.ui.widget.view.PasswordToggleEditText android:textSize="16.0sp" android:textColor="@color/white" android:textColorHint="@color/white50" android:id="@id/et_password" android:background="@null" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="@string/login_input_password_hint" android:cursorVisible="true" android:inputType="textPassword" android:textCursorDrawable="@null" android:layout_marginStart="20.0dip" app:hideIcon="@drawable/load_icon_eye_normal" app:showIcon="@drawable/load_icon_eye_selected" />
+            </LinearLayout>
+            <View android:background="@color/white60" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff2d8bff" android:gravity="center" android:layout_gravity="bottom" android:id="@id/login_btn" android:background="@drawable/login_button_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="5.0dip" android:text="@string/login_text" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/forget_btn" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/login_forget_password" android:layout_weight="1.0" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="end" android:id="@id/register_btn" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/login_register_account" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ff005fc3" android:layout_width="0.0dip" android:layout_height="0.5dip" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff005fc3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_other_method" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <View android:background="#ff005fc3" android:layout_width="0.0dip" android:layout_height="0.5dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="35.0dip">
+        <ImageView android:id="@id/btn_login_xiaomi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/load_btn_mi" android:layout_marginEnd="30.0dip" />
+        <ImageView android:id="@id/btn_login_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/load_btn_wechat" android:layout_marginStart="30.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/white80" android:layout_gravity="center_horizontal" android:id="@id/top_i_agree" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="I have read and agree to" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/select_user_protocol_iv" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/check_btn_white_selector" android:scaleType="fitCenter" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white80" android:id="@id/i_had_read" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_means_that_you_agree" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/user_agree" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/user_protocol" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="23.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/select_improve_plan_iv" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/check_btn_white_selector" android:scaleType="fitCenter" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white80" android:id="@id/i_well_join" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/w_will_join" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/improve_plan_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/user_improve_plan" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

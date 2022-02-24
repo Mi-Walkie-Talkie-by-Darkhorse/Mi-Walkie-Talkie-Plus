@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_layout" />
+    <ScrollView android:background="@color/space_bg" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/channel_setting" android:layout_marginStart="20.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/top_channel_container" android:background="@drawable/set_img_board_channel" android:layout_width="fill_parent" android:layout_height="@dimen/single_channel_item_height" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/device_setting_text" android:layout_marginStart="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_device_activate_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_device_activate" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="68.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set_icon_activation" android:scaleType="fitCenter" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activate_device" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/activate_device_describe" />
+                    </LinearLayout>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="20.0dip" />
+                </LinearLayout>
+                <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <View android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            </LinearLayout>
+            <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/device_setting_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/device_name_select_talkie" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="68.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set_icon_name" android:scaleType="fitCenter" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_interphonename" />
+                                <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/device_setting_device_name_describe" />
+                            </LinearLayout>
+                            <TextView android:textSize="13.0sp" android:textColor="@color/black80" android:id="@id/current_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="20.0dip" />
+                        </LinearLayout>
+                        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/double_frequency_model" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="68.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set_icon_dual" android:scaleType="fitCenter" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/double_frequency_model" />
+                                <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/device_setting_double_frequency_model_describe" />
+                            </LinearLayout>
+                            <CheckBox android:id="@id/double_frequency_model_switch_btn" android:background="@null" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/switch_btn_checkbox" android:layout_marginEnd="20.0dip" />
+                        </LinearLayout>
+                        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/public_my_location" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="68.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set_icon_position" android:scaleType="fitCenter" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_setting_public_my_location" />
+                                <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/device_setting_public_my_location_describe" />
+                            </LinearLayout>
+                            <CheckBox android:id="@id/public_my_location_switch_btn" android:background="@null" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/switch_btn_checkbox" android:layout_marginEnd="20.0dip" />
+                        </LinearLayout>
+                        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/auto_send_location" android:background="@drawable/btn_rec_trasparent" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="68.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set_icon_location_time" android:scaleType="fitCenter" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_setting_set_send_my_location" />
+                                <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/device_setting_set_send_my_location_describe" />
+                            </LinearLayout>
+                            <TextView android:textSize="13.0sp" android:textColor="@color/black80" android:id="@id/auto_send_location_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="20.0dip" />
+                        </LinearLayout>
+                        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/device_update" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="68.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set_icon_upgrade" android:scaleType="fitCenter" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/firmware_upgrade" />
+                                <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/device_setting_device_update_describe" />
+                            </LinearLayout>
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="20.0dip" />
+                        </LinearLayout>
+                        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/device_about" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="68.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set_icon_about" android:scaleType="fitCenter" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about" />
+                                <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/lite_item_detail_about" />
+                            </LinearLayout>
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="20.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+            <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="16.0sp" android:textColor="#aaff0000" android:gravity="center" android:id="@id/relieve_binding" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/unbind" />
+            <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

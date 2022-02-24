@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="7.0dip" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setting_map_download" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_icon_download" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/body_text_1p5" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/offlinemap_download" />
+            <ImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="28.0dip" />
+            <View android:layout_gravity="bottom" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setting_my_track" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_icon_locus" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/body_text_1p5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/track_share_title" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="28.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:layout_width="fill_parent" android:layout_height="7.0dip" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setting_product_instructions" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_icon_product" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/body_text_1p5" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_product_instructions" />
+            <ImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="28.0dip" />
+            <View android:layout_gravity="bottom" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setting_use_help" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_icon_answer" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/body_text_1p5" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_use_help" />
+            <ImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="28.0dip" />
+            <View android:layout_gravity="bottom" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setting_more_question_feedback" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_icon_question" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/body_text_1p5" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback" />
+            <ImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="28.0dip" />
+            <View android:layout_gravity="bottom" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setting_more_apk_check_update" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_icon_update" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/body_text_1p5" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_more_apk_check_update" />
+            <ImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="28.0dip" />
+            <View android:layout_gravity="bottom" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setting_more_about_device" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_icon_more" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/body_text_1p5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/about" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="28.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setting" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_icon_set" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/body_text_1p5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setting" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_black" android:layout_marginEnd="28.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:layout_width="fill_parent" android:layout_height="7.0dip" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="15.0sp" android:textColor="#fff94949" android:gravity="center" android:id="@id/logout" android:background="@drawable/btn_rec_trasparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="@string/logout" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="30.0dip" />
+</LinearLayout>

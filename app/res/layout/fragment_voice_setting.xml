@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.QMUIWindowInsetLayout android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/top_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?qmui_topbar_height">
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/item_startup_beep" app:accessory_type="switcher" app:titleText="@string/lite_item_voice_title_1" style="@style/LiteEditItemView" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/item_key_beep" app:accessory_type="switcher" app:titleText="@string/lite_item_voice_title_2" style="@style/LiteEditItemView" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/item_voice" app:accessory_type="chevron_text" app:titleText="@string/lite_item_voice_title_3" app:valueText="中文" style="@style/LiteEditItemView" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+    </LinearLayout>
+</com.qmuiteam.qmui.widget.QMUIWindowInsetLayout>

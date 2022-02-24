@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_layout" />
+    <ImageView android:id="@id/iv_top_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/key_icon" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/black50" android:id="@id/tv_sms_top_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/forget_pwd_reset_pwd" />
+            <com.ifengyu.intercom.ui.widget.view.PasswordToggleEditText android:textSize="16.0sp" android:textColor="@color/black" android:textColorHint="@color/black40" android:id="@id/et_password_first" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:hint="@string/register_input_password_hint" android:cursorVisible="true" android:inputType="textPassword" app:hideIcon="@drawable/login_pwd_eye_closed" app:showIcon="@drawable/login_pwd_eye_open" />
+            <com.ifengyu.intercom.ui.widget.view.PasswordToggleEditText android:textSize="16.0sp" android:textColor="@color/black" android:textColorHint="@color/black40" android:id="@id/et_password_second" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:hint="@string/forget_pwd_reset_input_pwd_again" android:cursorVisible="true" android:inputType="textPassword" app:hideIcon="@drawable/login_pwd_eye_closed" app:showIcon="@drawable/login_pwd_eye_open" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/register_btn_border_colors" android:gravity="center" android:layout_gravity="bottom" android:id="@id/reset_btn" android:background="@drawable/register_button_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:text="@string/common_select" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_reset_pwd_success" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/forget_pwd_success" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/forget_pwd_success_pls_relogin" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/register_btn_border_colors" android:gravity="center" android:layout_gravity="bottom" android:id="@id/goto_login_btn" android:background="@drawable/register_button_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="30.0dip" android:text="@string/forget_pwd_success_goto_relogin" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

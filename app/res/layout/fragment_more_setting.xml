@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.QMUIWindowInsetLayout android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/top_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?qmui_topbar_height">
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/item_keyless_to_talk" app:accessory_type="switcher" app:detailText="@string/button_free_cal_describing" app:titleText="@string/button_free_call_text" style="@style/LiteItemView" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/item_banned_on_busy" app:accessory_type="switcher" app:detailText="@string/stop_trans_if_busy_detail" app:titleText="@string/stop_trans_if_busy_text" style="@style/LiteItemView" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/item_squelch_level" app:accessory_type="chevron_text" app:detailText="@string/noise_level_detail" app:titleText="@string/noise_level_text" style="@style/LiteItemView" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/item_wide_narrow_band" app:accessory_type="chevron_text" app:detailText="@string/lite_item_wide_narrow_title" app:titleText="@string/wide_narrow_band_text" style="@style/LiteItemView" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+    </LinearLayout>
+</com.qmuiteam.qmui.widget.QMUIWindowInsetLayout>

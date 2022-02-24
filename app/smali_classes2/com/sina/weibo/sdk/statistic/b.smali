@@ -1,0 +1,84 @@
+.class Lcom/sina/weibo/sdk/statistic/b;
+.super Lcom/sina/weibo/sdk/statistic/f;
+.source "EventLog.java"
+
+
+# instance fields
+.field private f:Ljava/lang/String;
+
+.field private g:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 4
+    invoke-direct {p0}, Lcom/sina/weibo/sdk/statistic/f;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/statistic/f;-><init>(Ljava/lang/String;)V
+
+    .line 2
+    iput-object p2, p0, Lcom/sina/weibo/sdk/statistic/b;->f:Ljava/lang/String;
+
+    .line 3
+    iput-object p3, p0, Lcom/sina/weibo/sdk/statistic/b;->g:Ljava/util/Map;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public f()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/sina/weibo/sdk/statistic/b;->f:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public g()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/sina/weibo/sdk/statistic/b;->g:Ljava/util/Map;
+
+    return-object v0
+.end method

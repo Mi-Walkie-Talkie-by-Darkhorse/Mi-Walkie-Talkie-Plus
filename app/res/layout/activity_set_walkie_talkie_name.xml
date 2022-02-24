@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar_layout" />
+    <View android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/dialogTitleTextColor" android:gravity="center" android:id="@id/activity_set_walkie_name_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/common_name" android:layout_marginStart="20.0dip" android:layout_marginEnd="10.0dip" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/channel_settting_choose_number" android:textColorHint="#55666666" android:id="@id/activity_set_walkie_name_content_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/setting_user_input_rules" android:singleLine="true" android:layout_toLeftOf="@id/delete_text_btn" android:layout_toRightOf="@id/activity_set_walkie_name_text" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/edit_text_hint_color" android:gravity="center" android:id="@id/activity_set_walkie_name_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="21.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <ImageView android:layout_gravity="center|left" android:id="@id/delete_text_btn" android:paddingRight="22.0dip" android:visibility="visible" android:layout_width="37.0dip" android:layout_height="fill_parent" android:src="@drawable/common_btn_clear" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

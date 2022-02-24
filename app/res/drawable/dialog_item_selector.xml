@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/bg_pressed_white_material"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@color/bg_pressed_white" />
+    <item android:drawable="@color/white" />
+</ripple>

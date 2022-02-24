@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.layout.QMUIRelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="220.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/divider" android:background="@color/black5" android:layout_width="1.0dip" android:layout_height="220.0dip" android:layout_centerInParent="true" />
+    <com.ifengyu.intercom.ui.widget.view.NumberPickerView android:id="@id/np_first" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="132.0dip" android:layout_toLeftOf="@id/divider" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:npv_DividerColor="@color/black5" app:npv_DividerHeight="1.0dip" app:npv_ShowCount="3" app:npv_TextSizeNormal="12.0sp" app:npv_TextSizeSelected="16.0sp" app:npv_WrapSelectorWheel="false" />
+    <com.ifengyu.intercom.ui.widget.view.NumberPickerView android:id="@id/np_second" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_toRightOf="@id/divider" android:layout_alignParentRight="true" app:npv_DividerColor="@color/black5" app:npv_DividerHeight="1.0dip" app:npv_ShowCount="5" app:npv_TextSizeNormal="12.0sp" app:npv_TextSizeSelected="16.0sp" app:npv_WrapSelectorWheel="false" />
+</com.qmuiteam.qmui.layout.QMUIRelativeLayout>

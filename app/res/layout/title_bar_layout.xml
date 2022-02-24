@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/title_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_height">
+        <ImageView android:id="@id/title_bar_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_back" android:paddingStart="@dimen/lite_padding_horizontal" android:paddingEnd="@dimen/lite_padding_horizontal" style="@style/TitlebarLeftButton" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/title_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginRight="48.0dip" android:text="@string/app_name" android:lines="1" />
+        <ImageView android:id="@id/title_bar_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/lite_padding_horizontal" android:paddingEnd="@dimen/lite_padding_horizontal" style="@style/TitlebarRightButton" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center|right" android:id="@id/title_bar_confirm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/common_select" android:paddingStart="@dimen/lite_padding_horizontal" android:paddingEnd="@dimen/lite_padding_horizontal" />
+        <View android:layout_gravity="bottom" android:id="@id/title_bar_bottom_line" android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="fill_parent" android:layout_height="130.0dip" android:src="@drawable/webview_load_fail_icon" android:scaleType="fitCenter" />
+        <TextView android:textSize="13.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/request_data_failed_please_check_network" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/select_color_80" android:gravity="center" android:id="@id/webview_reload_btn" android:background="@drawable/webview_reload_btn_bg" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_marginTop="50.0dip" android:text="@string/load_retry" />
+    </LinearLayout>
+</LinearLayout>

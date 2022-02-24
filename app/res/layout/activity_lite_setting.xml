@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.QMUIWindowInsetLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?qmui_topbar_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/lite_section_text_color" android:gravity="center_vertical" android:paddingLeft="21.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="@string/channel_setting" />
+            <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_channel_board" android:background="@drawable/lite_set_img_board" android:layout_width="fill_parent" android:layout_height="167.0dip" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white80" android:id="@id/tv_channel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="39.0dip" android:text="频道01" android:layout_centerHorizontal="true" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_channel_name">
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_board" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="23.0sp" android:textColor="@color/white" android:id="@id/tv_board_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lite_empty_channel_title" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/white60" android:id="@id/tv_board_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lite_empty_channel_detail" />
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/content_board" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="42.0dip">
+                        <Space android:id="@id/place_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="27.0sp" android:textColor="@color/white" android:id="@id/tv_receive_freq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28.0dip" android:text="409.0000" android:layout_toLeftOf="@id/place_holder" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/white60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接收频率" android:layout_below="@id/tv_receive_freq" android:layout_alignLeft="@id/tv_receive_freq" />
+                        <TextView android:textSize="27.0sp" android:textColor="@color/white" android:id="@id/tv_send_freq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:text="409.0000" android:layout_toRightOf="@id/place_holder" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/white60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发射频率" android:layout_below="@id/tv_send_freq" android:layout_alignLeft="@id/tv_send_freq" />
+                        <View android:id="@id/line_middle" android:background="@color/white40" android:layout_width="1.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </RelativeLayout>
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_config" app:accessory_type="chevron" app:icon="@mipmap/set_icon_file" app:titleText="配置文件" style="@style/LiteItemView" />
+            <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+            <View android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+            <TextView android:textColor="@color/lite_section_text_color" android:gravity="center_vertical" android:paddingLeft="21.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="对讲机设置" />
+            <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_name" app:accessory_type="chevron_text" app:detailText="可编辑对讲机名称" app:icon="@mipmap/set_icon_name" app:titleText="对讲机名称" app:valueText="小米对讲机" style="@style/LiteItemView" />
+            <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_id" app:accessory_type="text" app:detailText="对讲机唯一出厂码" app:icon="@mipmap/set_icon_id" app:titleText="对讲机 ID" app:valueText="\ 1008230116" style="@style/LiteItemView" />
+            <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_location" app:accessory_type="switcher" app:detailText="开启后可将自己的位置共享给好友" app:icon="@mipmap/set_icon_loaction" app:titleText="共享位置" style="@style/LiteItemView" />
+            <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_time" android:visibility="gone" app:accessory_type="chevron_text" app:detailText="根据设置的时间发送位置信息" app:icon="@mipmap/set_icon_time" app:titleText="发送位置间隔" style="@style/LiteItemView" />
+            <View android:background="@color/lite_color_separator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_voice" app:accessory_type="chevron" app:detailText="设置提示音开关和语音播报语言" app:icon="@mipmap/set_icon_voice" app:titleText="提示音和语音播报" style="@style/LiteItemView" />
+            <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_deploy" app:accessory_type="chevron" app:detailText="可快速将附近的多台对讲机同步相同的配置" app:icon="@mipmap/set_icon_deploy" app:titleText="批量配置" style="@style/LiteItemView" />
+            <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_more" app:accessory_type="chevron" app:detailText="其他功能的设置项" app:icon="@mipmap/set_icon_more" app:titleText="更多设置" style="@style/LiteItemView" />
+            <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_update" app:accessory_type="chevron" app:detailText="检查对讲机的升级版本进行更新" app:icon="@mipmap/set_icon_update" app:titleText="固件升级" style="@style/LiteItemView" />
+            <View android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            <View android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            <com.qmuiteam.qmui.alpha.QMUIAlphaButton android:textSize="17.0sp" android:textColor="@color/qmui_config_color_red" android:id="@id/btn_unbind" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="解除绑定" />
+            <View android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="28.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/top_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.qmuiteam.qmui.widget.QMUIWindowInsetLayout>

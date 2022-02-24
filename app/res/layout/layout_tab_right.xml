@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:id="@id/tv_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <ImageView android:id="@id/iv_tab_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.flyco.tablayout.widget.MsgView android:textSize="11.5sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/rtv_msg_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ll_tap" mv:mv_backgroundColor="#fffd481f" mv:mv_isRadiusHalfHeight="true" mv:mv_strokeColor="#ffffffff" mv:mv_strokeWidth="1.0dip" xmlns:mv="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

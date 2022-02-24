@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.amap.api.maps.MapView android:id="@id/mapView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="40.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/map_icon_zoom_layout" android:background="@drawable/map_control_btn_bg" android:padding="1.0px" android:clickable="false" android:layout_width="@dimen/location_menu_iv_width" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+                <ImageView android:id="@id/map_icon_zoom_big_iv" android:background="@drawable/map_contorl_btn_zoom_big_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/location_menu_iv_width" android:src="@drawable/home_icon_big" android:scaleType="fitCenter" />
+                <View android:background="#ffb9b9b9" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" />
+                <ImageView android:id="@id/map_icon_zoom_small_iv" android:background="@drawable/map_contorl_btn_zoom_small_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/location_menu_iv_width" android:src="@drawable/home_icon_small" android:scaleType="fitCenter" />
+            </LinearLayout>
+            <ImageView android:id="@id/map_icon_my_locate_iv" android:background="@drawable/map_control_btn_bg" android:padding="8.0dip" android:layout_width="@dimen/location_menu_iv_width" android:layout_height="@dimen/location_menu_iv_width" android:src="@drawable/home_icon_location" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/map_tool_kit_bottom_layout" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="57.0dip" />
+</LinearLayout>

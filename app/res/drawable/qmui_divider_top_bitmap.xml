@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:gravity="fill_horizontal|center|top" android:src="@drawable/qmui_divider" android:tint="@color/qmui_drawable_color_list_separator"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

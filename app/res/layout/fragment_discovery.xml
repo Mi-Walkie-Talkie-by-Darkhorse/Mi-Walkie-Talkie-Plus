@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_bar_layout" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/discovery_swipe_refresh_layout" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/discovery_recycler" android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_frequency_adjustment" android:scaleType="center" android:divider="@null" android:dividerHeight="0.0dip" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

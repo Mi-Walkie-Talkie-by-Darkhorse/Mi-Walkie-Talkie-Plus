@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="360.0dip" android:layout_height="83.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/trail_icon_logo_blue" android:layout_marginEnd="12.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_info_at_bottom" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/app_download_two_dimension_code" android:layout_marginStart="12.0dip" />
+    </LinearLayout>
+</LinearLayout>

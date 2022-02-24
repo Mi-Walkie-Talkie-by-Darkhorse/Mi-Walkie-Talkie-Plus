@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_bottom_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:autofit="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0sp" android:textColor="@color/body_text_10" android:gravity="center" android:id="@id/top_item" android:background="@drawable/btn_rec_white_top_corner" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/center_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/line_3" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/body_text_10" android:gravity="center" android:id="@id/center_item" android:background="@drawable/btn_rec_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_3" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/body_text_10" android:gravity="center" android:id="@id/bottom_item" android:background="@drawable/item_rec_white_bottom_corner" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="@string/common_cancel" />
+</LinearLayout>

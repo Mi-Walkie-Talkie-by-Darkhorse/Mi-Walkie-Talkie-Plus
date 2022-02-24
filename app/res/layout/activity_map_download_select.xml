@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_layout" />
+    <View android:layout_width="fill_parent" android:layout_height="7.0dip" />
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/common_name" android:layout_marginStart="20.0dip" />
+        <EditText android:textSize="14.0sp" android:textColor="#ff8d8d8d" android:textColorHint="@color/textColorHint" android:gravity="center_vertical" android:id="@id/offmap_name" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/please_input_name" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:textCursorDrawable="@drawable/text_cursor_bg" />
+        <ImageView android:layout_gravity="start|center" android:id="@id/delete_text_btn" android:padding="10.0dip" android:visibility="gone" android:layout_width="37.0dip" android:layout_height="fill_parent" android:src="@drawable/common_btn_clear" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_marginLeft="20.0dip" android:text="@string/select_definition" />
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/high_click" android:layout_width="fill_parent" android:layout_height="51.0dip">
+            <CheckBox android:id="@id/high_check" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/checkbox" android:layout_marginStart="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/definition_high" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff8d8d8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/you_can_browse_to_the_car" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff8d8d8d" android:id="@id/high_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.5dip" />
+        </LinearLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/medium_click" android:layout_width="fill_parent" android:layout_height="51.0dip">
+            <CheckBox android:id="@id/medium_check" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/checkbox" android:layout_marginStart="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/definition_medium" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff8d8d8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/you_can_browse_to_the_buildings" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff8d8d8d" android:id="@id/medium_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.5dip" />
+        </LinearLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/low_click" android:layout_width="fill_parent" android:layout_height="51.0dip">
+            <CheckBox android:id="@id/low_check" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/checkbox" android:layout_marginStart="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/definition_low" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff8d8d8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/you_can_browse_to_the_approximate_scene" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff8d8d8d" android:id="@id/low_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.5dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

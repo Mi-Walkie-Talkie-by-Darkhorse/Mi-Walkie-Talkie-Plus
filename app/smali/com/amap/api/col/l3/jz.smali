@@ -1,0 +1,1908 @@
+.class public final Lcom/amap/api/col/l3/jz;
+.super Ljava/lang/Object;
+.source "CoreUtil.java"
+
+
+# static fields
+.field static a:Ljava/lang/String; = "http://apilocate.amap.com/mobile/binary"
+
+.field static b:Ljava/lang/String; = ""
+
+.field static c:Ljava/lang/String; = "001;11B;11C;11F;11G;11H;11I;11K;122;135;13J;13S;14S;157;15O;15U"
+
+.field public static d:Ljava/lang/String; = null
+
+.field public static e:Ljava/lang/String; = null
+
+.field public static f:I = 0x7530
+
+.field public static g:Ljava/lang/String; = null
+
+.field public static h:Ljava/lang/String; = null
+
+.field static i:Ljava/lang/String; = null
+
+.field static j:Ljava/util/HashMap; = null
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field static k:Z = false
+
+.field static l:Z = false
+
+.field private static final m:[Ljava/lang/String;
+
+.field private static n:Lcom/amap/api/col/l3/gh; = null
+
+.field private static o:Z = false
+
+.field private static p:Z = false
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    const-string v0, "com.amap.api.location"
+
+    const-string v1, "com.loc"
+
+    const-string v2, "com.amap.api.fence"
+
+    .line 1
+    filled-new-array {v0, v1, v2}, [Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/amap/api/col/l3/jz;->m:[Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public static a(Lcom/amap/api/location/AMapLocationClientOption;)Landroid/os/Bundle;
+    .locals 3
+
+    .line 94
+    new-instance v0, Landroid/os/Bundle;
+
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    if-nez p0, :cond_0
+
+    .line 95
+    new-instance p0, Lcom/amap/api/location/AMapLocationClientOption;
+
+    invoke-direct {p0}, Lcom/amap/api/location/AMapLocationClientOption;-><init>()V
+
+    :cond_0
+    :try_start_0
+    const-string v1, "opt"
+
+    .line 96
+    invoke-virtual {v0, v1, p0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p0
+
+    const-string v1, "CoreUtil"
+
+    const-string v2, "getOptionBundle"
+
+    .line 97
+    invoke-static {p0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public static a(Ljava/lang/String;Ljava/lang/String;)Lcom/amap/api/col/l3/gh;
+    .locals 2
+
+    .line 89
+    :try_start_0
+    new-instance v0, Lcom/amap/api/col/l3/gh$a;
+
+    const-string v1, "AMAP_Location_SDK_Android 4.7.2"
+
+    invoke-direct {v0, p0, p1, v1}, Lcom/amap/api/col/l3/gh$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {}, Lcom/amap/api/col/l3/jz;->e()[Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Lcom/amap/api/col/l3/gh$a;->a([Ljava/lang/String;)Lcom/amap/api/col/l3/gh$a;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/amap/api/col/l3/gh$a;->a()Lcom/amap/api/col/l3/gh;
+
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p0
+
+    const-string p1, "CoreUtil"
+
+    const-string v0, "getSDKInfo"
+
+    .line 90
+    invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    :goto_0
+    return-object p0
+.end method
+
+.method public static a(Lcom/amap/api/location/AMapLocation;Lcom/amap/api/location/AMapLocation;)Lcom/amap/api/location/AMapLocation;
+    .locals 5
+
+    if-nez p1, :cond_0
+
+    return-object p0
+
+    .line 4
+    :cond_0
+    :try_start_0
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getCountry()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setCountry(Ljava/lang/String;)V
+
+    .line 5
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getRoad()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setRoad(Ljava/lang/String;)V
+
+    .line 6
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getPoiName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setPoiName(Ljava/lang/String;)V
+
+    .line 7
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getStreet()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setStreet(Ljava/lang/String;)V
+
+    .line 8
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getStreetNum()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setNumber(Ljava/lang/String;)V
+
+    .line 9
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getCityCode()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 10
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAdCode()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 11
+    invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setCityCode(Ljava/lang/String;)V
+
+    .line 12
+    invoke-virtual {p0, v1}, Lcom/amap/api/location/AMapLocation;->setAdCode(Ljava/lang/String;)V
+
+    .line 13
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getCity()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setCity(Ljava/lang/String;)V
+
+    .line 14
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getDistrict()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setDistrict(Ljava/lang/String;)V
+
+    .line 15
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getProvince()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setProvince(Ljava/lang/String;)V
+
+    .line 16
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAoiName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setAoiName(Ljava/lang/String;)V
+
+    .line 17
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAddress()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setAddress(Ljava/lang/String;)V
+
+    .line 18
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getDescription()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setDescription(Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 19
+    :try_start_1
+    invoke-virtual {p0}, Landroid/location/Location;->getExtras()Landroid/os/Bundle;
+
+    move-result-object v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    const-string v1, "adcode"
+
+    const-string v2, "citycode"
+
+    const-string v3, "desc"
+
+    if-eqz v0, :cond_1
+
+    .line 20
+    :try_start_2
+    invoke-virtual {p0}, Landroid/location/Location;->getExtras()Landroid/os/Bundle;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getCityCode()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v2, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 21
+    invoke-virtual {p0}, Landroid/location/Location;->getExtras()Landroid/os/Bundle;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Landroid/location/Location;->getExtras()Landroid/os/Bundle;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 22
+    invoke-virtual {p0}, Landroid/location/Location;->getExtras()Landroid/os/Bundle;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAdCode()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 23
+    :cond_1
+    new-instance v0, Landroid/os/Bundle;
+
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    .line 24
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getCityCode()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v2, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 25
+    invoke-virtual {p1}, Landroid/location/Location;->getExtras()Landroid/os/Bundle;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 26
+    invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAdCode()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 27
+    invoke-virtual {p0, v0}, Landroid/location/Location;->setExtras(Landroid/os/Bundle;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    :catchall_0
+    :goto_0
+    return-object p0
+.end method
+
+.method public static a(Landroid/os/Bundle;)Lcom/amap/api/location/AMapLocationClientOption;
+    .locals 3
+
+    .line 98
+    new-instance v0, Lcom/amap/api/location/AMapLocationClientOption;
+
+    invoke-direct {v0}, Lcom/amap/api/location/AMapLocationClientOption;-><init>()V
+
+    if-nez p0, :cond_0
+
+    return-object v0
+
+    .line 99
+    :cond_0
+    :try_start_0
+    const-class v1, Lcom/amap/api/location/AMapLocationClientOption;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Landroid/os/Bundle;->setClassLoader(Ljava/lang/ClassLoader;)V
+
+    const-string v1, "opt"
+
+    .line 100
+    invoke-virtual {p0, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/amap/api/location/AMapLocationClientOption;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    move-object v0, p0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p0
+
+    const-string v1, "CoreUtil"
+
+    const-string v2, "getOptionFromBundle"
+
+    .line 101
+    invoke-static {p0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public static a()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/amap/api/col/l3/jz;->a:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public static a(Landroid/content/Context;)V
+    .locals 5
+
+    const-string v0, "checkUrl"
+
+    const-string v1, "CoreUtil"
+
+    const/4 v2, 0x0
+
+    .line 77
+    :try_start_0
+    invoke-static {p0, v2}, Lcom/amap/api/col/l3/gi;->a(Landroid/content/Context;Z)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const-string p0, "http://abroad.apilocate.amap.com/mobile/binary"
+
+    .line 78
+    sput-object p0, Lcom/amap/api/col/l3/jz;->a:Ljava/lang/String;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
+
+    return-void
+
+    .line 79
+    :cond_0
+    :try_start_1
+    sget-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
+
+    if-nez v2, :cond_1
+
+    new-instance v2, Ljava/util/HashMap;
+
+    const/16 v3, 0x10
+
+    invoke-direct {v2, v3}, Ljava/util/HashMap;-><init>(I)V
+
+    sput-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
+
+    :cond_1
+    sget-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
+
+    invoke-virtual {v2}, Ljava/util/HashMap;->clear()V
+
+    sget-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
+
+    const-string v3, "a9a9d23668a1a7ea93de9b21d67e436a"
+
+    const-string v4, "F13160D440C7D0229DA95450F66AF92154AC84DF088F8CA3100B2E8131D57F3DC67124D4C466056E7A3DFBE035E1B9A4B9DA4DB68AE65A43EDFD92F5C60EF0C9"
+
+    invoke-virtual {v2, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
+
+    const-string v3, "fe643c382e5c3b3962141f1a2e815a78"
+
+    const-string v4, "FB923EE67A8B4032DAA517DD8CD7A26FF7C25B0C3663F92A0B61251C4FFFA858DF169D61321C3E7919CB67DF8EFEC827"
+
+    invoke-virtual {v2, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
+
+    const-string v3, "b2e8bd171989cb2c3c13bd89b4c1067a"
+
+    const-string v4, "239CE372F804D4BE4EAFFD183668379BDF274440E6F246AB16BBE6F5D1D30DEACFBBF0C942485727FF12288228760A9E"
+
+    invoke-virtual {v2, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
+
+    const-string v3, "9a571aa113ad987d626c0457828962e6"
+
+    const-string v4, "D2FF99A88BEB04683D89470D4FA72B1749DA456AB0D0F1A476477CE5A6874F53A9106423D905F9D808C0FCE8E7F1E04AC642F01FE41D0C7D933971F45CBA72B7"
+
+    invoke-virtual {v2, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
+
+    const-string v3, "668319f11506def6208d6afe320dfd52"
+
+    const-string v4, "53E53D46011A6BBAEA4FAE5442E659E0577CDD336F930C28635C322FB3F51C3C63F7FBAC9EAE448DFA2E5E5D716C4807"
+
+    invoke-virtual {v2, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
+
+    const-string v3, "256b0f26bb2a9506be6cfdb84028ae08"
+
+    const-string v4, "AF2228680EDC323FBA035362EB7E1E38A0C33E1CF6F6FB805EE553A230CBA754CD9552EB9B546542CBE619E8293151BE"
+
+    invoke-virtual {v2, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v2
+
+    :try_start_2
+    const-string v3, "initUrlHash"
+
+    invoke-static {v2, v1, v3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 80
+    :goto_0
+    invoke-static {p0}, Lcom/amap/api/col/l3/fw;->f(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/amap/api/col/l3/jo;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 81
+    sput-object p0, Lcom/amap/api/col/l3/jz;->i:Ljava/lang/String;
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+
+    if-eqz p0, :cond_7
+
+    :try_start_3
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    sget-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
+
+    if-nez v2, :cond_3
+
+    return-void
+
+    :cond_3
+    sget-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
+
+    invoke-virtual {v2, p0}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_4
+
+    return-void
+
+    :cond_4
+    sget-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
+
+    invoke-virtual {v2, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_5
+
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    if-lez v4, :cond_5
+
+    invoke-static {v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/String;)[B
+
+    move-result-object v2
+
+    new-instance v3, Ljava/lang/String;
+
+    invoke-static {v2, p0}, Lcom/amap/api/col/l3/jo;->d([BLjava/lang/String;)[B
+
+    move-result-object p0
+
+    const-string v2, "utf-8"
+
+    invoke-direct {v3, p0, v2}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
+
+    :cond_5
+    if-eqz v3, :cond_6
+
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
+
+    move-result p0
+
+    if-lez p0, :cond_6
+
+    const-string p0, "http:"
+
+    invoke-virtual {v3, p0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_6
+
+    sput-object v3, Lcom/amap/api/col/l3/jz;->b:Ljava/lang/String;
+
+    sput-object v3, Lcom/amap/api/col/l3/jz;->a:Ljava/lang/String;
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    :cond_6
+    return-void
+
+    :catchall_1
+    move-exception p0
+
+    :try_start_4
+    invoke-static {p0, v1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+
+    :cond_7
+    :goto_1
+    return-void
+
+    :catchall_2
+    move-exception p0
+
+    .line 82
+    invoke-static {p0, v1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static a(Lcom/amap/api/location/AMapLocation;Lorg/json/JSONObject;)V
+    .locals 12
+
+    const-string v0, "coordType"
+
+    const-string v1, "desc"
+
+    const-string v2, "citycode"
+
+    const-string v3, "adcode"
+
+    if-eqz p1, :cond_5
+
+    if-eqz p0, :cond_5
+
+    :try_start_0
+    const-string v4, "lat"
+
+    .line 28
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getLatitude()D
+
+    move-result-wide v5
+
+    invoke-virtual {p1, v4, v5, v6}, Lorg/json/JSONObject;->optDouble(Ljava/lang/String;D)D
+
+    move-result-wide v4
+
+    const-string v6, "lon"
+
+    .line 29
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getLongitude()D
+
+    move-result-wide v7
+
+    invoke-virtual {p1, v6, v7, v8}, Lorg/json/JSONObject;->optDouble(Ljava/lang/String;D)D
+
+    move-result-wide v6
+
+    const-string v8, "provider"
+
+    .line 30
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getProvider()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p1, v8, v9}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {p0, v8}, Landroid/location/Location;->setProvider(Ljava/lang/String;)V
+
+    .line 31
+    invoke-virtual {p0, v4, v5}, Lcom/amap/api/location/AMapLocation;->setLatitude(D)V
+
+    .line 32
+    invoke-virtual {p0, v6, v7}, Lcom/amap/api/location/AMapLocation;->setLongitude(D)V
+
+    const-string v8, "altitude"
+
+    .line 33
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getAltitude()D
+
+    move-result-wide v9
+
+    invoke-virtual {p1, v8, v9, v10}, Lorg/json/JSONObject;->optDouble(Ljava/lang/String;D)D
+
+    move-result-wide v8
+
+    invoke-virtual {p0, v8, v9}, Landroid/location/Location;->setAltitude(D)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_3
+
+    :try_start_1
+    const-string v8, "accuracy"
+
+    .line 34
+    invoke-virtual {p1, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    .line 35
+    invoke-static {v8}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_0
+
+    .line 36
+    invoke-static {v8}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+
+    move-result v8
+
+    invoke-virtual {p0, v8}, Landroid/location/Location;->setAccuracy(F)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :catchall_0
+    :cond_0
+    :try_start_2
+    const-string v8, "speed"
+
+    .line 37
+    invoke-virtual {p1, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    .line 38
+    invoke-static {v8}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_1
+
+    .line 39
+    invoke-static {v8}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+
+    move-result v8
+
+    invoke-virtual {p0, v8}, Landroid/location/Location;->setSpeed(F)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    :catchall_1
+    :cond_1
+    :try_start_3
+    const-string v8, "bearing"
+
+    .line 40
+    invoke-virtual {p1, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    .line 41
+    invoke-static {v8}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_2
+
+    .line 42
+    invoke-static {v8}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+
+    move-result v8
+
+    invoke-virtual {p0, v8}, Landroid/location/Location;->setBearing(F)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    .line 43
+    :catchall_2
+    :cond_2
+    :try_start_4
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getAdCode()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {p1, v3, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {p0, v8}, Lcom/amap/api/location/AMapLocation;->setAdCode(Ljava/lang/String;)V
+
+    .line 44
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getCityCode()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {p1, v2, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {p0, v8}, Lcom/amap/api/location/AMapLocation;->setCityCode(Ljava/lang/String;)V
+
+    const-string v8, "address"
+
+    .line 45
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getAddress()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p1, v8, v9}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {p0, v8}, Lcom/amap/api/location/AMapLocation;->setAddress(Ljava/lang/String;)V
+
+    const-string v8, ""
+
+    .line 46
+    invoke-virtual {p1, v1, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    const-string v9, "country"
+
+    .line 47
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getCountry()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setCountry(Ljava/lang/String;)V
+
+    const-string v9, "province"
+
+    .line 48
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getProvince()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setProvince(Ljava/lang/String;)V
+
+    const-string v9, "city"
+
+    .line 49
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getCity()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setCity(Ljava/lang/String;)V
+
+    const-string v9, "district"
+
+    .line 50
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getDistrict()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setDistrict(Ljava/lang/String;)V
+
+    const-string v9, "road"
+
+    .line 51
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getRoad()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setRoad(Ljava/lang/String;)V
+
+    const-string v9, "street"
+
+    .line 52
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getStreet()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setStreet(Ljava/lang/String;)V
+
+    const-string v9, "number"
+
+    .line 53
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getStreetNum()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setNumber(Ljava/lang/String;)V
+
+    const-string v9, "poiname"
+
+    .line 54
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getPoiName()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setPoiName(Ljava/lang/String;)V
+
+    const-string v9, "aoiname"
+
+    .line 55
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getAoiName()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setAoiName(Ljava/lang/String;)V
+
+    const-string v9, "errorCode"
+
+    .line 56
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getErrorCode()I
+
+    move-result v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setErrorCode(I)V
+
+    const-string v9, "errorInfo"
+
+    .line 57
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getErrorInfo()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setErrorInfo(Ljava/lang/String;)V
+
+    const-string v9, "locationType"
+
+    .line 58
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
+
+    move-result v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setLocationType(I)V
+
+    const-string v9, "locationDetail"
+
+    .line 59
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getLocationDetail()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setLocationDetail(Ljava/lang/String;)V
+
+    const-string v9, "time"
+
+    .line 60
+    invoke-virtual {p0}, Landroid/location/Location;->getTime()J
+
+    move-result-wide v10
+
+    invoke-virtual {p1, v9, v10, v11}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;J)J
+
+    move-result-wide v9
+
+    invoke-virtual {p0, v9, v10}, Landroid/location/Location;->setTime(J)V
+
+    const-string v9, "isOffset"
+
+    .line 61
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->isOffset()Z
+
+    move-result v10
+
+    invoke-virtual {p1, v9, v10}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
+
+    move-result v9
+
+    .line 62
+    invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setOffset(Z)V
+
+    const-string v10, "poiid"
+
+    .line 63
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getBuildingId()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-virtual {p1, v10, v11}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p0, v10}, Lcom/amap/api/location/AMapLocation;->setBuildingId(Ljava/lang/String;)V
+
+    const-string v10, "floor"
+
+    .line 64
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getFloor()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-virtual {p1, v10, v11}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p0, v10}, Lcom/amap/api/location/AMapLocation;->setFloor(Ljava/lang/String;)V
+
+    const-string v10, "description"
+
+    .line 65
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getDescription()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-virtual {p1, v10, v11}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {p0, v10}, Lcom/amap/api/location/AMapLocation;->setDescription(Ljava/lang/String;)V
+
+    .line 66
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v10
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_3
+
+    const-string v11, "GCJ02"
+
+    if-eqz v10, :cond_3
+
+    .line 67
+    :try_start_5
+    invoke-virtual {p1, v0, v11}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcom/amap/api/location/AMapLocation;->setCoordType(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 68
+    :cond_3
+    invoke-static {v4, v5, v6, v7}, Lcom/amap/api/col/l3/jz;->a(DD)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_4
+
+    if-eqz v9, :cond_4
+
+    .line 69
+    invoke-virtual {p0, v11}, Lcom/amap/api/location/AMapLocation;->setCoordType(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_4
+    const-string p1, "WGS84"
+
+    .line 70
+    invoke-virtual {p0, p1}, Lcom/amap/api/location/AMapLocation;->setCoordType(Ljava/lang/String;)V
+
+    .line 71
+    :goto_0
+    new-instance p1, Landroid/os/Bundle;
+
+    invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
+
+    .line 72
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getCityCode()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v2, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 73
+    invoke-virtual {v8}, Ljava/lang/String;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 74
+    invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getAdCode()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v3, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 75
+    invoke-virtual {p0, p1}, Landroid/location/Location;->setExtras(Landroid/os/Bundle;)V
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_3
+
+    return-void
+
+    :catchall_3
+    move-exception p0
+
+    const-string p1, "CoreUtil"
+
+    const-string v0, "transformLocation"
+
+    .line 76
+    invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_5
+    return-void
+.end method
+
+.method public static a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "reportError"
+
+    .line 91
+    invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 92
+    :cond_0
+    :try_start_0
+    instance-of v0, p0, Lcom/amap/api/col/l3/fv;
+
+    if-eqz v0, :cond_1
+
+    return-void
+
+    .line 93
+    :cond_1
+    invoke-static {p0, p1, p2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :catchall_0
+    return-void
+.end method
+
+.method public static a(DD)Z
+    .locals 4
+
+    const-wide v0, 0x4052400000000000L    # 73.0
+
+    sub-double/2addr p2, v0
+
+    const-wide/high16 v0, 0x3fe0000000000000L    # 0.5
+
+    div-double/2addr p2, v0
+
+    double-to-int p2, p2
+
+    const-wide/high16 v2, 0x400c000000000000L    # 3.5
+
+    sub-double/2addr p0, v2
+
+    div-double/2addr p0, v0
+
+    double-to-int p0, p0
+
+    const/4 p1, 0x0
+
+    if-ltz p0, :cond_2
+
+    const/16 p3, 0x65
+
+    if-ge p0, p3, :cond_2
+
+    if-ltz p2, :cond_2
+
+    const/16 p3, 0x7c
+
+    if-lt p2, p3, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    mul-int/lit8 p0, p0, 0x7c
+
+    add-int/2addr p0, p2
+
+    const/4 p2, 0x1
+
+    :try_start_0
+    const-string p3, "00000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000001011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011101010111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111101111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000110111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011010111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111100110001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111110011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111000000000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111100000000000010111110100000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000001111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111000000111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111101111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000101111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000011110000000001111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000011000011111100000000111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000001111111100111111111100110111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000101111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111011111000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100100000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011100000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000111110000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110011111110000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111110000000000000000000000111011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000011111111111111111111111111111111111111111111111100001111111111111111111111111111111111111111111111111010000000000000000000000111111111111111111111111111111111111111111110000000000000001111111111111111111111111111111111111111111100000000000000000000011111111111111111111111111111111100000000000000000000000000001111111111111111111111111111111111111111110000000000000000000001111111111111111111111111111111100000000000000000000000000000001111111111111111111111111111111111111111000000000000000000000111111111111111111111111111111110000000000000000000000000000001111111111111111111111111111111111111111100000000000000000000111111111111111111111111111111000000000000000000000000000000000111111111111111111111111111111111111111111000000000000000000001111111111111111111111111110000000000000000000000000000000000001110011111111111111111111111111111111111111100000000000000000000011111111111111111100000000000000000000000000000000000000000000000001111111111111111111111111111111111111000000000000000000001111111111111111111000000000000000000000000000000000000000000000000011111111111111111111111111111111111100000000000000000000011111111111111111100000000000000000000000000000000000000000000000000011111111111111111111111111111111111000000000000000000001111111111111111100000000000000000000000000000000000000000000000000000000111111111111111111111111111111110000000000000000000000000111111111100000000000000000000000000000000000000000000000000111111111111111111111111111111111111111000000000000000000000000011111111100000000000000000000000000000000000000000000000000011111111111111111111111111111110001111100000000000000000000000000111110000000000000000000000000000000000000000000000000000001111111111111111111111111111111000000000000000000000000000000000001110000000000000000000000000000000000000000000000000000000011111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010110000000000000000000000"
+
+    .line 2
+    invoke-virtual {p3, p0}, Ljava/lang/String;->charAt(I)C
+
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/16 p3, 0x31
+
+    if-ne p0, p3, :cond_1
+
+    return p2
+
+    :cond_1
+    return p1
+
+    :catchall_0
+    move-exception p0
+
+    const-string p1, "CoreUtil"
+
+    const-string p3, "isChina"
+
+    .line 3
+    invoke-static {p0, p1, p3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+
+    return p2
+
+    :cond_2
+    :goto_0
+    return p1
+.end method
+
+.method private static a(DDDDDD)Z
+    .locals 6
+
+    sub-double v0, p4, p0
+
+    sub-double v2, p10, p2
+
+    mul-double v0, v0, v2
+
+    sub-double v2, p8, p0
+
+    sub-double v4, p6, p2
+
+    mul-double v2, v2, v4
+
+    sub-double/2addr v0, v2
+
+    .line 117
+    invoke-static {v0, v1}, Ljava/lang/Math;->abs(D)D
+
+    move-result-wide v0
+
+    const-wide v2, 0x3e112e0be826d695L    # 1.0E-9
+
+    cmpg-double v4, v0, v2
+
+    if-gez v4, :cond_0
+
+    sub-double v0, p0, p4
+
+    sub-double v2, p0, p8
+
+    mul-double v0, v0, v2
+
+    const-wide/16 v2, 0x0
+
+    cmpg-double v4, v0, v2
+
+    if-gtz v4, :cond_0
+
+    sub-double v0, p2, p6
+
+    sub-double v4, p2, p10
+
+    mul-double v0, v0, v4
+
+    cmpg-double v4, v0, v2
+
+    if-gtz v4, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public static a(Lcom/amap/api/location/DPoint;Ljava/util/List;)Z
+    .locals 33
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/amap/api/location/DPoint;",
+            "Ljava/util/List<",
+            "Lcom/amap/api/location/DPoint;",
+            ">;)Z"
+        }
+    .end annotation
+
+    move-object/from16 v0, p1
+
+    .line 102
+    invoke-virtual/range {p0 .. p0}, Lcom/amap/api/location/DPoint;->getLongitude()D
+
+    move-result-wide v13
+
+    .line 103
+    invoke-virtual/range {p0 .. p0}, Lcom/amap/api/location/DPoint;->getLatitude()D
+
+    move-result-wide v15
+
+    .line 104
+    invoke-virtual/range {p0 .. p0}, Lcom/amap/api/location/DPoint;->getLatitude()D
+
+    move-result-wide v17
+
+    const/4 v11, 0x0
+
+    .line 105
+    invoke-interface {v0, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/amap/api/location/DPoint;
+
+    invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    const/16 v19, 0x1
+
+    add-int/lit8 v2, v2, -0x1
+
+    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/amap/api/location/DPoint;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 106
+    invoke-interface {v0, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_0
+    const/4 v1, 0x0
+
+    const/16 v20, 0x0
+
+    .line 107
+    :goto_0
+    invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    add-int/lit8 v2, v2, -0x1
+
+    if-ge v1, v2, :cond_6
+
+    .line 108
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/amap/api/location/DPoint;
+
+    invoke-virtual {v2}, Lcom/amap/api/location/DPoint;->getLongitude()D
+
+    move-result-wide v21
+
+    .line 109
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/amap/api/location/DPoint;
+
+    invoke-virtual {v2}, Lcom/amap/api/location/DPoint;->getLatitude()D
+
+    move-result-wide v23
+
+    add-int/lit8 v12, v1, 0x1
+
+    .line 110
+    invoke-interface {v0, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/amap/api/location/DPoint;
+
+    invoke-virtual {v1}, Lcom/amap/api/location/DPoint;->getLongitude()D
+
+    move-result-wide v25
+
+    .line 111
+    invoke-interface {v0, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/amap/api/location/DPoint;
+
+    invoke-virtual {v1}, Lcom/amap/api/location/DPoint;->getLatitude()D
+
+    move-result-wide v27
+
+    move-wide v1, v13
+
+    move-wide v3, v15
+
+    move-wide/from16 v5, v21
+
+    move-wide/from16 v7, v23
+
+    move-wide/from16 v9, v25
+
+    move/from16 v30, v12
+
+    const/16 v29, 0x0
+
+    move-wide/from16 v11, v27
+
+    .line 112
+    invoke-static/range {v1 .. v12}, Lcom/amap/api/col/l3/jz;->a(DDDDDD)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    return v19
+
+    :cond_1
+    sub-double v31, v27, v23
+
+    .line 113
+    invoke-static/range {v31 .. v32}, Ljava/lang/Math;->abs(D)D
+
+    move-result-wide v1
+
+    const-wide v3, 0x3e112e0be826d695L    # 1.0E-9
+
+    cmpg-double v5, v1, v3
+
+    if-ltz v5, :cond_5
+
+    const-wide v9, 0x4066800000000000L    # 180.0
+
+    move-wide/from16 v1, v21
+
+    move-wide/from16 v3, v23
+
+    move-wide v5, v13
+
+    move-wide v7, v15
+
+    move-wide/from16 v11, v17
+
+    .line 114
+    invoke-static/range {v1 .. v12}, Lcom/amap/api/col/l3/jz;->a(DDDDDD)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    cmpl-double v1, v23, v27
+
+    if-lez v1, :cond_5
+
+    :goto_1
+    add-int/lit8 v20, v20, 0x1
+
+    goto :goto_3
+
+    :cond_2
+    const-wide v9, 0x4066800000000000L    # 180.0
+
+    move-wide/from16 v1, v25
+
+    move-wide/from16 v3, v27
+
+    move-wide v5, v13
+
+    move-wide v7, v15
+
+    move-wide/from16 v11, v17
+
+    .line 115
+    invoke-static/range {v1 .. v12}, Lcom/amap/api/col/l3/jz;->a(DDDDDD)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    cmpl-double v1, v27, v23
+
+    if-lez v1, :cond_5
+
+    goto :goto_1
+
+    :cond_3
+    sub-double v25, v25, v21
+
+    sub-double v1, v17, v15
+
+    mul-double v3, v25, v1
+
+    const-wide v5, 0x4066800000000000L    # 180.0
+
+    sub-double/2addr v5, v13
+
+    mul-double v7, v31, v5
+
+    sub-double/2addr v3, v7
+
+    const-wide/16 v7, 0x0
+
+    cmpl-double v9, v3, v7
+
+    if-eqz v9, :cond_4
+
+    sub-double v23, v23, v15
+
+    mul-double v5, v5, v23
+
+    sub-double v21, v21, v13
+
+    mul-double v1, v1, v21
+
+    sub-double/2addr v5, v1
+
+    div-double/2addr v5, v3
+
+    mul-double v23, v23, v25
+
+    mul-double v21, v21, v31
+
+    sub-double v23, v23, v21
+
+    div-double v23, v23, v3
+
+    cmpl-double v1, v5, v7
+
+    if-ltz v1, :cond_4
+
+    const-wide/high16 v1, 0x3ff0000000000000L    # 1.0
+
+    cmpg-double v3, v5, v1
+
+    if-gtz v3, :cond_4
+
+    cmpl-double v3, v23, v7
+
+    if-ltz v3, :cond_4
+
+    cmpg-double v3, v23, v1
+
+    if-gtz v3, :cond_4
+
+    const/4 v11, 0x1
+
+    goto :goto_2
+
+    :cond_4
+    const/4 v11, 0x0
+
+    :goto_2
+    if-eqz v11, :cond_5
+
+    goto :goto_1
+
+    :cond_5
+    :goto_3
+    move/from16 v1, v30
+
+    const/4 v11, 0x0
+
+    goto/16 :goto_0
+
+    :cond_6
+    const/16 v29, 0x0
+
+    .line 116
+    rem-int/lit8 v20, v20, 0x2
+
+    if-eqz v20, :cond_7
+
+    const/4 v11, 0x1
+
+    goto :goto_4
+
+    :cond_7
+    const/4 v11, 0x0
+
+    :goto_4
+    return v11
+.end method
+
+.method private static a(Ljava/lang/String;)[B
+    .locals 5
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_2
+
+    .line 83
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    if-ge v1, v2, :cond_0
+
+    goto :goto_1
+
+    .line 84
+    :cond_0
+    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 85
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    div-int/2addr v1, v2
+
+    .line 86
+    new-array v2, v1, [B
+
+    :goto_0
+    if-ge v0, v1, :cond_1
+
+    mul-int/lit8 v3, v0, 0x2
+
+    add-int/lit8 v4, v3, 0x2
+
+    .line 87
+    invoke-virtual {p0, v3, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 88
+    invoke-static {v3}, Lcom/amap/api/col/l3/ki;->i(Ljava/lang/String;)I
+
+    move-result v3
+
+    and-int/lit16 v3, v3, 0xff
+
+    int-to-byte v3, v3
+
+    aput-byte v3, v2, v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return-object v2
+
+    :cond_2
+    :goto_1
+    new-array p0, v0, [B
+
+    return-object p0
+.end method
+
+.method public static b()Lcom/amap/api/col/l3/gh;
+    .locals 4
+
+    const-string v0, "4.7.2"
+
+    .line 1
+    :try_start_0
+    sget-object v1, Lcom/amap/api/col/l3/jz;->n:Lcom/amap/api/col/l3/gh;
+
+    if-nez v1, :cond_0
+
+    .line 2
+    new-instance v1, Lcom/amap/api/col/l3/gh$a;
+
+    const-string v2, "loc"
+
+    const-string v3, "AMAP_Location_SDK_Android 4.7.2"
+
+    invoke-direct {v1, v2, v0, v3}, Lcom/amap/api/col/l3/gh$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 3
+    invoke-static {}, Lcom/amap/api/col/l3/jz;->e()[Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/amap/api/col/l3/gh$a;->a([Ljava/lang/String;)Lcom/amap/api/col/l3/gh$a;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Lcom/amap/api/col/l3/gh$a;->a(Ljava/lang/String;)Lcom/amap/api/col/l3/gh$a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/amap/api/col/l3/gh$a;->a()Lcom/amap/api/col/l3/gh;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/amap/api/col/l3/jz;->n:Lcom/amap/api/col/l3/gh;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    const-string v1, "CoreUtil"
+
+    const-string v2, "getSDKInfo"
+
+    .line 4
+    invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 5
+    :cond_0
+    :goto_0
+    sget-object v0, Lcom/amap/api/col/l3/jz;->n:Lcom/amap/api/col/l3/gh;
+
+    return-object v0
+.end method
+
+.method public static b(Landroid/content/Context;)Ljava/lang/String;
+    .locals 0
+
+    .line 6
+    invoke-static {p0}, Lcom/amap/api/col/l3/fw;->e(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 7
+    invoke-static {p0}, Lcom/amap/api/col/l3/ge;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static c()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/amap/api/col/l3/jz;->c:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public static c(Landroid/content/Context;)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    .line 2
+    :try_start_0
+    invoke-static {p0, v0}, Lcom/amap/api/col/l3/gi;->a(Landroid/content/Context;Z)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-string p0, "http://abroad.apilocate.amap.com/mobile/binary"
+
+    .line 3
+    sput-object p0, Lcom/amap/api/col/l3/jz;->a:Ljava/lang/String;
+
+    return-void
+
+    .line 4
+    :cond_0
+    sget-object p0, Lcom/amap/api/col/l3/jz;->b:Ljava/lang/String;
+
+    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    const-string p0, "http://apilocate.amap.com/mobile/binary"
+
+    .line 5
+    sput-object p0, Lcom/amap/api/col/l3/jz;->a:Ljava/lang/String;
+
+    return-void
+
+    .line 6
+    :cond_1
+    sget-object p0, Lcom/amap/api/col/l3/jz;->b:Ljava/lang/String;
+
+    sput-object p0, Lcom/amap/api/col/l3/jz;->a:Ljava/lang/String;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    const-string v0, "CoreUtil"
+
+    const-string v1, "changeUrl"
+
+    .line 7
+    invoke-static {p0, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static d()Z
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lcom/amap/api/col/l3/jz;->k:Z
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    .line 2
+    sput-boolean v0, Lcom/amap/api/col/l3/jz;->k:Z
+
+    const/4 v0, 0x0
+
+    .line 3
+    sput-boolean v0, Lcom/amap/api/col/l3/jz;->l:Z
+
+    .line 4
+    :cond_0
+    sget-boolean v0, Lcom/amap/api/col/l3/jz;->l:Z
+
+    return v0
+.end method
+
+.method private static e()[Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/amap/api/col/l3/jz;->m:[Ljava/lang/String;
+
+    invoke-virtual {v0}, [Ljava/lang/String;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Ljava/lang/String;
+
+    return-object v0
+.end method

@@ -1,0 +1,47 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: MI-Walkie-Talkie-2.13.7.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- assets/map_style.data
+- res/raw/audio_end_tip.wav
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '28'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  androidsupportmultidexversion.txt: '8'
+  miui_push_version: '8'
+  push_version: '8'
+  com/sina/sso/RemoteSSO.aidl: '8'
+  com/sina/weibo/sdk/net/cacert_cn.cer: '8'
+  com/sina/weibo/sdk/net/cacert_com.cer: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+  org/bouncycastle/x509/CertPathReviewerMessages.properties: '8'
+  org/bouncycastle/x509/CertPathReviewerMessages_de.properties: '8'
+  org/osmdroid/center.png: '0'
+  org/osmdroid/direction_arrow.png: '0'
+  org/osmdroid/ic_menu_compass.png: '0'
+  org/osmdroid/ic_menu_mapmode.png: '0'
+  org/osmdroid/ic_menu_mylocation.png: '0'
+  org/osmdroid/ic_menu_offline.png: '0'
+  org/osmdroid/marker_default.png: '0'
+  org/osmdroid/marker_default_focused_base.png: '0'
+  org/osmdroid/navto_small.png: '0'
+  org/osmdroid/next.png: '0'
+  org/osmdroid/person.png: '0'
+  org/osmdroid/previous.png: '0'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.6.0
+versionInfo:
+  versionCode: '239'
+  versionName: 2.13.7

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.layout.QMUIRelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/top_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:qmui_bottomDividerHeight="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/device_connect_tip_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_bar">
+        <TextView android:textSize="27.0sp" android:textColor="@color/lite_colorAccent" android:layout_gravity="center_horizontal" android:id="@id/device_connect_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connect_device_search_intercom" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black40" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/device_connect_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="16.0dip" android:text="@string/connect_makesure_device_start" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/device_connect_container" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true" android:translationY="16.0dip">
+        <ImageView android:id="@id/device_connect_circle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/connect_backview" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/device_connect_progress" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/connect_progress" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/black60" android:id="@id/device_connect_list_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/connect_select_device_title" android:layout_above="@id/device_connect_list" android:layout_marginStart="23.0dip" />
+    <ListView android:id="@id/device_connect_list" android:layout_width="fill_parent" android:layout_height="148.0dip" android:layout_marginBottom="16.0dip" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:layout_above="@id/device_connect_control" />
+    <ImageView android:id="@id/device_connect_long_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:src="@drawable/connect_long_state" android:layout_above="@id/device_connect_control" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/device_connect_control" android:padding="8.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/select_color" android:layout_gravity="center_vertical" android:id="@id/device_connect_control_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connect_later" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@drawable/bluetooth_icon_more_blue" />
+    </LinearLayout>
+</com.qmuiteam.qmui.layout.QMUIRelativeLayout>

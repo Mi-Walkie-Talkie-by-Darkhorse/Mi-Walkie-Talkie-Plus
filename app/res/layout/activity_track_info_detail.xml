@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_layout" />
+    <ScrollView android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="241.0dip">
+                <com.amap.api.maps.MapView android:id="@id/track_display_map" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="@dimen/location_menu_iv_width" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="40.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                    <LinearLayout android:orientation="vertical" android:id="@id/map_icon_zoom_layout" android:background="@drawable/map_control_btn_bg" android:padding="1.0px" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+                        <ImageView android:id="@id/map_icon_zoom_big_iv" android:background="@drawable/map_contorl_btn_zoom_big_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/location_menu_iv_width" android:src="@drawable/home_icon_big" android:scaleType="fitCenter" />
+                        <View android:background="#ffb9b9b9" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" />
+                        <ImageView android:id="@id/map_icon_zoom_small_iv" android:background="@drawable/map_contorl_btn_zoom_small_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/location_menu_iv_width" android:src="@drawable/home_icon_small" android:scaleType="fitCenter" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/map_icon_my_locate_iv" android:background="@drawable/map_control_btn_bg" android:padding="8.0dip" android:layout_width="@dimen/location_menu_iv_width" android:layout_height="@dimen/location_menu_iv_width" android:src="@drawable/home_icon_location" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <View android:layout_width="fill_parent" android:layout_height="6.5dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/track_share_group_center_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip">
+                    <LinearLayout android:gravity="left" android:orientation="horizontal" android:paddingLeft="20.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <com.ifengyu.intercom.ui.widget.view.CirclrImageView android:id="@id/track_info_detail_user_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/my_head_default" android:scaleType="centerInside" app:frameColor="#15000000" app:layout_collapseMode="parallax" app:layout_collapseParallaxMultiplier="0.8" app:widthFrame="0" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <TextView android:textSize="13.5sp" android:textColor="@color/black" android:id="@id/track_info_detail_user_name" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/me" />
+                            <TextView android:textSize="10.0sp" android:textColor="@color/black50" android:id="@id/track_info_detail_total_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="3.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="36.0sp" android:textColor="@color/select_color" android:layout_gravity="bottom" android:id="@id/track_info_detail_total_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0" android:layout_marginEnd="20.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="25.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/track_info_detail_total_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="00:00" />
+                        <TextView android:textSize="11.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="@string/total_time" />
+                    </LinearLayout>
+                    <View android:background="@color/line_2" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/track_info_detail_average_speed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0.0" />
+                        <TextView android:textSize="11.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="@string/mean_speed" />
+                    </LinearLayout>
+                    <View android:background="@color/line_2" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/track_info_detail_max_altitude" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" />
+                        <TextView android:textSize="11.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="@string/highest_elevation" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="6.5dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/track_share_group_bottom_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/track_info_detail_average_altitude" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="00" />
+                        <TextView android:textSize="11.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="@string/average_altitude" />
+                    </LinearLayout>
+                    <View android:background="@color/line_2" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/track_info_detail_accrued_climb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="00" />
+                        <TextView android:textSize="11.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="@string/total_climb" />
+                    </LinearLayout>
+                    <View android:background="@color/line_2" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/track_info_detail_accrued_descent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="00" />
+                        <TextView android:textSize="11.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="@string/total_decline" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="11.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/track_line_chart_y" />
+                <com.github.mikephil.charting.charts.LineChart android:id="@id/track_altitude_chart" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/black80" android:gravity="center" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/track_line_chart_x" />
+                <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
