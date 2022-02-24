@@ -1,46 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <integer-array name="dolphin_public_channel">
+        <item>409750000</item>
+        <item>409762500</item>
+        <item>409775000</item>
+        <item>409787500</item>
+        <item>409800000</item>
+        <item>409812500</item>
+        <item>409825000</item>
+        <item>409837500</item>
+        <item>409850000</item>
+        <item>409862500</item>
+        <item>409875000</item>
+        <item>409887500</item>
+        <item>409900000</item>
+        <item>409912500</item>
+        <item>409925000</item>
+        <item>409937500</item>
+        <item>409950000</item>
+        <item>409962500</item>
+        <item>409975000</item>
+        <item>409987500</item>
+    </integer-array>
+    <integer-array name="dolphin_remote_channel">
+        <item>430137500</item>
+        <item>430437500</item>
+        <item>431137500</item>
+        <item>431437500</item>
+        <item>432137500</item>
+        <item>432437500</item>
+        <item>433137500</item>
+        <item>433437500</item>
+        <item>434137500</item>
+        <item>434437500</item>
+        <item>435137500</item>
+        <item>435437500</item>
+        <item>436137500</item>
+        <item>436437500</item>
+        <item>437137500</item>
+        <item>437437500</item>
+        <item>438137500</item>
+        <item>438437500</item>
+        <item>439137500</item>
+        <item>439437500</item>
+    </integer-array>
+    <integer-array name="lite_receive_freq">
+        <item>430137500</item>
+        <item>430437500</item>
+        <item>431137500</item>
+        <item>431437500</item>
+        <item>432137500</item>
+        <item>432437500</item>
+        <item>433137500</item>
+        <item>433437500</item>
+        <item>434137500</item>
+        <item>434437500</item>
+        <item>435137500</item>
+        <item>435437500</item>
+        <item>436137500</item>
+        <item>436437500</item>
+        <item>437137500</item>
+        <item>437437500</item>
+    </integer-array>
+    <integer-array name="lite_send_freq">
+        <item>430137500</item>
+        <item>430437500</item>
+        <item>431137500</item>
+        <item>431437500</item>
+        <item>432137500</item>
+        <item>432437500</item>
+        <item>433137500</item>
+        <item>433437500</item>
+        <item>434137500</item>
+        <item>434437500</item>
+        <item>435137500</item>
+        <item>435437500</item>
+        <item>436137500</item>
+        <item>436437500</item>
+        <item>437137500</item>
+        <item>437437500</item>
+    </integer-array>
+    <integer-array name="seal_public_5_channel">
+        <item>409750000</item>
+        <item>409762500</item>
+        <item>409775000</item>
+        <item>409787500</item>
+        <item>409800000</item>
+    </integer-array>
+    <integer-array name="seal_public_all_channel">
+        <item>409750000</item>
+        <item>409762500</item>
+        <item>409775000</item>
+        <item>409787500</item>
+        <item>409800000</item>
+        <item>409812500</item>
+        <item>409825000</item>
+        <item>409837500</item>
+        <item>409850000</item>
+        <item>409862500</item>
+        <item>409875000</item>
+        <item>409887500</item>
+        <item>409900000</item>
+        <item>409912500</item>
+        <item>409925000</item>
+        <item>409937500</item>
+        <item>409950000</item>
+        <item>409962500</item>
+        <item>409975000</item>
+        <item>409987500</item>
+    </integer-array>
+    <integer-array name="seal_remote_channel">
+        <item>430137500</item>
+        <item>430437500</item>
+        <item>431137500</item>
+        <item>431437500</item>
+        <item>432137500</item>
+        <item>432437500</item>
+        <item>433137500</item>
+        <item>433437500</item>
+        <item>434137500</item>
+        <item>434437500</item>
+        <item>435137500</item>
+        <item>435437500</item>
+        <item>436137500</item>
+        <item>436437500</item>
+        <item>437137500</item>
+        <item>437437500</item>
+        <item>438137500</item>
+        <item>438437500</item>
+        <item>439137500</item>
+        <item>439437500</item>
+    </integer-array>
     <string-array name="analog_tone">
-        <item>Closed</item>
-        <item>067.0Hz</item>
-        <item>069.3Hz</item>
-        <item>071.9Hz</item>
-        <item>074.4Hz</item>
-        <item>077.0Hz</item>
-        <item>079.7Hz</item>
-        <item>082.5Hz</item>
-        <item>085.4Hz</item>
-        <item>088.5Hz</item>
-        <item>091.5Hz</item>
-        <item>094.8Hz</item>
-        <item>097.4Hz</item>
-        <item>100.0Hz</item>
-        <item>103.5Hz</item>
-        <item>107.2Hz</item>
-        <item>110.9Hz</item>
-        <item>114.8Hz</item>
-        <item>118.8Hz</item>
-        <item>123.0Hz</item>
-        <item>127.3Hz</item>
-        <item>131.8Hz</item>
-        <item>136.5Hz</item>
-        <item>141.3Hz</item>
-        <item>146.2Hz</item>
-        <item>151.4Hz</item>
-        <item>156.7Hz</item>
-        <item>162.2Hz</item>
-        <item>167.9Hz</item>
-        <item>173.8Hz</item>
-        <item>179.9Hz</item>
-        <item>186.2Hz</item>
-        <item>192.8Hz</item>
-        <item>203.5Hz</item>
-        <item>210.7Hz</item>
-        <item>218.1Hz</item>
-        <item>225.7Hz</item>
-        <item>233.6Hz</item>
-        <item>241.8Hz</item>
-        <item>250.3Hz</item>
+        <item>@string/common_closed</item>
+        <item>67.0 Hz</item>
+        <item>69.3 Hz</item>
+        <item>71.9 Hz</item>
+        <item>74.4 Hz</item>
+        <item>77.0 Hz</item>
+        <item>79.7 Hz</item>
+        <item>82.5 Hz</item>
+        <item>85.4 Hz</item>
+        <item>88.5 Hz</item>
+        <item>91.5 Hz</item>
+        <item>94.8 Hz</item>
+        <item>97.4 Hz</item>
+        <item>100.0 Hz</item>
+        <item>103.5 Hz</item>
+        <item>107.2 Hz</item>
+        <item>110.9 Hz</item>
+        <item>114.8 Hz</item>
+        <item>118.8 Hz</item>
+        <item>123.0 Hz</item>
+        <item>127.3 Hz</item>
+        <item>131.8 Hz</item>
+        <item>136.5 Hz</item>
+        <item>141.3 Hz</item>
+        <item>146.2 Hz</item>
+        <item>151.4 Hz</item>
+        <item>156.7 Hz</item>
+        <item>162.2 Hz</item>
+        <item>167.9 Hz</item>
+        <item>173.8 Hz</item>
+        <item>179.9 Hz</item>
+        <item>186.2 Hz</item>
+        <item>192.8 Hz</item>
+        <item>203.5 Hz</item>
+        <item>210.7 Hz</item>
+        <item>218.1 Hz</item>
+        <item>225.7 Hz</item>
+        <item>233.6 Hz</item>
+        <item>241.8 Hz</item>
+        <item>250.3 Hz</item>
     </string-array>
     <string-array name="band_width">
         <item>Wideband</item>
@@ -57,7 +188,7 @@
         <item>Cancel</item>
     </string-array>
     <string-array name="digital_tone_inversion">
-        <item>Closed</item>
+        <item>@string/common_closed</item>
         <item>D023I</item>
         <item>D025I</item>
         <item>D026I</item>
@@ -143,7 +274,7 @@
         <item>D754I</item>
     </string-array>
     <string-array name="digital_tone_normal">
-        <item>Closed</item>
+        <item>@string/common_closed</item>
         <item>D023N</item>
         <item>D025N</item>
         <item>D026N</item>
@@ -262,101 +393,101 @@
         <item>Me</item>
     </string-array>
     <string-array name="seal_analog_tone">
-        <item>Closed</item>
-        <item>067.0Hz</item>
-        <item>071.9Hz</item>
-        <item>074.4Hz</item>
-        <item>077.0Hz</item>
-        <item>079.7Hz</item>
-        <item>082.5Hz</item>
-        <item>085.4Hz</item>
-        <item>088.5Hz</item>
-        <item>091.5Hz</item>
-        <item>094.8Hz</item>
-        <item>097.4Hz</item>
-        <item>100.0Hz</item>
-        <item>103.5Hz</item>
-        <item>107.2Hz</item>
-        <item>110.9Hz</item>
-        <item>114.8Hz</item>
-        <item>118.8Hz</item>
-        <item>123.0Hz</item>
-        <item>127.3Hz</item>
-        <item>131.8Hz</item>
-        <item>136.5Hz</item>
-        <item>141.3Hz</item>
-        <item>146.2Hz</item>
-        <item>151.4Hz</item>
-        <item>156.7Hz</item>
-        <item>162.2Hz</item>
-        <item>167.9Hz</item>
-        <item>173.8Hz</item>
-        <item>179.9Hz</item>
-        <item>186.2Hz</item>
-        <item>192.8Hz</item>
-        <item>203.5Hz</item>
-        <item>210.7Hz</item>
-        <item>218.1Hz</item>
-        <item>225.7Hz</item>
-        <item>233.6Hz</item>
-        <item>241.8Hz</item>
-        <item>250.3Hz</item>
+        <item>@string/common_closed</item>
+        <item>67.0 Hz</item>
+        <item>71.9 Hz</item>
+        <item>74.4 Hz</item>
+        <item>77.0 Hz</item>
+        <item>79.7 Hz</item>
+        <item>82.5 Hz</item>
+        <item>85.4 Hz</item>
+        <item>88.5 Hz</item>
+        <item>91.5 Hz</item>
+        <item>94.8 Hz</item>
+        <item>97.4 Hz</item>
+        <item>100.0 Hz</item>
+        <item>103.5 Hz</item>
+        <item>107.2 Hz</item>
+        <item>110.9 Hz</item>
+        <item>114.8 Hz</item>
+        <item>118.8 Hz</item>
+        <item>123.0 Hz</item>
+        <item>127.3 Hz</item>
+        <item>131.8 Hz</item>
+        <item>136.5 Hz</item>
+        <item>141.3 Hz</item>
+        <item>146.2 Hz</item>
+        <item>151.4 Hz</item>
+        <item>156.7 Hz</item>
+        <item>162.2 Hz</item>
+        <item>167.9 Hz</item>
+        <item>173.8 Hz</item>
+        <item>179.9 Hz</item>
+        <item>186.2 Hz</item>
+        <item>192.8 Hz</item>
+        <item>203.5 Hz</item>
+        <item>210.7 Hz</item>
+        <item>218.1 Hz</item>
+        <item>225.7 Hz</item>
+        <item>233.6 Hz</item>
+        <item>241.8 Hz</item>
+        <item>250.3 Hz</item>
     </string-array>
     <string-array name="shark_analog_tone">
-        <item>Closed</item>
-        <item>067.0Hz</item>
-        <item>069.3Hz</item>
-        <item>071.9Hz</item>
-        <item>074.4Hz</item>
-        <item>077.0Hz</item>
-        <item>079.7Hz</item>
-        <item>082.5Hz</item>
-        <item>085.4Hz</item>
-        <item>088.5Hz</item>
-        <item>091.5Hz</item>
-        <item>094.8Hz</item>
-        <item>097.4Hz</item>
-        <item>100.0Hz</item>
-        <item>103.5Hz</item>
-        <item>107.2Hz</item>
-        <item>110.9Hz</item>
-        <item>114.8Hz</item>
-        <item>118.8Hz</item>
-        <item>123.0Hz</item>
-        <item>127.3Hz</item>
-        <item>131.8Hz</item>
-        <item>136.5Hz</item>
-        <item>141.3Hz</item>
-        <item>146.2Hz</item>
-        <item>151.4Hz</item>
-        <item>156.7Hz</item>
-        <item>159.8Hz</item>
-        <item>162.2Hz</item>
-        <item>165.5Hz</item>
-        <item>167.9Hz</item>
-        <item>171.3Hz</item>
-        <item>173.8Hz</item>
-        <item>177.3Hz</item>
-        <item>179.9Hz</item>
-        <item>183.5Hz</item>
-        <item>186.2Hz</item>
-        <item>189.9Hz</item>
-        <item>192.8Hz</item>
-        <item>196.6Hz</item>
-        <item>199.5Hz</item>
-        <item>203.5Hz</item>
-        <item>206.5Hz</item>
-        <item>210.7Hz</item>
-        <item>218.1Hz</item>
-        <item>225.7Hz</item>
-        <item>229.1Hz</item>
-        <item>233.6Hz</item>
-        <item>241.8Hz</item>
-        <item>250.3Hz</item>
-        <item>254.1Hz</item>
+        <item>@string/common_closed</item>
+        <item>67.0 Hz</item>
+        <item>69.3 Hz</item>
+        <item>71.9 Hz</item>
+        <item>74.4 Hz</item>
+        <item>77.0 Hz</item>
+        <item>79.7 Hz</item>
+        <item>82.5 Hz</item>
+        <item>85.4 Hz</item>
+        <item>88.5 Hz</item>
+        <item>91.5 Hz</item>
+        <item>94.8 Hz</item>
+        <item>97.4 Hz</item>
+        <item>100.0 Hz</item>
+        <item>103.5 Hz</item>
+        <item>107.2 Hz</item>
+        <item>110.9 Hz</item>
+        <item>114.8 Hz</item>
+        <item>118.8 Hz</item>
+        <item>123.0 Hz</item>
+        <item>127.3 Hz</item>
+        <item>131.8 Hz</item>
+        <item>136.5 Hz</item>
+        <item>141.3 Hz</item>
+        <item>146.2 Hz</item>
+        <item>151.4 Hz</item>
+        <item>156.7 Hz</item>
+        <item>159.8 Hz</item>
+        <item>162.2 Hz</item>
+        <item>165.5 Hz</item>
+        <item>167.9 Hz</item>
+        <item>171.3 Hz</item>
+        <item>173.8 Hz</item>
+        <item>177.3 Hz</item>
+        <item>179.9 Hz</item>
+        <item>183.5 Hz</item>
+        <item>186.2 Hz</item>
+        <item>189.9 Hz</item>
+        <item>192.8 Hz</item>
+        <item>196.6 Hz</item>
+        <item>199.5 Hz</item>
+        <item>203.5 Hz</item>
+        <item>206.5 Hz</item>
+        <item>210.7 Hz</item>
+        <item>218.1 Hz</item>
+        <item>225.7 Hz</item>
+        <item>229.1 Hz</item>
+        <item>233.6 Hz</item>
+        <item>241.8 Hz</item>
+        <item>250.3 Hz</item>
+        <item>254.1 Hz</item>
     </string-array>
     <string-array name="shark_digital_tone_inversion">
-        <item>Closed</item>
+        <item>@string/common_closed</item>
         <item>D023I</item>
         <item>D025I</item>
         <item>D026I</item>
@@ -463,7 +594,7 @@
         <item>D754I</item>
     </string-array>
     <string-array name="shark_digital_tone_normal">
-        <item>Closed</item>
+        <item>@string/common_closed</item>
         <item>D023N</item>
         <item>D025N</item>
         <item>D026N</item>
@@ -574,8 +705,8 @@
         <item>Sensitive</item>
     </string-array>
     <string-array name="sub_code_type">
-        <item>Analog</item>
-        <item>Digital: Normal</item>
-        <item>Digital: RV code</item>
+        <item>Analog tone (CTCSS)</item>
+        <item>Digital code (DCS), normal</item>
+        <item>Digital code (DCS), inverted</item>
     </string-array>
 </resources>
