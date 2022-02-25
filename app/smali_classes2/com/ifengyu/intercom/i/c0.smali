@@ -642,7 +642,7 @@
 
     move-result-object v0
 
-    const-string v1, "en"
+    const-string v1, "zh"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 

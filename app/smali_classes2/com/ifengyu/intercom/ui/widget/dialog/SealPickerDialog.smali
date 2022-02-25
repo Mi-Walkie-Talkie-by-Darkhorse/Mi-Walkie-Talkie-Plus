@@ -202,13 +202,13 @@
 
     move-result-object p1
 
-    const-string v0, "en"
+    const-string v0, "zh"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_0
 
     .line 17
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog;->mNp1:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
