@@ -4898,9 +4898,9 @@
     <public type="layout" name="ucrop_view" id="0x7f0c0159" />
     <public type="layout" name="user_guide_device_setting" id="0x7f0c015a" />
     <public type="layout" name="user_guide_muli_device_manager" id="0x7f0c015b" />
-    <public type="layout" name="user_guide_share_location" id="0x7f0c015c" />
-    <public type="layout" name="view_tips_loading" id="0x7f0c015d" />
-    <public type="layout" name="webview_load_fail" id="0x7f0c015e" />
+    <public type="layout" name="user_guide_share_location" id="0x7f0c007d" />
+    <public type="layout" name="view_tips_loading" id="0x7f0c008a" />
+    <public type="layout" name="webview_load_fail" id="0x7f0c008b" />
     <public type="layout" name="material_clock_period_toggle_land" id="0x7f0c00da" />
     <public type="menu" name="ucrop_menu_activity" id="0x7f0d0000" />
     <public type="mipmap" name="ic_launcher" id="0x7f0e0005" />
