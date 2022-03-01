@@ -933,4 +933,5 @@
     <string name="you_can_browse_to_the_car">可浏览到汽车等</string>
     <string name="zhixiashi_or_hangkang">直辖市或特别行政区</string>
     <string name="zhixiashi_or_hangkang_en">Municipalities or SAR</string>
+    <string name="frequency_mhz">頻率值，MHz</string>
 </resources>
