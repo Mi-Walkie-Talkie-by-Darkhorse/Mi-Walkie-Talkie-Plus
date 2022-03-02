@@ -38,6 +38,8 @@
 .method public a(Ljava/lang/String;)V
     .locals 0
 
+    invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$a;->b(Ljava/lang/String;)V
+
     return-void
 .end method
 
