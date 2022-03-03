@@ -160,7 +160,6 @@
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/o;->show()V
 
     return-void
-
 .end method
 
 .method static synthetic a(Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;Z)Z
