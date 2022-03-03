@@ -121,7 +121,7 @@ I have read and fully understood this statement, and promise that I possess all 
     <string name="altitude_h">Altitude</string>
     <string name="aomen">Macao</string>
     <string name="apk_update_title">App version update</string>
-    <string name="app_name">Mi PTT</string>
+    <string name="app_name">Mi PTT+</string>
     <string name="app_version">App Version: 2.13.7</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="authorized_login">Authorized logging in</string>
@@ -130,11 +130,11 @@ I have read and fully understood this statement, and promise that I possess all 
     <string name="away_from">Distance</string>
     <string name="base">OSM base layer</string>
     <string name="base_nl">Netherlands base overlay</string>
-    <string name="before_apply_camera_permissions">To use mobile phone camera, please grant the camera permission to Mi PTT.</string>
-    <string name="before_apply_location_permission">"In order to provide location sharing, track recording and Bluetooth device scanning and connection functions, Xi'an Fengyu Information Technology Co., Ltd. (contact: privacy@ifengyu.com) needs to collect your location information (personal sensitive information) through the Mi PTT app, and put it in the Store, transfer and trace until you withdraw your authorization. You can revoke the authorization through the system permission setting function, or apply to delete the collected data through the user rights center. If you refuse to authorize, you will not be able to use theese functions.
+    <string name="before_apply_camera_permissions">To use mobile phone camera, please grant the camera permission to Mi PTT+.</string>
+    <string name="before_apply_location_permission">"In order to provide location sharing, track recording and Bluetooth device scanning and connection functions, Xi'an Fengyu Information Technology Co., Ltd. (contact: privacy@ifengyu.com) needs to collect your location information (personal sensitive information) through the Mi PTT+ app, and put it in the Store, transfer and trace until you withdraw your authorization. You can revoke the authorization through the system permission setting function, or apply to delete the collected data through the user rights center. If you refuse to authorize, you will not be able to use theese functions.
 
-Please enable the location permission in Settings > Apps > Mi PTT > Permission Management."</string>
-    <string name="before_apply_storage_permission">To use the photo album, file download and save functions, please grant the storage permission to Mi PTT.</string>
+Please enable the location permission in Settings > Apps > Mi PTT+ > Permission Management."</string>
+    <string name="before_apply_storage_permission">To use the photo album, file download and save functions, please grant the storage permission to Mi PTT+.</string>
     <string name="beginner_guide">User Guide</string>
     <string name="beijing">Beijing</string>
     <string name="bing">Bing</string>
@@ -737,7 +737,7 @@ Please enable [Location] in [Settings]."</string>
     <string name="register_input_password_hint">Alphanumeric password of 8 to 16 characters long</string>
     <string name="register_input_verify_code_hint">Enter verification code</string>
     <string name="register_phone_had_refistered">This phone number has already been registered.</string>
-    <string name="register_top_welcome_prompt">Welcome to the Mi PTT</string>
+    <string name="register_top_welcome_prompt">Welcome to the Mi PTT+</string>
     <string name="relay_d">Repeater %1$d</string>
     <string name="relay_list_none">"No repeater list information, please add
 144.000–148.000    400.000–470.000"</string>
@@ -967,7 +967,7 @@ Please enable [Location] in [Settings]."</string>
     <string name="user_privacy_agree_prefix">Also please read and agree</string>
     <string name="user_privacy_pls_agree_there_must_permission">Please agree to use necessary permissions mentioned above</string>
     <string name="user_privacy_statement">Privacy Statement</string>
-    <string name="user_privacy_statement_detail">You are welcome to use Mi PTT. You can use this application to manage the Mi Walkie-Talkie radios, view and share the location, track and record movements, and so on. We will strictly abide by relevant laws and regulations and privacy policies to protect your personal information. In order to provide basic services, necessary personal information is collected.</string>
+    <string name="user_privacy_statement_detail">You are welcome to use Mi PTT+. You can use this application to manage the Mi Walkie-Talkie radios, view and share the location, track and record movements, and so on. We will strictly abide by relevant laws and regulations and privacy policies to protect your personal information. In order to provide basic services, necessary personal information is collected.</string>
     <string name="user_protocol">User Agreement and Privacy Policy</string>
     <string name="user_protocol_download_error">User Agreement and Privacy Policy download failed</string>
     <string name="user_protocol_download_path">Saved to %1$s</string>
