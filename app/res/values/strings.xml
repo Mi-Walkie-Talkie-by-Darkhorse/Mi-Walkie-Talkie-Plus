@@ -553,8 +553,8 @@ Current version is the latest"</string>
     <string name="map_kit_select_next_point">Next measurement point</string>
     <string name="map_kit_select_start_point">Select a starting point</string>
     <string name="map_kit_selected_location_latlong">Coordinate of selected</string>
-    <string name="map_kit_text">Gadgets</string>
-    <string name="map_mode">Map Source</string>
+    <string name="map_kit_text">Tools</string>
+    <string name="map_mode">Map source</string>
     <string name="map_satellitic">Satellite map</string>
     <string name="map_size_text">Map size  </string>
     <string name="map_standard">Standard map</string>
@@ -856,7 +856,7 @@ Please enable [Location] in [Settings]."</string>
     <string name="sure_open_vox_prompt_detail">Using the button-free function in a noisy environment can easily cause false triggering. For better use, please avoid using this function in a noisy environment</string>
     <string name="sure_open_vox_prompt_title">After turning on this function, you can talk to each other without pressing the intercom call button.</string>
     <string name="sure_to_delete_current_feedback">Delete current feedback information?</string>
-    <string name="switch_channel">Switch</string>
+    <string name="switch_channel">Channels</string>
     <string name="switch_current_group">Switch current group</string>
     <string name="system_permission">Permissions</string>
     <string name="system_permission_camera">Camera</string>
