@@ -999,4 +999,6 @@ Please enable [Location] in [Settings]."</string>
     <string name="zhixiashi_or_hangkang_en">Municipalities or SAR</string>
     <string name="zhixiashi_or_hangkang">@string/zhixiashi_or_hangkang_en</string>
     <string name="frequency_mhz">Frequency value, MHz</string>
+    <string name="hardware_version">"Hardware version\u0020"</string>
+    <string name="flash_file_text">Flash \"%s\"</string>
 </resources>

@@ -1,5 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
-.super Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
+.super Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;
 .source "SealSharkMcuUpdateActivity.java"
 
 # interfaces
@@ -41,7 +41,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;-><init>()V
+    invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;-><init>()V
 
     const/4 v0, 0x0
 
@@ -1020,6 +1020,10 @@
 .method private z()V
     .locals 5
 
+    iget-object v2, p0, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->fwf:Ljava/io/File;
+
+    if-nez v2, :cond_2
+
     .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->z:Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;
 
@@ -1101,6 +1105,7 @@
 
     if-eqz v3, :cond_0
 
+    :cond_2
     const/4 v0, 0x4
 
     .line 6
@@ -1315,12 +1320,14 @@
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c004c
 
     .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->setContentView(I)V
+
+    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->initUI()V
 
     .line 3
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
@@ -1396,7 +1403,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onDestroy()V
+    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->onDestroy()V
 
     const/4 v0, 0x0
 
@@ -1413,7 +1420,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onPause()V
+    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->onPause()V
 
     .line 2
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
@@ -1429,7 +1436,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onResume()V
+    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->onResume()V
 
     .line 2
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;

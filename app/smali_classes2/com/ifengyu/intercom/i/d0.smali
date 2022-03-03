@@ -99,7 +99,12 @@
 .method public static D()I
     .locals 3
 
-    .line 1
+    invoke-static {}, Lcom/ifengyu/intercom/i/d0;->fwdir()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -112,6 +117,7 @@
 
     move-result v0
 
+    :cond_0
     return v0
 .end method
 
@@ -240,10 +246,36 @@
     return v0
 .end method
 
+.method public static Ju()I
+    .locals 1
+
+    invoke-static {}, Lcom/ifengyu/intercom/i/d0;->fwdir()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lcom/ifengyu/intercom/i/d0;->J()I
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x2
+
+    return v0
+.end method
+
 .method public static K()I
     .locals 3
 
-    .line 1
+    invoke-static {}, Lcom/ifengyu/intercom/i/d0;->fwdir()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -256,6 +288,7 @@
 
     move-result v0
 
+    :cond_0
     return v0
 .end method
 
@@ -1561,6 +1594,58 @@
     return v0
 .end method
 
+.method private static fwdir()Z
+    .locals 3
+
+    :try_start_0
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "mounted"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "mounted_ro"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    new-instance v0, Ljava/io/File;
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+
+    move-result-object v1
+
+    const-string v2, "Mi-walkie-talkie.firmware"
+
+    invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v0
+
+    :cond_1
+    return v0
+
+    :catch_0
+    move-exception v0
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method public static g()I
     .locals 3
 
@@ -2084,7 +2169,12 @@
 .method public static l()I
     .locals 3
 
-    .line 1
+    invoke-static {}, Lcom/ifengyu/intercom/i/d0;->fwdir()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2097,6 +2187,7 @@
 
     move-result v0
 
+    :cond_0
     return v0
 .end method
 

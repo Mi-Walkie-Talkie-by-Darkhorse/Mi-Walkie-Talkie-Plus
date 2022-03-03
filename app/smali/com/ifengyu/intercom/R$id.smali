@@ -2411,8 +2411,6 @@
 
 .field public static final update_restart_click:I = 0x7f0904b3
 
-.field public static final update_start_click:I = 0x7f0904b4
-
 .field public static final update_state:I = 0x7f0904b5
 
 .field public static final update_sure_click:I = 0x7f0904b6
@@ -2501,7 +2499,7 @@
 
 .field public static final wrapper_states:I = 0x7f0904e0
 
-.field public static final zero_corner_chip:I = 0x7f0904e1
+.field public static final zero_corner_chip:I = 0x7f0904b4
 
 
 # direct methods
