@@ -82,7 +82,7 @@
 
     const/16 v6, 0x2e
 
-    invoke-static {}, Lcom/ifengyu/intercom/b/w;->ad()I
+    invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
     move-result v1
 
@@ -96,7 +96,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-static {}, Lcom/ifengyu/intercom/b/w;->m()I
+    invoke-static {}, Lcom/ifengyu/intercom/i/d0;->k()I
 
     move-result v1
 
@@ -127,7 +127,7 @@
     :pswitch_0
     const-string v1, "shark_"
 
-    invoke-static {}, Lcom/ifengyu/intercom/b/w;->F()I
+    invoke-static {}, Lcom/ifengyu/intercom/i/d0;->J()I
 
     move-result v3
 
@@ -136,7 +136,7 @@
     :pswitch_1
     const-string v1, "seal_"
 
-    invoke-static {}, Lcom/ifengyu/intercom/b/w;->r()I
+    invoke-static {}, Lcom/ifengyu/intercom/i/d0;->C()I
 
     move-result v3
 
