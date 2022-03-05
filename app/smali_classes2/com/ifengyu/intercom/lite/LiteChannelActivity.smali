@@ -41,7 +41,7 @@
     .line 3
     const-class p1, Lcom/ifengyu/intercom/lite/LiteChannelActivity;
 
-    const-class v1, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;
+    const-class v1, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;
 
     invoke-static {p0, p1, v1, v0}, Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity;->a(Landroid/content/Context;Ljava/lang/Class;Ljava/lang/Class;Landroid/os/Bundle;)Landroid/content/Intent;
 

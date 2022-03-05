@@ -7672,7 +7672,30 @@
 
     .line 95
     :sswitch_15
-    invoke-direct {p0}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->F()V
+
+
+
+
+
+
+
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
+    move-result-object v0
+    new-instance v1, Lcom/ifengyu/intercom/lite/models/ChannelModel;
+    invoke-direct {v1}, Lcom/ifengyu/intercom/lite/models/ChannelModel;-><init>()V
+    invoke-static {v0, v1}, Lcom/ifengyu/intercom/lite/LiteChannelActivity;->a(Landroid/content/Context;Lcom/ifengyu/intercom/lite/models/ChannelModel;)V
+
+
+
+
+
+
+
+
+
+
+
 
     goto :goto_9
 
