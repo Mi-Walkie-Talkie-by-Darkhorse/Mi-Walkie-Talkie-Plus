@@ -317,47 +317,33 @@
     return-void
 .end method
 
-.method private a(Ljava/lang/String;Z)V
-    .locals 2
+.method private a(II)V
+    .locals 3
 
-    .line 25
-    new-instance v0, Lcom/ifengyu/intercom/lite/c/b/c;
+    const/4 v1, 0x0
 
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
+    if-lez p1, :cond_0
+
+    invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->b(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/ifengyu/intercom/lite/c/b/c;-><init>(Landroid/content/Context;)V
+    :cond_0
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
-    .line 26
-    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(Ljava/lang/String;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
+    move-result-object v2
 
-    check-cast v0, Lcom/ifengyu/intercom/lite/c/b/b;
+    new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/o;
 
-    const p1, 0x7f11018c
+    invoke-direct {v0, v2, v1, p2}, Lcom/ifengyu/intercom/ui/widget/dialog/o;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
 
-    .line 27
-    invoke-static {p1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
+    new-instance v2, Lcom/ifengyu/intercom/lite/fragment/n0;
 
-    move-result-object p1
+    invoke-direct {v2, p0, p2}, Lcom/ifengyu/intercom/lite/fragment/n0;-><init>(Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;I)V
 
-    invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/lite/c/b/b;->b(Ljava/lang/String;)Lcom/ifengyu/intercom/lite/c/b/b;
+    invoke-virtual {v0, v2}, Lcom/ifengyu/intercom/ui/widget/dialog/o;->a(Lcom/ifengyu/intercom/ui/widget/dialog/o$k;)V
 
-    new-instance p1, Lcom/ifengyu/intercom/lite/fragment/n0;
-
-    invoke-direct {p1, p0, p2}, Lcom/ifengyu/intercom/lite/fragment/n0;-><init>(Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;Z)V
-
-    .line 28
-    invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/lite/c/b/b;->a(Lcom/ifengyu/intercom/lite/c/b/b$c;)Lcom/ifengyu/intercom/lite/c/b/b;
-
-    const p1, 0x7f1200fc
-
-    .line 29
-    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/b;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/o;->show()V
 
     return-void
 .end method
@@ -495,101 +481,50 @@
     return-void
 .end method
 
-.method public synthetic a(ZLcom/qmuiteam/qmui/widget/dialog/b;I)V
-    .locals 1
-
-    if-eqz p1, :cond_0
-
-    .line 30
-    iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
-
-    invoke-virtual {p1, p3}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setReceiveFreq(I)V
-
-    .line 31
-    iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mItemReceiveFreq:Lcom/ifengyu/library/widget/view/ItemView;
+.method public synthetic ao(II)V
+    .locals 2
 
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
+
+    add-int/lit8 p2, p2, -0x1
+
+    if-lez p2, :cond_1
+
+    :cond_2
+    invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setReceiveFreq(I)V
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getDisplayReceiveFreq()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p2
 
-    invoke-virtual {p1, v0}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
+    iget-object v1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mItemReceiveFreq:Lcom/ifengyu/library/widget/view/ItemView;
 
-    .line 32
-    iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
+    invoke-virtual {v1, p2}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->isEmpty()Z
+    invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getSendFreq()I
 
-    move-result p1
+    move-result p2
 
-    if-eqz p1, :cond_1
+    if-gtz p2, :cond_0
 
-    .line 33
-    iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
-
-    invoke-virtual {p1, p3}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setSendFreq(I)V
-
-    .line 34
-    iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mItemSendFreq:Lcom/ifengyu/library/widget/view/ItemView;
-
-    iget-object p3, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
-
-    invoke-virtual {p3}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getDisplaySendFreq()Ljava/lang/String;
-
-    move-result-object p3
-
-    invoke-virtual {p1, p3}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
-
-    goto :goto_0
-
-    .line 35
-    :cond_0
-    iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
-
-    invoke-virtual {p1, p3}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setSendFreq(I)V
-
-    .line 36
-    iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mItemSendFreq:Lcom/ifengyu/library/widget/view/ItemView;
-
-    iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
+    :cond_1
+    invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setSendFreq(I)V
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getDisplaySendFreq()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p2
 
-    invoke-virtual {p1, v0}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
+    iget-object v1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mItemSendFreq:Lcom/ifengyu/library/widget/view/ItemView;
 
-    .line 37
-    iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
+    invoke-virtual {v1, p2}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->isEmpty()Z
+    invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getReceiveFreq()I
 
-    move-result p1
+    move-result p2
 
-    if-eqz p1, :cond_1
+    if-lez p2, :cond_2
 
-    .line 38
-    iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
-
-    invoke-virtual {p1, p3}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setReceiveFreq(I)V
-
-    .line 39
-    iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mItemReceiveFreq:Lcom/ifengyu/library/widget/view/ItemView;
-
-    iget-object p3, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
-
-    invoke-virtual {p3}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getDisplayReceiveFreq()Ljava/lang/String;
-
-    move-result-object p3
-
-    invoke-virtual {p1, p3}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
-
-    .line 40
-    :cond_1
-    :goto_0
-    invoke-virtual {p2}, Landroidx/appcompat/app/d;->dismiss()V
-
+    :cond_0
     return-void
 .end method
 
@@ -665,24 +600,22 @@
     .line 5
     invoke-direct {p0, p1, v0, v1, v2}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->a(Ljava/lang/String;ZII)V
 
-    goto :goto_0
+    return-void
 
-    .line 6
     :sswitch_1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f110116
+    invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getSendFreq()I
 
-    .line 7
-    invoke-static {p1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
+    move-result p1
 
-    move-result-object p1
+    const/4 v1, 0x1
 
-    invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->a(Ljava/lang/String;Z)V
+    invoke-direct {p0, p1, v1}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->a(II)V
 
-    goto :goto_0
+    return-void
 
     .line 8
     :sswitch_2
@@ -713,24 +646,22 @@
     .line 11
     invoke-direct {p0, p1, v1, v0, v2}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->a(Ljava/lang/String;ZII)V
 
-    goto :goto_0
+    return-void
 
-    .line 12
     :sswitch_3
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f11029b
+    invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getReceiveFreq()I
 
-    .line 13
-    invoke-static {p1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
+    move-result p1
 
-    move-result-object p1
+    const/4 v1, 0x2
 
-    invoke-direct {p0, p1, v1}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->a(Ljava/lang/String;Z)V
+    invoke-direct {p0, p1, v1}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->a(II)V
 
-    goto :goto_0
+    return-void
 
     .line 14
     :sswitch_4
@@ -747,8 +678,6 @@
     :cond_0
     :goto_0
     return-void
-
-    nop
 
     :sswitch_data_0
     .sparse-switch
